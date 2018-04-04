@@ -1,0 +1,282 @@
+\hypertarget{liste_8c}{}\section{RÃ©fÃ©rence du fichier src/liste.c}
+\label{liste_8c}\index{src/liste.\+c@{src/liste.\+c}}
+
+
+Ensemble de fonctions servants à l\textquotesingle{}utilisation des listes.  
+
+
+{\ttfamily \#include \char`\"{}liste.\+h\char`\"{}}\\*
+Graphe des dÃ©pendances par inclusion de liste.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{liste_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{liste_8c_a5cc83f8eeeb903a8b631ef84f9efffcf}{copie\+\_\+liste} (int nbj\+\_\+max, \hyperlink{structt__liste}{t\+\_\+liste} source\mbox{[}nbj\+\_\+max\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} copie\mbox{[}nbj\+\_\+max\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui copie une liste source sur la liste copie. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a7dda997062b284703a6637cb25a8871a}{init\+\_\+liste} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Initialise la liste. \end{DoxyCompactList}\item 
+int \hyperlink{liste_8c_aaf6d7622b271b1fba9c0eb73a5d6db44}{liste\+\_\+vide} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Indique si une liste est vide ou non. \end{DoxyCompactList}\item 
+int \hyperlink{liste_8c_a1ec9a3419a08cb571c722eb8eeb45224}{hors\+\_\+liste} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Indique si l\textquotesingle{}élément courant de la liste se trouve bien dans la liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a6f3dc42709b31e9eb527e3018568e766}{en\+\_\+tete} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Fonction qui place l\textquotesingle{}élément courant en tête de liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a0070ce853ee19eac4f1226988a494e01}{en\+\_\+queue} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Fonction qui place l\textquotesingle{}élément courant en queue de liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a8e2e7a55e996e294e79a6e607cad00dc}{precedent} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Fonction qui place l\textquotesingle{}élément courant sur l\textquotesingle{}élément précédent. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_ac76a08dfdd4e447188d85378a1c39aba}{suivant} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Fonction qui place l\textquotesingle{}élément courant sur l\textquotesingle{}élément suivant. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a24e91e6bd38de3d8e043dd079256053b}{val\+\_\+elem} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste, \hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$copie)
+\begin{DoxyCompactList}\small\item\em Fonction qui récupère la matrice de l\textquotesingle{}élément courant et la copie. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a6173fcd0d246aa6ab73cfd9395d1e179}{oter\+\_\+elt} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Fonction qui supprime l\textquotesingle{}élément courant. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a3fcc34a240ac672285b9588bb8c6c1ec}{placer\+\_\+elem} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste, \hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em Fonction qui place ou remplace une matrice dans la liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a08a7b02c46805f275729f5639551f144}{ajouter\+\_\+piece} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste, \hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em Fonction qui place une pièce au bon endroit de la liste. \end{DoxyCompactList}\item 
+void \hyperlink{liste_8c_a13b2afdaa5eec613cf6d42eb49eae08a}{remplir\+\_\+listes} (\hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Fonction qui remplit une liste avec une banque de pièces contenue dans un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description dÃ©taillÃ©e}
+Ensemble de fonctions servants à l\textquotesingle{}utilisation des listes. 
+
+\begin{DoxyAuthor}{Auteur}
+Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Documentation des fonctions}
+\index{liste.\+c@{liste.\+c}!ajouter\+\_\+piece@{ajouter\+\_\+piece}}
+\index{ajouter\+\_\+piece@{ajouter\+\_\+piece}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{ajouter\+\_\+piece(t\+\_\+liste $\ast$liste, t\+\_\+matrice $\ast$piece)}{ajouter_piece(t_liste *liste, t_matrice *piece)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajouter\+\_\+piece (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste, }
+\item[{{\bf t\+\_\+matrice} $\ast$}]{piece}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a08a7b02c46805f275729f5639551f144}{}\label{liste_8c_a08a7b02c46805f275729f5639551f144}
+
+
+Fonction qui place une pièce au bon endroit de la liste. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+{\em $\ast$piece} & La pièce \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!copie\+\_\+liste@{copie\+\_\+liste}}
+\index{copie\+\_\+liste@{copie\+\_\+liste}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{copie\+\_\+liste(int nbj\+\_\+max, t\+\_\+liste source[nbj\+\_\+max], t\+\_\+liste copie[nbj\+\_\+max])}{copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max])}}]{\setlength{\rightskip}{0pt plus 5cm}void copie\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{int}]{nbj\+\_\+max, }
+\item[{{\bf t\+\_\+liste}}]{source\mbox{[}nbj\+\_\+max\mbox{]}, }
+\item[{{\bf t\+\_\+liste}}]{copie\mbox{[}nbj\+\_\+max\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a5cc83f8eeeb903a8b631ef84f9efffcf}{}\label{liste_8c_a5cc83f8eeeb903a8b631ef84f9efffcf}
+
+
+Fonction qui copie une liste source sur la liste copie. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em nbj\+\_\+max} & Nombre de joueur dans la partie \\
+\hline
+{\em source\mbox{[}nbj\+\_\+max\mbox{]}} & La source \\
+\hline
+{\em copie\mbox{[}nbj\+\_\+max\mbox{]}} & La copie \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!en\+\_\+queue@{en\+\_\+queue}}
+\index{en\+\_\+queue@{en\+\_\+queue}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{en\+\_\+queue(t\+\_\+liste $\ast$liste)}{en_queue(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void en\+\_\+queue (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a0070ce853ee19eac4f1226988a494e01}{}\label{liste_8c_a0070ce853ee19eac4f1226988a494e01}
+
+
+Fonction qui place l\textquotesingle{}élément courant en queue de liste. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!en\+\_\+tete@{en\+\_\+tete}}
+\index{en\+\_\+tete@{en\+\_\+tete}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{en\+\_\+tete(t\+\_\+liste $\ast$liste)}{en_tete(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void en\+\_\+tete (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a6f3dc42709b31e9eb527e3018568e766}{}\label{liste_8c_a6f3dc42709b31e9eb527e3018568e766}
+
+
+Fonction qui place l\textquotesingle{}élément courant en tête de liste. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!hors\+\_\+liste@{hors\+\_\+liste}}
+\index{hors\+\_\+liste@{hors\+\_\+liste}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{hors\+\_\+liste(t\+\_\+liste $\ast$liste)}{hors_liste(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}int hors\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a1ec9a3419a08cb571c722eb8eeb45224}{}\label{liste_8c_a1ec9a3419a08cb571c722eb8eeb45224}
+
+
+Indique si l\textquotesingle{}élément courant de la liste se trouve bien dans la liste. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!init\+\_\+liste@{init\+\_\+liste}}
+\index{init\+\_\+liste@{init\+\_\+liste}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{init\+\_\+liste(t\+\_\+liste $\ast$liste)}{init_liste(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+liste (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a7dda997062b284703a6637cb25a8871a}{}\label{liste_8c_a7dda997062b284703a6637cb25a8871a}
+
+
+Initialise la liste. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!liste\+\_\+vide@{liste\+\_\+vide}}
+\index{liste\+\_\+vide@{liste\+\_\+vide}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{liste\+\_\+vide(t\+\_\+liste $\ast$liste)}{liste_vide(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}int liste\+\_\+vide (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_aaf6d7622b271b1fba9c0eb73a5d6db44}{}\label{liste_8c_aaf6d7622b271b1fba9c0eb73a5d6db44}
+
+
+Indique si une liste est vide ou non. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!oter\+\_\+elt@{oter\+\_\+elt}}
+\index{oter\+\_\+elt@{oter\+\_\+elt}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{oter\+\_\+elt(t\+\_\+liste $\ast$liste)}{oter_elt(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void oter\+\_\+elt (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a6173fcd0d246aa6ab73cfd9395d1e179}{}\label{liste_8c_a6173fcd0d246aa6ab73cfd9395d1e179}
+
+
+Fonction qui supprime l\textquotesingle{}élément courant. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!placer\+\_\+elem@{placer\+\_\+elem}}
+\index{placer\+\_\+elem@{placer\+\_\+elem}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{placer\+\_\+elem(t\+\_\+liste $\ast$liste, t\+\_\+matrice $\ast$piece)}{placer_elem(t_liste *liste, t_matrice *piece)}}]{\setlength{\rightskip}{0pt plus 5cm}void placer\+\_\+elem (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste, }
+\item[{{\bf t\+\_\+matrice} $\ast$}]{piece}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a3fcc34a240ac672285b9588bb8c6c1ec}{}\label{liste_8c_a3fcc34a240ac672285b9588bb8c6c1ec}
+
+
+Fonction qui place ou remplace une matrice dans la liste. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+{\em $\ast$piece} & La pièce \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!precedent@{precedent}}
+\index{precedent@{precedent}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{precedent(t\+\_\+liste $\ast$liste)}{precedent(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void precedent (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a8e2e7a55e996e294e79a6e607cad00dc}{}\label{liste_8c_a8e2e7a55e996e294e79a6e607cad00dc}
+
+
+Fonction qui place l\textquotesingle{}élément courant sur l\textquotesingle{}élément précédent. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!remplir\+\_\+listes@{remplir\+\_\+listes}}
+\index{remplir\+\_\+listes@{remplir\+\_\+listes}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{remplir\+\_\+listes(t\+\_\+liste $\ast$liste)}{remplir_listes(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void remplir\+\_\+listes (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a13b2afdaa5eec613cf6d42eb49eae08a}{}\label{liste_8c_a13b2afdaa5eec613cf6d42eb49eae08a}
+
+
+Fonction qui remplit une liste avec une banque de pièces contenue dans un fichier. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!suivant@{suivant}}
+\index{suivant@{suivant}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{suivant(t\+\_\+liste $\ast$liste)}{suivant(t_liste *liste)}}]{\setlength{\rightskip}{0pt plus 5cm}void suivant (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_ac76a08dfdd4e447188d85378a1c39aba}{}\label{liste_8c_ac76a08dfdd4e447188d85378a1c39aba}
+
+
+Fonction qui place l\textquotesingle{}élément courant sur l\textquotesingle{}élément suivant. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+\end{DoxyParams}
+\index{liste.\+c@{liste.\+c}!val\+\_\+elem@{val\+\_\+elem}}
+\index{val\+\_\+elem@{val\+\_\+elem}!liste.\+c@{liste.\+c}}
+\subsubsection[{\texorpdfstring{val\+\_\+elem(t\+\_\+liste $\ast$liste, t\+\_\+matrice $\ast$copie)}{val_elem(t_liste *liste, t_matrice *copie)}}]{\setlength{\rightskip}{0pt plus 5cm}void val\+\_\+elem (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste, }
+\item[{{\bf t\+\_\+matrice} $\ast$}]{copie}
+\end{DoxyParamCaption}
+)}\hypertarget{liste_8c_a24e91e6bd38de3d8e043dd079256053b}{}\label{liste_8c_a24e91e6bd38de3d8e043dd079256053b}
+
+
+Fonction qui récupère la matrice de l\textquotesingle{}élément courant et la copie. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em $\ast$liste} & La liste \\
+\hline
+{\em $\ast$copie} & La matrice contenant la copie \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,94 @@
+\hypertarget{ajouter__piece_8c}{}\section{Référence du fichier src/ajouter\+\_\+piece.c}
+\label{ajouter__piece_8c}\index{src/ajouter\+\_\+piece.\+c@{src/ajouter\+\_\+piece.\+c}}
+
+
+Fonctions qui vérifient le placement d\textquotesingle{}une pièce et la placent.  
+
+
+{\ttfamily \#include \char`\"{}ajouter\+\_\+piece.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de ajouter\+\_\+piece.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{ajouter__piece_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ajouter__piece_8c_a76b63705ca536064dfc779ad32b1afe9}{placer\+\_\+posibiliter} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int y, int x, int joueur)
+\begin{DoxyCompactList}\small\item\em Place dans le plateau une indication qui permet de déterminer si la case est une possibilité pour un joueur. \end{DoxyCompactList}\item 
+int \hyperlink{ajouter__piece_8c_abcdf545d4b1e52e2abeb59bc45c90ffe}{placer\+\_\+piece} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__matrice}{t\+\_\+matrice} matri, \hyperlink{structt__coordonnee}{t\+\_\+coordonnee} coord, int joueur, int mode)
+\begin{DoxyCompactList}\small\item\em Place la pièce dans le plateau après avoir vérifié que cela soit possible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fonctions qui vérifient le placement d\textquotesingle{}une pièce et la placent. 
+
+\begin{DoxyAuthor}{Auteur}
+Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Documentation des fonctions}
+\index{ajouter\+\_\+piece.\+c@{ajouter\+\_\+piece.\+c}!placer\+\_\+piece@{placer\+\_\+piece}}
+\index{placer\+\_\+piece@{placer\+\_\+piece}!ajouter\+\_\+piece.\+c@{ajouter\+\_\+piece.\+c}}
+\subsubsection[{\texorpdfstring{placer\+\_\+piece(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+matrice matri, t\+\_\+coordonnee coord, int joueur, int mode)}{placer_piece(int taille_plateau, t_case(*plateau)[taille_plateau], t_matrice matri, t_coordonnee coord, int joueur, int mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int placer\+\_\+piece (
+\begin{DoxyParamCaption}
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{{\bf t\+\_\+matrice}}]{matri, }
+\item[{{\bf t\+\_\+coordonnee}}]{coord, }
+\item[{int}]{joueur, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{ajouter__piece_8c_abcdf545d4b1e52e2abeb59bc45c90ffe}{}\label{ajouter__piece_8c_abcdf545d4b1e52e2abeb59bc45c90ffe}
+
+
+Place la pièce dans le plateau après avoir vérifié que cela soit possible. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+\_\+plateau} & la taille du plateau \\
+\hline
+{\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\
+\hline
+{\em matri} & La matrice contenant la pièce \\
+\hline
+{\em coord} & Les coordonées de la case \\
+\hline
+{\em joueur} & Le joueur actuel \\
+\hline
+\end{DoxyParams}
+\index{ajouter\+\_\+piece.\+c@{ajouter\+\_\+piece.\+c}!placer\+\_\+posibiliter@{placer\+\_\+posibiliter}}
+\index{placer\+\_\+posibiliter@{placer\+\_\+posibiliter}!ajouter\+\_\+piece.\+c@{ajouter\+\_\+piece.\+c}}
+\subsubsection[{\texorpdfstring{placer\+\_\+posibiliter(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], int y, int x, int joueur)}{placer_posibiliter(int taille_plateau, t_case(*plateau)[taille_plateau], int y, int x, int joueur)}}]{\setlength{\rightskip}{0pt plus 5cm}void placer\+\_\+posibiliter (
+\begin{DoxyParamCaption}
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{int}]{y, }
+\item[{int}]{x, }
+\item[{int}]{joueur}
+\end{DoxyParamCaption}
+)}\hypertarget{ajouter__piece_8c_a76b63705ca536064dfc779ad32b1afe9}{}\label{ajouter__piece_8c_a76b63705ca536064dfc779ad32b1afe9}
+
+
+Place dans le plateau une indication qui permet de déterminer si la case est une possibilité pour un joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+\_\+plateau} & la taille du plateau \\
+\hline
+{\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\
+\hline
+{\em x} & La colonne du plateau \\
+\hline
+{\em y} & la ligne du plateau \\
+\hline
+{\em joueur} & Le joueur actuel \\
+\hline
+\end{DoxyParams}

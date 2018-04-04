@@ -1,0 +1,114 @@
+\hypertarget{menu__pause_8c}{}\section{R√©f√©rence du fichier src/menu\+\_\+pause.c}
+\label{menu__pause_8c}\index{src/menu\+\_\+pause.\+c@{src/menu\+\_\+pause.\+c}}
+
+
+Fonctions de sauvegarde, de chargement et du menu de pause.  
+
+
+{\ttfamily \#include \char`\"{}menu\+\_\+pause.\+h\char`\"{}}\\*
+Graphe des d√©pendances par inclusion de menu\+\_\+pause.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{menu__pause_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}{charger\+\_\+partie} ()\hypertarget{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}{}\label{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}
+
+\begin{DoxyCompactList}\small\item\em Charge une partie ‡ partir d\textquotesingle{}un fichier de sauvegarde. \end{DoxyCompactList}\item 
+void \hyperlink{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}{sauvegarder\+\_\+partie} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece)
+\begin{DoxyCompactList}\small\item\em Sauvegarde la partie. \end{DoxyCompactList}\item 
+int \hyperlink{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}{menu\+\_\+pause} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece)
+\begin{DoxyCompactList}\small\item\em Le menu de pause. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description d√©taill√©e}
+Fonctions de sauvegarde, de chargement et du menu de pause. 
+
+\begin{DoxyAuthor}{Auteur}
+Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Documentation des fonctions}
+\index{menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}!menu\+\_\+pause@{menu\+\_\+pause}}
+\index{menu\+\_\+pause@{menu\+\_\+pause}!menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}}
+\subsubsection[{\texorpdfstring{menu\+\_\+pause(int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+liste $\ast$liste\+\_\+piece)}{menu_pause(int nbj, int nbj_max, int nb_tour_joueur, int *score, int *player, int taille_plateau, t_case(*plateau)[taille_plateau], t_liste *liste_piece)}}]{\setlength{\rightskip}{0pt plus 5cm}menu\+\_\+pause (
+\begin{DoxyParamCaption}
+\item[{int}]{nbj, }
+\item[{int}]{nbj\+\_\+max, }
+\item[{int}]{nb\+\_\+tour\+\_\+joueur, }
+\item[{int $\ast$}]{score, }
+\item[{int $\ast$}]{player, }
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece}
+\end{DoxyParamCaption}
+)}\hypertarget{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}{}\label{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}
+
+
+Le menu de pause. 
+
+
+\begin{DoxyParams}{Param√®tres}
+{\em nbj} & Nombre de joueurs ordinateurs \\
+\hline
+{\em nbj\+\_\+max} & Nombre de joueurs \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Le tour \\
+\hline
+{\em $\ast$score} & Tableau des scores des joueurs \\
+\hline
+{\em $\ast$player} & \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\
+\hline
+{\em $\ast$liste\+\_\+piece} & Les listes de piËces des joueurs \\
+\hline
+\end{DoxyParams}
+\index{menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}!sauvegarder\+\_\+partie@{sauvegarder\+\_\+partie}}
+\index{sauvegarder\+\_\+partie@{sauvegarder\+\_\+partie}!menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}}
+\subsubsection[{\texorpdfstring{sauvegarder\+\_\+partie(int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+liste $\ast$liste\+\_\+piece)}{sauvegarder_partie(int nbj, int nbj_max, int nb_tour_joueur, int *score, int *player, int taille_plateau, t_case(*plateau)[taille_plateau], t_liste *liste_piece)}}]{\setlength{\rightskip}{0pt plus 5cm}void sauvegarder\+\_\+partie (
+\begin{DoxyParamCaption}
+\item[{int}]{nbj, }
+\item[{int}]{nbj\+\_\+max, }
+\item[{int}]{nb\+\_\+tour\+\_\+joueur, }
+\item[{int $\ast$}]{score, }
+\item[{int $\ast$}]{player, }
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece}
+\end{DoxyParamCaption}
+)}\hypertarget{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}{}\label{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}
+
+
+Sauvegarde la partie. 
+
+Enregistre dans un fichier l\textquotesingle{}Ètat du plateau, les piËces restantes de chaque joueur ainsi que leur score et ‡ qui c\textquotesingle{}est le tour de jouer 
+\begin{DoxyParams}{Param√®tres}
+{\em nbj} & Nombre de joueurs ordinateurs \\
+\hline
+{\em nbj\+\_\+max} & Nombre de joueurs \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Le tour \\
+\hline
+{\em $\ast$score} & Tableau des scores des joueurs \\
+\hline
+{\em $\ast$player} & \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\
+\hline
+{\em $\ast$liste\+\_\+piece} & Les listes de piËces des joueurs \\
+\hline
+\end{DoxyParams}

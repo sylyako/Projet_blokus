@@ -1,0 +1,90 @@
+\hypertarget{unicode_8c}{}\section{Référence du fichier src/unicode.c}
+\label{unicode_8c}\index{src/unicode.\+c@{src/unicode.\+c}}
+
+
+Fonctions d\textquotesingle{}affichage des cases du plateau avec des caractères unicode.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}unicode.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}couleurs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de unicode.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unicode_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{unicode_8c_a61ef8e58ec8fff2bd2273058a38b7689}{aff\+\_\+case\+\_\+haut} (int x, int y, int couleur, int nb\+\_\+joueurs)
+\begin{DoxyCompactList}\small\item\em Affiche le haut d\textquotesingle{}une case du plateau. \end{DoxyCompactList}\item 
+void \hyperlink{unicode_8c_a2756c6713422f9de9a781715d15da33b}{aff\+\_\+case\+\_\+bas} (int x, int y, int couleur, int nb\+\_\+joueurs)
+\begin{DoxyCompactList}\small\item\em Affiche le bas d\textquotesingle{}une case du plateau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fonctions d\textquotesingle{}affichage des cases du plateau avec des caractères unicode. 
+
+Contient deux fonctions pour l\textquotesingle{}affichage du haut d\textquotesingle{}une case et du bas d\textquotesingle{}une case en caractère unicode et avec gestion de couleur. Les caractères unicodes sont directement rentrés dans le code car sinon les lignes du plateau ne s\textquotesingle{}alignent pas correctement. \begin{DoxyAuthor}{Auteur}
+Kevin Semamra 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+mars 2018 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\index{unicode.\+c@{unicode.\+c}!aff\+\_\+case\+\_\+bas@{aff\+\_\+case\+\_\+bas}}
+\index{aff\+\_\+case\+\_\+bas@{aff\+\_\+case\+\_\+bas}!unicode.\+c@{unicode.\+c}}
+\subsubsection[{\texorpdfstring{aff\+\_\+case\+\_\+bas(int x, int y, int couleur, int nb\+\_\+joueurs)}{aff_case_bas(int x, int y, int couleur, int nb_joueurs)}}]{\setlength{\rightskip}{0pt plus 5cm}void aff\+\_\+case\+\_\+bas (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{couleur, }
+\item[{int}]{nb\+\_\+joueurs}
+\end{DoxyParamCaption}
+)}\hypertarget{unicode_8c_a2756c6713422f9de9a781715d15da33b}{}\label{unicode_8c_a2756c6713422f9de9a781715d15da33b}
+
+
+Affiche le bas d\textquotesingle{}une case du plateau. 
+
+Affiche les bordures de la partie basse de la case, ainsi que la couleur correspondant à une pièce ou une possibilité de placement pour le joueur courant. 
+\begin{DoxyParams}{Paramètres}
+{\em x} & x représente un numéro de colonne. \\
+\hline
+{\em y} & y représente un numéro de ligne. \\
+\hline
+{\em nb\+\_\+joueurs} & nb\+\_\+joueurs est utilisé pour déterminé la longueur du plateau. \\
+\hline
+\end{DoxyParams}
+\index{unicode.\+c@{unicode.\+c}!aff\+\_\+case\+\_\+haut@{aff\+\_\+case\+\_\+haut}}
+\index{aff\+\_\+case\+\_\+haut@{aff\+\_\+case\+\_\+haut}!unicode.\+c@{unicode.\+c}}
+\subsubsection[{\texorpdfstring{aff\+\_\+case\+\_\+haut(int x, int y, int couleur, int nb\+\_\+joueurs)}{aff_case_haut(int x, int y, int couleur, int nb_joueurs)}}]{\setlength{\rightskip}{0pt plus 5cm}void aff\+\_\+case\+\_\+haut (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{couleur, }
+\item[{int}]{nb\+\_\+joueurs}
+\end{DoxyParamCaption}
+)}\hypertarget{unicode_8c_a61ef8e58ec8fff2bd2273058a38b7689}{}\label{unicode_8c_a61ef8e58ec8fff2bd2273058a38b7689}
+
+
+Affiche le haut d\textquotesingle{}une case du plateau. 
+
+Affiche les bordures de la partie haute de la case, ainsi que la couleur correspondant à une pièce ou une possibilité de placement pour le joueur courant. 
+\begin{DoxyParams}{Paramètres}
+{\em x} & x représente un numéro de colonne. \\
+\hline
+{\em y} & y représente un numéro de ligne. \\
+\hline
+{\em nb\+\_\+joueurs} & nb\+\_\+joueurs est utilisé pour déterminé la longueur du plateau. \\
+\hline
+\end{DoxyParams}
