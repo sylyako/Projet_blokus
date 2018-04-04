@@ -1,0 +1,41 @@
+ 
+-->Principe général
+
+Les joueurs disposent tous d'un jeu de pièces identiques en début de partie. Chaque joueur à son tour place une de ses pièces sur le tablier en respectant les règles de pose. Lorsque plus aucun joueur ne peut poser de pièce, la partie s'achève et on compte les points.
+Règle du jeu
+Matériel
+
+    1 tablier de jeu composé de 400 cases (20x20)
+    4 jeux de 21 pièces en 4 couleurs ; chaque jeu est composé de 12 pentominos, 5 tétrominos, 2 triominos, 1 domino et 1 carré simple.
+
+-->Mise en place
+
+Au départ, le tablier est vide de toute pièce. Chaque joueur reçoit un jeu de pièces qu'il dispose devant lui comme il le souhaite. Les joueurs sont placés autour de la table dans l'ordre suivant : bleu, jaune, rouge, vert. Chacun a devant lui un coin du tablier de jeu.
+
+
+-->But du jeu
+
+Placer le plus de pièces possible. Les pièces restant en main à la fin de la partie détermineront un score négatif.
+
+
+-->Déroulement
+
+On joue officiellement selon l'ordre suivant : bleu, jaune, rouge, vert.
+
+Le premier joueur (bleu) place une de ses 21 pièces sur le tablier. Cette première pièce doit recouvrir la case d'angle du plateau qui est devant lui. Jaune, Rouge puis Vert font de même.
+
+Les pièces posées par la suite doivent toucher par au moins un angle d'une pièce de même couleur. Mais des pièces de même couleur ne peuvent jamais se toucher par un côté.
+
+
+-->Fin de partie et vainqueur
+
+Dès qu'un joueur ne peut plus jouer de pièce, il abandonne. Il est possible qu'un joueur qui peut encore placer des pièces joue seul plusieurs fois de suite à la fin de la partie.
+
+Lorsque tous les joueurs ont abandonné, la partie est terminée.
+
+Le vainqueur est alors celui qui a le score le plus élevé. Chaque joueur marque :
+
+    -1 point par carré non posé (un pentamino qui resterait en main fait donc perdre 5 points)
+    15 points si on a posé toutes ses pièces + 5 autres points si la dernière pièce posée était le petit carré.
+
+*****FIN DES REGLES*****
