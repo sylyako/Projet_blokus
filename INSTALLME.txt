@@ -1,0 +1,15 @@
+
+La compilation de l'ENSEMBLE de nos fichiers nécessites le téléchargement de bibliothèques non intégrées dans la version de base de la SDL2. 
+
+Importation d'image compressées : 
+
+	- SDL2_image-2.0.3
+
+Importation des polices : 
+
+	- SDL2_ttf-2.0.14 
+
+Manipulation d'image : 
+
+	- SDL2_gfx-1.0.4
+
