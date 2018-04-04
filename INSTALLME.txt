@@ -3,13 +3,13 @@ La compilation de l'ENSEMBLE de nos fichiers nécessites le téléchargement de 
 
 Importation d'image compressées : 
 
-	- SDL2_image-2.0.3
+	- SDL2_image-2.0.3	trop volumineux pour être déposer sur le Git
 
 Importation des polices : 
 
-	- SDL2_ttf-2.0.14 
+	- SDL2_ttf-2.0.14      téléchargeable dans le répertoire lib
 
 Manipulation d'image : 
 
-	- SDL2_gfx-1.0.4
+	- SDL2_gfx-1.0.4.      téléchargeable dans le répertoire lib
 
