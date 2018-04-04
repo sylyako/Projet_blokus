@@ -2,11 +2,13 @@
 #define LISTE_H
 
 #include "matrice.h"
-
+ /** 
+ * \brief structure t_liste : Structure definissant une liste de piece.
+ */
 typedef struct{
     int queue;
     int ec;
-    t_matrice elem[TAILLE_MAX];
+    t_matrice elem[TAILLE_MAX];	/**< Contient une piece */
 }t_liste;
 
 void copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max]);

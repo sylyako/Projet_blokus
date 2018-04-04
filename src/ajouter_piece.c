@@ -1,36 +1,7 @@
 #include "ajouter_piece.h"
+#include "init_plateau.h"
 
-
-/**
- * \file ajouter_piece.c
- * \brief Fonctions qui vérifient le placement d'une pièce et la placent
- * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
- * \version 1
- *
- *
- * \fn void placer_posibiliter(int taille_plateau, t_case (*plateau)[taille_plateau], int y, int x, int joueur)
- * \brief Place dans le plateau une indication qui permet de déterminer si la case est une possibilité pour un joueur
- * \param taille_plateau la taille du plateau
- * \param (*plateau)[taille_plateau] Le plateau
- * \param x La colonne du plateau
- * \param y la ligne du plateau
- * \param joueur Le joueur actuel
- *
- *
- * \fn int placer_piece(int taille_plateau, t_case (*plateau)[taille_plateau], t_matrice matri, t_coordonnee coord, int joueur, int mode)
- * \brief Place la pièce dans le plateau après avoir vérifié que cela soit possible
- * \param taille_plateau la taille du plateau
- * \param (*plateau)[taille_plateau] Le plateau
- * \param matri La matrice contenant la pièce 
- * \param coord Les coordonées de la case
- * \param joueur Le joueur actuel 
- * 
- */
-
-
-
-
-void placer_posibiliter(int taille_plateau, t_case (*plateau)[taille_plateau], int y, int x, int joueur){
+void placer_posibiliter(int taille_plateau, t_case_m (*plateau)[taille_plateau], int y, int x, int joueur){
     if(coordonner_invalide(y+1,x,taille_plateau) || plateau[y+1][x].couleur != joueur){
         if(coordonner_invalide(y,x+1,taille_plateau) || plateau[y][x+1].couleur != joueur){
             if(coordonner_invalide(y-1,x,taille_plateau) || plateau[y-1][x].couleur != joueur){
@@ -51,7 +22,7 @@ void placer_posibiliter(int taille_plateau, t_case (*plateau)[taille_plateau], i
 }
 
 /* Veerifie si l'on peut placer la piece au coordonner cible puis la place, permet aussi de seulement verifier si l'on peut placer un piece au coordonner cible avec mode = 1 */
-int placer_piece(int taille_plateau, t_case (*plateau)[taille_plateau], t_matrice matri, t_coordonnee coord, int joueur, int mode){
+int placer_piece(int taille_plateau, t_case_m (*plateau)[taille_plateau], t_matrice matri, t_coordonnee coord, int joueur, int mode){
     int i,j,indice = -1;
     int cpt = 0;
     t_coordonnee coord2;

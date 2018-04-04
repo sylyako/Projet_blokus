@@ -4,29 +4,55 @@
 #include "couleurs.h"
 #include "unicode.h"
 
+/*Affichage des regles du BLOKUS en "brut". Il faudra la completer pour le SDL*/
+void affichage_regles(void){
+	char carac;
+	FILE * regles;
 
-/**
- * \file afficher.c
- * \brief Ensemble de fonctions d'affichage
- * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
- * \version 1
- *
- *
- * \fn void affichage_menu_pause(void)
- * \brief Affiche le menu de pause 
- * 
- *
- *
- * \fn void affiche_plateau(int taille_plateau, t_case (*plateau) [taille_plateau], int joueur, int statut, int nbj_max)
- * \brief Affiche le plateau de jeu 
- * \param taille_plateau La taille du plateau
- * \param (*plateau)[taille_plateau] Le plateau
- * \param joueur le joueur actuel
- * \param nbj_max Le nombre de joueurs
- *
- */
+	regles = fopen("regles.txt","r");
+
+	printf("\n**** REGLES DU BLOKUS ****\n\n");
+
+	while(!feof(regles)){
+		fscanf(regles,"%c",&carac);
+		printf("%c",carac);
+	}
+	fclose(regles);
+}
 
 
+/*Proc�dure qui affiche les diff�rents menu*/
+void affichage_menu_pincipale(int mode){
+
+    if(mode == 1){
+
+        printf("Veuillez saisir le mode de jeu qui vous convient : \n");
+
+        printf("	1.Jeux Local");
+        printf("\n");
+        printf("	2.Jeux en r�seaux");
+        printf("\n");
+        printf("	3.Reprendre une partie");
+        printf("\n");
+        printf("	4.Voir les regles");
+        printf("\n");
+        printf("	5.Quitter");
+        printf("\n");
+        printf("--> Saisissez ici : ");
+
+    }else if(mode == 2){
+        printf("Quel mode de jeu voulez vous : \n");
+
+        printf("	1. 2 joueurs");
+        printf("\n");
+        printf("	2. 4 joueurs");
+        printf("\n");
+        printf("	3. Retour menu principale");
+        printf("\n");
+        printf("--> Saisissez ici : ");
+
+    }
+}
 
 /* Affiche le menue de pause */
 void affichage_menu_pause(void){
@@ -45,81 +71,153 @@ void affichage_menu_pause(void){
     printf("--> Saisissez ici : ");
 }
 
-/* Affiche le plateau de jeu actuel */
-void affiche_plateau(int taille_plateau, t_case (*plateau) [taille_plateau], int joueur, int statut, int nbj_max){
+/* Affiche le plateau de jeux actuel */
+void affiche_plateau(int taille_plateau, t_case_m (*plateau)[taille_plateau], int joueur, int statut){
     int i,j;
-	
-       printf("y\\x ");
+    
+    if (statut == 0){ //affichage simple
+        
+        printf(" y\\x  ");
         for(i = 0; i < taille_plateau; i++){
-            if (i < 10)
+            if (i < 10){
                 printf(" %i  ",i);
-            else
+            }else{
                 printf(" %i ",i);
+            }
         }
         printf("\n");
-        
-	 /*Une case fait deux de longueur et de largeur, on doit alors traiter ligne par ligne,
-	  *à cause du retour à la ligne
-	 */ 
-            
-	    for(i = 0; i < taille_plateau; i++){
-
-/***************** AFFICHAGE PARTIE HAUTE DES CASES SUR UNE LIGNE *******************/
-                for(j = 0; j < taille_plateau; j++){
-
-		/*On vérifie si la case actuelle est une possibilité pour le joueur*/
-
-		     if (joueur == rouge && plateau[i][j].couleur == libre && plateau[i][j].possible_r) 
-			aff_case_haut(i, j, 5, nbj_max);
-		     else if (joueur == bleu && plateau[i][j].couleur == libre && plateau[i][j].possible_b) 
-			aff_case_haut(i, j, 5, nbj_max);
-		     else if (joueur == vert && plateau[i][j].couleur == libre && plateau[i][j].possible_v) 
-			aff_case_haut(i, j, 5, nbj_max);
-		     else if (joueur == jaune && plateau[i][j].couleur == libre && plateau[i][j].possible_j) 
-			aff_case_haut(i, j, 5, nbj_max);
-
-                /*Sinon, on affiche la couleur de la case */	
-	
-		     else {
-			switch(plateau[i][j].couleur) {
-				case rouge : aff_case_haut(i, j, rouge, nbj_max);break;
-				case bleu  : aff_case_haut(i, j, bleu, nbj_max);break;
-				case vert  : aff_case_haut(i, j, vert, nbj_max);break;
-				case jaune : aff_case_haut(i, j, jaune, nbj_max);break;
-				default : aff_case_haut(i, j, libre, nbj_max);break;
-		  	}
-                     }
+        for(i = 0; i < taille_plateau; i++){
+            if (i < 10){
+                printf(" %i   ",i);
+            }else{
+                printf(" %i  ",i);
+            }
+            for(j = 0; j < taille_plateau; j++){
+                if(plateau[i][j].couleur == rouge){
+                    printf("| R ");
+                }else if(plateau[i][j].couleur == bleu){
+                    printf("| B ");
+                }else if(plateau[i][j].couleur == vert){
+                    printf("| V ");
+                }else if(plateau[i][j].couleur == jaune){
+                    printf("| J ");
+                }else{
+                    printf("|   ");
                 }
-            	
-/***************** AFFICHAGE PARTIE BASSE DES CASES SUR UNE LIGNE *******************/
-               
+            }
+            printf("|");
+            printf("\n");
+        }
+    }else{ //affichage avec les case disponibles
+        printf(" y\\x  ");
+        for(i = 0; i < taille_plateau; i++){
+            if (i < 10){
+                printf(" %i  ",i);
+            }else{
+                printf(" %i ",i);
+            }
+        }
+        printf("\n");
+        if(joueur == rouge){ //economiese au minimum 0 et au maximum nbj*(taille_plateau)² -4 (~= 1600 pour 4 joueur) verification par appel
+            for(i = 0; i < taille_plateau; i++){
+                if (i < 10){
+                    printf(" %i   ",i);
+                }else{
+                    printf(" %i  ",i);
+                }
                 for(j = 0; j < taille_plateau; j++){
-
-		/*On vérifie si la case actuelle est une possibilité pour le joueur*/
-
-                    if (joueur == rouge && plateau[i][j].couleur == libre && plateau[i][j].possible_r) 
-			aff_case_bas(i, j, 5, nbj_max);
-		    else if (joueur == bleu && plateau[i][j].couleur == libre && plateau[i][j].possible_b) 
-			aff_case_bas(i, j, 5, nbj_max);
-		    else if (joueur == vert && plateau[i][j].couleur == libre && plateau[i][j].possible_v) 
-			aff_case_bas(i, j, 5, nbj_max);
-		    else if (joueur == jaune && plateau[i][j].couleur == libre && plateau[i][j].possible_j) 
-			aff_case_bas(i, j, 5, nbj_max);
-
-		/*Sinon, on affiche la couleur de la case */
-
-		    else {
-		  	switch(plateau[i][j].couleur) {
-				case rouge : aff_case_bas(i, j, rouge, nbj_max);break;
-				case bleu  : aff_case_bas(i, j, bleu, nbj_max);break;
-				case vert  : aff_case_bas(i, j, vert, nbj_max);break;
-				case jaune : aff_case_bas(i, j, jaune, nbj_max);break;
-				default : aff_case_bas(i, j, libre, nbj_max);break;
-		   	}
-		    }
-               }
-          }
-
+                    if(plateau[i][j].couleur == libre && plateau[i][j].possible_r){ //Si la case est libre et que le joueur rouge a la possibiliter de jouer ici
+                        printf("| O ");
+                    }else if(plateau[i][j].couleur == rouge){
+                        printf("| R ");
+                    }else if(plateau[i][j].couleur == bleu){
+                        printf("| B ");
+                    }else if(plateau[i][j].couleur == vert){
+                        printf("| V ");
+                    }else if(plateau[i][j].couleur == jaune){
+                        printf("| J ");
+                    }else{
+                        printf("|   ");
+                    }
+                }
+                printf("|");
+                printf("\n");
+            }
+        }else if(joueur == bleu){
+            for(i = 0; i < taille_plateau; i++){
+                if (i < 10){
+                    printf(" %i   ",i);
+                }else{
+                    printf(" %i  ",i);
+                }
+                for(j = 0; j < taille_plateau; j++){
+                    if(plateau[i][j].couleur == libre && plateau[i][j].possible_b){ //Si la case est libre et que le joueur bleu a la possibiliter de jouer ici
+                        printf("| O ");
+                    }else if(plateau[i][j].couleur == rouge){
+                        printf("| R ");
+                    }else if(plateau[i][j].couleur == bleu){
+                        printf("| B ");
+                    }else if(plateau[i][j].couleur == vert){
+                        printf("| V ");
+                    }else if(plateau[i][j].couleur == jaune){
+                        printf("| J ");
+                    }else{
+                        printf("|   ");
+                    }
+                }
+                printf("|");
+                printf("\n");
+            }
+        }else if(joueur == vert){
+            for(i = 0; i < taille_plateau; i++){
+                if (i < 10){
+                    printf(" %i   ",i);
+                }else{
+                    printf(" %i  ",i);
+                }
+                for(j = 0; j < taille_plateau; j++){
+                    if(plateau[i][j].couleur == libre && plateau[i][j].possible_v){ //Si la case est libre et que le joueur vert a la possibiliter de jouer ici
+                        printf("| O ");
+                    }else if(plateau[i][j].couleur == rouge){
+                        printf("| R ");
+                    }else if(plateau[i][j].couleur == bleu){
+                        printf("| B ");
+                    }else if(plateau[i][j].couleur == vert){
+                        printf("| V ");
+                    }else if(plateau[i][j].couleur == jaune){
+                        printf("| J ");
+                    }else{
+                        printf("|   ");
+                    }
+                }
+                printf("|");
+                printf("\n");
+            }
+        }else{
+            for(i = 0; i < taille_plateau; i++){
+                if (i < 10){
+                    printf(" %i   ",i);
+                }else{
+                    printf(" %i  ",i);
+                }
+                for(j = 0; j < taille_plateau; j++){
+                    if(plateau[i][j].couleur == libre && plateau[i][j].possible_j){ //Si la case est libre et que le joueur jaune a la possibiliter de jouer ici
+                        printf("| O ");
+                    }else if(plateau[i][j].couleur == rouge){
+                        printf("| R ");
+                    }else if(plateau[i][j].couleur == bleu){
+                        printf("| B ");
+                    }else if(plateau[i][j].couleur == vert){
+                        printf("| V ");
+                    }else if(plateau[i][j].couleur == jaune){
+                        printf("| J ");
+                    }else{
+                        printf("|   ");
+                    }
+                }
+                printf("|");
+                printf("\n");
+            }
+        }
+    }
 }
-
-

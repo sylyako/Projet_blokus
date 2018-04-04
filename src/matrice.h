@@ -2,10 +2,13 @@
 #define MATRICE_H
 #include "structures.h"
 
+ /** 
+ * \brief structure t_matrice :Contient les informations d'une piece.
+ */
 typedef struct {
-	int mat[5][5];
-	int taille;
-	int num;
+	int mat[5][5];	/**< Matrice ou l'on retrouve la piece */
+	int taille;		/**< Taille qu'occupe la piece dans la matrice (3x3,2x3...) */
+	int num;		/**< Numero de la piece correspondante */
 }t_matrice;
 
 void init_matrice (t_matrice* mat);
