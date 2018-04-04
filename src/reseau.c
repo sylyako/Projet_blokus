@@ -1,5 +1,60 @@
 #include "reseau.h"
 
+/**
+ * \file reseau.c
+ * \brief Module qui permet une connexion TCP entre plusieurs ordinateurs
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ *
+ * \fn void init_serveur (int *socket_serveur, struct sockaddr_in *adresse_serveur)
+ * \brief Instaure un socket serveur sur l'ordinateur 
+ * \param *socket_serveur le socket serveur à initialiser
+ * \param *adresse_serveur informations sur l'adresse du pc
+ *
+ *
+ * \fn void ajout_clients(int * socket_serveur,int socket_client [], int nbj_max)
+ * \brief Ajoute des clients sur des sockets clients
+ * \param *socket_serveur le socket serveur
+ * \param socket_client[] Les sockets clients à lier au serveur 
+ * \param nbj_max Le nombre de clients à lier
+ *
+ *
+ * \fn int connexion_serveur ( int *socket_client, struct sockaddr_in *server_address)
+ * \brief Foctio qui permet de se conecter à un serveur
+ * \param *socket_client le socket du client
+ * \param *server_address Les informations du serveur à indiquer
+ * 
+ *
+ * \fn void envoyer_plateau_clients (int socket_client [], int taille_plateau, t_case (*plateau) [taille_plateau], int nbj_max)
+ * \brief Envoie le plateau de jeu à tous les clients
+ * \param socket_client[] les sockets des clients
+ * \param *taille_plateau La taille du plateau de jeu
+ * \param (*plateau)[taille_plateau] Le plateau de jeu
+ * \param nbj_max Le nombre de joueurs
+ *
+ * 
+ *
+ * \fn void envoyer_plateau (int socket_client, int taille_plateau, t_case (*plateau) [taille_plateau])
+ * \brief Envoie le plateau de jeu
+ * \param socket_client le socket du client
+ * \param taille_plateau La taille du plateau de jeu
+ * \param (*plateau)[taille_plateau] Le plateau de jeu
+ *
+ *
+ *
+ * \fn void envoyer_numero (int socket_client, int numero)
+ * \brief Envoie un numéro qui est attribué au joueur
+ * \param socket_client le socket du client
+ * \param numero le numéro attribué au joueur
+ *
+ *
+ *
+ * \fn void nv_plateau (int socket_client, int taille_plateau, t_case (*plateau) [taille_plateau])
+ * \brief Reçoit le nouvel état du plateau de jeu
+ * \param taille_plateau La taille du plateau de jeu
+ * \param (*plateau)[taille_plateau] Le plateau de jeu
+ */
 
 /* Initialisation du serveur*/
 void init_serveur (int *socket_serveur, struct sockaddr_in *adresse_serveur) {

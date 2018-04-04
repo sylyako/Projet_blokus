@@ -2,6 +2,42 @@
 
 #include "menu_pause.h"
 
+/**
+ * \file menu_pause.c
+ * \brief Fonctions de sauvegarde, de chargement et du menu de pause
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ *
+ * \fn int charger_partie()
+ * \brief Charge une partie à partir d'un fichier de sauvegarde
+ *
+ *
+ * \fn void sauvegarder_partie(int nbj, int nbj_max, int nb_tour_joueur, int* score, int* player, int taille_plateau, t_case (*plateau)[taille_plateau], t_liste* liste_piece){
+ * \brief Sauvegarde la partie
+ * \details Enregistre dans un fichier l'état du plateau, les pièces restantes de chaque joueur ainsi que leur score et à qui c'est le tour de jouer
+ * \param nbj Nombre de joueurs ordinateurs
+ * \param nbj_max Nombre de joueurs
+ * \param nb_tour_joueur Le tour
+ * \param *score Tableau des scores des joueurs
+ * \param *player
+ * \param taille_plateau La taille du plateau
+ * \param (*plateau)[taille_plateau] Le plateau
+ * \param *liste_piece Les listes de pièces des joueurs 
+ *
+ *
+ * \fn menu_pause(int nbj, int nbj_max, int nb_tour_joueur, int* score,int* player, int taille_plateau, t_case (*plateau)[taille_plateau], t_liste* liste_piece)
+ * \brief Le menu de pause
+ * \param nbj Nombre de joueurs ordinateurs
+ * \param nbj_max Nombre de joueurs
+ * \param nb_tour_joueur Le tour
+ * \param *score Tableau des scores des joueurs
+ * \param *player
+ * \param taille_plateau La taille du plateau
+ * \param (*plateau)[taille_plateau] Le plateau
+ * \param *liste_piece Les listes de pièces des joueurs 
+ */
+
 int charger_partie(){
     // retourne une valeur qui fera quitter jusqu'au menu principale
     //ou jeux(nbj,nbj_max,0,score,player,taille_plateau,plateau,piece);
@@ -75,7 +111,7 @@ int charger_partie(){
     }
 
 
-affiche_plateau(taille_plateau,plateau,0,0, nbj_max);
+    affiche_plateau(taille_plateau,plateau,0,0, nbj_max);
 
     for(j = 0; j < nbj_max; j++){	//Pour chaque joueur
         i = 1;

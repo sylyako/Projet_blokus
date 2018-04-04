@@ -2,6 +2,84 @@
 
 #include "liste.h"
 
+/**
+ * \file liste.c
+ * \brief Ensemble de fonctions servants à l'utilisation des listes.
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ *
+ * \fn void copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max])
+ * \brief Fonction qui copie une liste source sur la liste copie
+ * \param nbj_max Nombre de joueur dans la partie
+ * \param source[nbj_max] La source
+ * \param copie[nbj_max] La copie
+ *
+ *
+ * \fn void init_liste(t_liste* liste)
+ * \brief Initialise la liste
+ * \param *liste La liste
+ *
+ *
+ * \fn int liste_vide(t_liste* liste)
+ * \brief Indique si une liste est vide ou non
+ * \param *liste La liste
+ *
+ *
+ * \fn int hors_liste(t_liste* liste)
+ * \brief Indique si l'élément courant de la liste se trouve bien dans la liste
+ * \param *liste La liste
+ *
+ *
+ * \fn void en_tete(t_liste* liste)
+ * \brief Fonction qui place l'élément courant en tête de liste
+ * \param *liste La liste
+ *
+ *
+ * \fn void en_queue(t_liste* liste)
+ * \brief Fonction qui place l'élément courant en queue de liste
+ * \param *liste La liste
+ *
+ *
+ * \fn void precedent(t_liste* liste)
+ * \brief Fonction qui place l'élément courant sur l'élément précédent
+ * \param *liste La liste
+ *
+ *
+ * \fn void suivant(t_liste* liste)
+ * \brief Fonction qui place l'élément courant sur l'élément suivant
+ * \param *liste La liste
+ *
+ *
+ * \fn void val_elem (t_liste* liste, t_matrice* copie)
+ * \brief Fonction qui récupère la matrice de l'élément courant et la copie
+ * \param *liste La liste
+ * \param *copie La matrice contenant la copie
+ *
+ *
+ * \fn void oter_elt(t_liste* liste)
+ * \brief Fonction qui supprime l'élément courant
+ * \param *liste La liste
+ *
+ *
+ * \fn void placer_elem(t_liste* liste,t_matrice* piece)
+ * \brief Fonction qui place ou remplace une matrice dans la liste
+ * \param *liste La liste
+ * \param *piece La pièce
+ *
+ *
+ * \fn void ajouter_piece(t_liste* liste,t_matrice* piece)
+ * \brief Fonction qui place une pièce au bon endroit de la liste
+ * \param *liste La liste
+ * \param *piece La pièce
+ *
+ *
+ * \fn void remplir_listes(t_liste* liste)
+ * \brief Fonction qui remplit une liste avec une banque de pièces contenue dans un fichier
+ * \param *liste La liste
+ */
+
+
 void copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max]){
     int i,l,queue,ec;
     t_matrice piece;

@@ -1,5 +1,44 @@
 #include "Partie.h"
 
+/**
+ * \file Partie.c
+ * \brief Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal.
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ *
+ * \fn void afficher_piece_dispo(int nb_piece, t_liste* liste)
+ * \brief Affiche tous les numero des pieces restantes 
+ * \param nb_piece numéro de la pièce recerchée
+ * \param liste Pointeur sur une liste de pièces
+ *
+ *
+ * \fn int piece_dispo(int piece, int* nb_piece, int tab_piece[], t_liste* liste, t_matrice* copie)
+ * \brief Verifie si la piece choisie (int piece) est bien une piece disponible. Si c'est le cas on copie tout les information de la piece dans copie.
+ * \param piece Numero de la piece concernée
+ * \param tabpiece Tableau contenant les numeros des pieces disponibles
+ * \param liste Pointeur de type t_liste contenant toutes les pieces d'un joueur
+ * \param copie Pointeur de type t_matrice recevant la piece disponible
+ *
+ * \fn void calcule_score(int nbj_max,int score[nbj_max],int joueur, t_liste* liste)
+ * \brief Procédure qui calcul le score final d'un joueur
+ * \param nbj_max Variable de type int contenant le nombre de joueur
+ * \param score[nbj_max] Tableau contenant les scores de chaque joueur
+ * \param joueur Variable contenant le numero du joueur dont on souhaite connaitre le score
+ * \param liste Pointeur de type t_liste contenant les pieces
+ *
+ * \fn int jeux(int nbj, int nbj_max, int nb_tour_joueur, int score[nbj_max], int joueur_en_jeux[nbj_max], int taille_plateau, t_case plateau [taille_plateau][taille_plateau],t_liste* piece)
+ * \brief Procédure qui initialise les elements necessaires au jeu et qui fait tourner le jeu jusqu'à l'arret de celui-ci
+ * \param nbj Variable de type int contenant le nombre de joueurs humains
+ * \param nbj_max Variable de type int contenant le nombre de joueurs total
+ * \param nb_tour_joueur Variable contenant le nombres de tours écoulés
+ * \param score[nbj_max] Tableau contenant les scores de tous les joueurs
+ * \param joueur_en_jeux[nbj_max] Tableau qui définit si unjoueur peut encore jouer ou non
+ * \param taille_plateau Variable de type int contenant la taille du plateau de jeu.
+ * \param plateau [taille_plateau][taille_plateau] Matrice contenant le plateau de jeu
+ * \param piece Pointeur de type t_liste contenant les pieces
+ *
+
 
 /* Affiche tout les numero des pieces restantes en utilisant */
 void afficher_piece_dispo(int nb_piece, t_liste* liste){

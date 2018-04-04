@@ -5,40 +5,28 @@
 #include "unicode.h"
 
 
+/**
+ * \file afficher.c
+ * \brief Ensemble de fonctions d'affichage
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ *
+ * \fn void affichage_menu_pause(void)
+ * \brief Affiche le menu de pause 
+ * 
+ *
+ *
+ * \fn void affiche_plateau(int taille_plateau, t_case (*plateau) [taille_plateau], int joueur, int statut, int nbj_max)
+ * \brief Affiche le plateau de jeu 
+ * \param taille_plateau La taille du plateau
+ * \param (*plateau)[taille_plateau] Le plateau
+ * \param joueur le joueur actuel
+ * \param nbj_max Le nombre de joueurs
+ *
+ */
 
 
-/*Proc�dure qui affiche les diff�rents menu*/
-void affichage_menu_pincipale(int mode){
-
-    if(mode == 1){
-
-        printf("Veuillez saisir le mode de jeu qui vous convient : \n");
-
-        printf("	1.Jeux Local");
-        printf("\n");
-        printf("	2.Jeux en r�seaux");
-        printf("\n");
-        printf("	3.Reprendre une partie");
-        printf("\n");
-        printf("	4.Voir les regles");
-        printf("\n");
-        printf("	5.Quitter");
-        printf("\n");
-        printf("--> Saisissez ici : ");
-
-    }else if(mode == 2){
-        printf("Quel mode de jeu voulez vous : \n");
-
-        printf("	1. 2 joueurs");
-        printf("\n");
-        printf("	2. 4 joueurs");
-        printf("\n");
-        printf("	3. Retour menu principale");
-        printf("\n");
-        printf("--> Saisissez ici : ");
-
-    }
-}
 
 /* Affiche le menue de pause */
 void affichage_menu_pause(void){

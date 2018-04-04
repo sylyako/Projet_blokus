@@ -1,5 +1,32 @@
 #include "possibilite.h"
 
+/**
+ * \file possibilite.c
+ * \brief Ensemble de fonctions relatives aux possibilitees du positionnement d'une ou de plusieurs piece avec un plateau donne.
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ *
+ * \fn int verif_posibiliter(int nb_tour, t_coordonnee** tab_dispo, int joueur, int* nb_dispo, t_liste* liste, int taille_plateau, t_case_m (*plateau)[taille_plateau])
+ * \brief Verifie si les positions possibles sont REELEMENT des possibles en simulant une piece sur chaque posibilitee
+ * \param nb_tour
+ * \param tab_dispo Pointeur de pointeur de type t_coordonnee qui comporte toutes les coordonnees possibles a jouer.
+ * \param joueur Entier désignant le numero du joueur en jeu
+ * \param liste Pointeur de type t_liste contenant les pieces du joueur
+ * \param taille_plateau Entier contenant la taille du plateau sur laquelle la partie est jouee.
+ * \param plateau Pointeur contenant tout le plateau
+ *
+ * \fn int possible_de_jouer(int taille_plateau, t_case_m (*plateau)[taille_plateau], int joueur, int nb_tour, t_coordonnee** tab_dispo, int* nb_dispo, t_liste* liste)
+ * \brief Verifie si il y a encore des coups possibles et si oui, retourne le tableau des possibilitees
+ * \param taille_plateau Entier contenant la taille du plateau sur laquelle la partie est jouee.
+ * \param plateau Pointeur contenant tout le plateau
+ * \param joueur Entier désignant le numero du joueur en jeu
+ * \param tab_dispo Pointeur de pointeur de type t_coordonnee qui comporte toutes les coordonnees possibles a jouer.
+ * \param nb_dispo Pointeur vers un type entier désignant le nombre de pieces disponibles.
+ * \param liste Pointeur de type t_liste contenant les pieces du joueur
+ *
+*/
+
 /* Verifie si les positions possibles sont REELEMENT des position possible en simulant un posage des pieces sur chaque posibiliter*/
 int verif_posibiliter(int nb_tour, t_coordonnee** tab_dispo, int joueur, int* nb_dispo, t_liste* liste, int taille_plateau, t_case (*plateau)[taille_plateau]){
     t_matrice piece;
