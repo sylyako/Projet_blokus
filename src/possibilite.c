@@ -1,21 +1,4 @@
-#include "structures.h"
-#include "liste.h"
-#include "matrice.h"
-#include "init_plateau.h"
-#include "afficher.h"
-#include "ajouter_piece.h"
 #include "possibilite.h"
-#include "SDL2/SDL_ttf.h"
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
-#include "dessine.h"
-#include "SDL2/SDL2_rotozoom.h"
-#include "sdl.h"
-#include <string.h>
-#include "Partie.h"
-#include "IA.h"
-
-
 
 /**
  * \file possibilite.c
@@ -44,17 +27,12 @@
  *
 */
 
-
-
-
-
-
-
-int verif_posibiliter(int nb_tour, t_coordonnee** tab_dispo, int joueur, int* nb_dispo, t_liste* liste, int taille_plateau, t_case_m (*plateau)[taille_plateau]){
+/* Verifie si les positions possibles sont REELEMENT des position possible en simulant un posage des pieces sur chaque posibiliter*/
+int verif_posibiliter(int nb_tour, t_coordonnee** tab_dispo, int joueur, int* nb_dispo, t_liste* liste, int taille_plateau, t_case (*plateau)[taille_plateau]){
     t_matrice piece;
     int i = 0, j = 0, k = 0, l, statut = 0, compte = 0;
     t_coordonnee coord, coord2;
-    t_case_m plateau_copie [taille_plateau][taille_plateau];
+    t_case plateau_copie [taille_plateau][taille_plateau];
 
     en_tete(liste);
     val_elem(liste,&piece);
@@ -123,8 +101,8 @@ int verif_posibiliter(int nb_tour, t_coordonnee** tab_dispo, int joueur, int* nb
     return(1);
 }
 
-
-int possible_de_jouer(int taille_plateau, t_case_m (*plateau)[taille_plateau], int joueur, int nb_tour, t_coordonnee** tab_dispo, int* nb_dispo, t_liste* liste){
+/* Verifie si il y a encore des coups possibles et retourne le tableau des possibiliter*/
+int possible_de_jouer(int taille_plateau, t_case (*plateau)[taille_plateau], int joueur, int nb_tour, t_coordonnee** tab_dispo, int* nb_dispo, t_liste* liste){
     int i,j;
     en_tete(liste);
     /* Si on est au premier tour */
