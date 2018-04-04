@@ -1,7 +1,7 @@
 
-Le Dépôt GitHub est découpé en 2 parties bien distinctes afin de pouvoir utiliser le Jeu de la meilleure des manières. 
+Le Dépôt GitHub est découpé en 2 branches bien distinctes afin de pouvoir utiliser le Jeu de la meilleure des manières. 
 
-Dossier TERMINAL : 
+Branche Version_TERMINAL : 
 
 Jeu COMPLET et parfaitement fonctionnel comprenant : 
 	
@@ -13,7 +13,7 @@ Jeu COMPLET et parfaitement fonctionnel comprenant :
 	- Sauvegarde / Chargement de parties
 
 
-Dossier INTERFACE GRAPHIQUE : 
+Branche Version_INTERFACE_GRAPHIQUE : 
 
 Jeu QUASI-COMPLET comprenant : 
 	
