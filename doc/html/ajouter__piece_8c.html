@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Blokus_terminal: Référence du fichier src/ajouter_piece.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Blokus_terminal
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier ajouter_piece.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions qui vérifient le placement d'une pièce et la placent.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;ajouter_piece.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de ajouter_piece.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="ajouter__piece_8c__incl.png" border="0" usemap="#src_2ajouter__piece_8c" alt=""/></div>
+<map name="src_2ajouter__piece_8c" id="src_2ajouter__piece_8c">
+<area shape="rect" id="node2" href="ajouter__piece_8h_source.html" title="ajouter_piece.h" alt="" coords="141,80,251,107"/>
+<area shape="rect" id="node3" href="structures_8h.html" title="Contient les structures communes du programme. " alt="" coords="121,304,212,331"/>
+<area shape="rect" id="node8" href="liste_8h_source.html" title="liste.h" alt="" coords="167,155,225,181"/>
+<area shape="rect" id="node9" href="matrice_8h_source.html" title="matrice.h" alt="" coords="167,229,243,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a76b63705ca536064dfc779ad32b1afe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ajouter__piece_8c.html#a76b63705ca536064dfc779ad32b1afe9">placer_posibiliter</a> (int taille_plateau, <a class="el" href="structt__case.html">t_case</a>(*plateau)[taille_plateau], int y, int x, int joueur)</td></tr>
+<tr class="memdesc:a76b63705ca536064dfc779ad32b1afe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place dans le plateau une indication qui permet de déterminer si la case est une possibilité pour un joueur.  <a href="#a76b63705ca536064dfc779ad32b1afe9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a76b63705ca536064dfc779ad32b1afe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdf545d4b1e52e2abeb59bc45c90ffe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ajouter__piece_8c.html#abcdf545d4b1e52e2abeb59bc45c90ffe">placer_piece</a> (int taille_plateau, <a class="el" href="structt__case.html">t_case</a>(*plateau)[taille_plateau], <a class="el" href="structt__matrice.html">t_matrice</a> matri, <a class="el" href="structt__coordonnee.html">t_coordonnee</a> coord, int joueur, int mode)</td></tr>
+<tr class="memdesc:abcdf545d4b1e52e2abeb59bc45c90ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place la pièce dans le plateau après avoir vérifié que cela soit possible.  <a href="#abcdf545d4b1e52e2abeb59bc45c90ffe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abcdf545d4b1e52e2abeb59bc45c90ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions qui vérifient le placement d'une pièce et la placent. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="abcdf545d4b1e52e2abeb59bc45c90ffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int placer_piece </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taille_plateau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structt__case.html">t_case</a>(*)&#160;</td>
+          <td class="paramname"><em>plateau</em>[taille_plateau], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structt__matrice.html">t_matrice</a>&#160;</td>
+          <td class="paramname"><em>matri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structt__coordonnee.html">t_coordonnee</a>&#160;</td>
+          <td class="paramname"><em>coord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place la pièce dans le plateau après avoir vérifié que cela soit possible. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taille_plateau</td><td>la taille du plateau </td></tr>
+    <tr><td class="paramname">(*plateau)[taille_plateau]</td><td>Le plateau </td></tr>
+    <tr><td class="paramname">matri</td><td>La matrice contenant la pièce </td></tr>
+    <tr><td class="paramname">coord</td><td>Les coordonées de la case </td></tr>
+    <tr><td class="paramname">joueur</td><td>Le joueur actuel </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a76b63705ca536064dfc779ad32b1afe9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void placer_posibiliter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taille_plateau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structt__case.html">t_case</a>(*)&#160;</td>
+          <td class="paramname"><em>plateau</em>[taille_plateau], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place dans le plateau une indication qui permet de déterminer si la case est une possibilité pour un joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taille_plateau</td><td>la taille du plateau </td></tr>
+    <tr><td class="paramname">(*plateau)[taille_plateau]</td><td>Le plateau </td></tr>
+    <tr><td class="paramname">x</td><td>La colonne du plateau </td></tr>
+    <tr><td class="paramname">y</td><td>la ligne du plateau </td></tr>
+    <tr><td class="paramname">joueur</td><td>Le joueur actuel </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

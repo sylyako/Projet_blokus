@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Blokus_terminal:  Fichier source de src/structures.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Blokus_terminal
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">structures.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="structures_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef STRUCTURES</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define STRUCTURES</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;stdio.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;stdlib.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&lt;string.h&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include&lt;unistd.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define TAILLE_MAX 21</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define TAILLE_MATRICE_PIECE 5</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e">   26</a></span>&#160;    <a class="code" href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e">libre</a> = 4,  </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    rouge = 0,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    bleu = 1,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    vert = 2,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    jaune = 3</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}<a class="code" href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07">t_couleur</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structt__case.html">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structt__case.html#ae871a70afefeefaeb0003ed141d9d06b">   40</a></span>&#160;    <a class="code" href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07">t_couleur</a> <a class="code" href="structt__case.html#ae871a70afefeefaeb0003ed141d9d06b">couleur</a>;  </div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structt__case.html#abfbade6a8fc1927fbdb8dca9c810b1c4">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structt__case.html#abfbade6a8fc1927fbdb8dca9c810b1c4">possible_r</a>;     </div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structt__case.html#aea7d8d23a697e3cd7b07a44e88f5781b">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structt__case.html#aea7d8d23a697e3cd7b07a44e88f5781b">possible_b</a>; </div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structt__case.html#a74e4a7aa37b5071dfc9a4da15d88cc7d">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structt__case.html#a74e4a7aa37b5071dfc9a4da15d88cc7d">possible_v</a>; </div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structt__case.html#a7ba4c0e092015a53344116cc2e54f2dc">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structt__case.html#a7ba4c0e092015a53344116cc2e54f2dc">possible_j</a>; </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <a class="code" href="structt__case.html">t_case</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structt__coordonnee.html">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{ <span class="comment">//a voir si on conserve</span></div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structt__coordonnee.html#adc43d2ee9bc8331939123bf7f019a5f6">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structt__coordonnee.html#adc43d2ee9bc8331939123bf7f019a5f6">x</a>;  </div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structt__coordonnee.html#a59976d5ac64eac95bdbe12b4453f1af3">   55</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structt__coordonnee.html#a59976d5ac64eac95bdbe12b4453f1af3">y</a>;  </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}<a class="code" href="structt__coordonnee.html">t_coordonnee</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structt__coordonnee_html_a59976d5ac64eac95bdbe12b4453f1af3"><div class="ttname"><a href="structt__coordonnee.html#a59976d5ac64eac95bdbe12b4453f1af3">t_coordonnee::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> structures.h:55</div></div>
+<div class="ttc" id="structt__case_html_a7ba4c0e092015a53344116cc2e54f2dc"><div class="ttname"><a href="structt__case.html#a7ba4c0e092015a53344116cc2e54f2dc">t_case::possible_j</a></div><div class="ttdeci">int possible_j</div><div class="ttdef"><b>Definition:</b> structures.h:45</div></div>
+<div class="ttc" id="structt__coordonnee_html_adc43d2ee9bc8331939123bf7f019a5f6"><div class="ttname"><a href="structt__coordonnee.html#adc43d2ee9bc8331939123bf7f019a5f6">t_coordonnee::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> structures.h:54</div></div>
+<div class="ttc" id="structt__case_html_a74e4a7aa37b5071dfc9a4da15d88cc7d"><div class="ttname"><a href="structt__case.html#a74e4a7aa37b5071dfc9a4da15d88cc7d">t_case::possible_v</a></div><div class="ttdeci">int possible_v</div><div class="ttdef"><b>Definition:</b> structures.h:44</div></div>
+<div class="ttc" id="structures_8h_html_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e"><div class="ttname"><a href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e">libre</a></div><div class="ttdef"><b>Definition:</b> structures.h:26</div></div>
+<div class="ttc" id="structt__case_html_abfbade6a8fc1927fbdb8dca9c810b1c4"><div class="ttname"><a href="structt__case.html#abfbade6a8fc1927fbdb8dca9c810b1c4">t_case::possible_r</a></div><div class="ttdeci">int possible_r</div><div class="ttdef"><b>Definition:</b> structures.h:42</div></div>
+<div class="ttc" id="structt__case_html"><div class="ttname"><a href="structt__case.html">t_case</a></div><div class="ttdoc">Définition d&amp;#39;une case pour un plateau de Blokus. </div><div class="ttdef"><b>Definition:</b> structures.h:39</div></div>
+<div class="ttc" id="structt__case_html_aea7d8d23a697e3cd7b07a44e88f5781b"><div class="ttname"><a href="structt__case.html#aea7d8d23a697e3cd7b07a44e88f5781b">t_case::possible_b</a></div><div class="ttdeci">int possible_b</div><div class="ttdef"><b>Definition:</b> structures.h:43</div></div>
+<div class="ttc" id="structures_8h_html_aa9f0f93fc533400ebe242cbb9986ef07"><div class="ttname"><a href="structures_8h.html#aa9f0f93fc533400ebe242cbb9986ef07">t_couleur</a></div><div class="ttdeci">t_couleur</div><div class="ttdoc">Définition de couleurs en fonction d&amp;#39;un entier. </div><div class="ttdef"><b>Definition:</b> structures.h:25</div></div>
+<div class="ttc" id="structt__case_html_ae871a70afefeefaeb0003ed141d9d06b"><div class="ttname"><a href="structt__case.html#ae871a70afefeefaeb0003ed141d9d06b">t_case::couleur</a></div><div class="ttdeci">t_couleur couleur</div><div class="ttdef"><b>Definition:</b> structures.h:40</div></div>
+<div class="ttc" id="structt__coordonnee_html"><div class="ttname"><a href="structt__coordonnee.html">t_coordonnee</a></div><div class="ttdoc">Contient des coordonnées pour une matrice à deux dimensions. </div><div class="ttdef"><b>Definition:</b> structures.h:53</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

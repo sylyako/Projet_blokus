@@ -1,0 +1,13 @@
+<map id="src/Partie.c" name="src/Partie.c">
+<area shape="rect" id="node2" href="$Partie_8h_source.html" title="Partie.h" alt="" coords="373,80,439,107"/>
+<area shape="rect" id="node3" href="$liste_8h_source.html" title="liste.h" alt="" coords="307,229,364,256"/>
+<area shape="rect" id="node4" href="$matrice_8h_source.html" title="matrice.h" alt="" coords="231,304,307,331"/>
+<area shape="rect" id="node10" href="$init__plateau_8h_source.html" title="init_plateau.h" alt="" coords="357,155,455,181"/>
+<area shape="rect" id="node11" href="$afficher_8h_source.html" title="afficher.h" alt="" coords="589,229,665,256"/>
+<area shape="rect" id="node12" href="$menu__pause_8h_source.html" title="menu_pause.h" alt="" coords="479,155,586,181"/>
+<area shape="rect" id="node13" href="$ajouter__piece_8h_source.html" title="ajouter_piece.h" alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node14" href="$possibilite_8h_source.html" title="possibilite.h" alt="" coords="141,155,231,181"/>
+<area shape="rect" id="node15" href="$IA_8h_source.html" title="IA.h" alt="" coords="611,155,657,181"/>
+<area shape="rect" id="node16" href="$reseau_8h_source.html" title="reseau.h" alt="" coords="627,304,699,331"/>
+<area shape="rect" id="node5" href="$structures_8h.html" title="Contient les structures communes du programme. " alt="" coords="443,379,534,405"/>
+</map>
