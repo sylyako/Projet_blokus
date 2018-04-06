@@ -1055,7 +1055,7 @@ int press_sauvegarder(int x, int y,t_case back_cases[20][20],int nb_joueurs, t_p
     
     if(x>1 && x< 141 && y>hf-51 && y< hf-1){
         //Sauvegarde de la SDL
-        fic=fopen("sauvegarde_sdl.txt","w");
+        fic=fopen("ressources/sauvegarde_sdl.txt","w");
         for(joueur=0 ; joueur<nb_joueurs ; joueur++){
             
             if(joueur==0)
@@ -1085,7 +1085,7 @@ int press_sauvegarder(int x, int y,t_case back_cases[20][20],int nb_joueurs, t_p
         
         // Sauvegarde du moteur
         
-        fichier = fopen("SAV1", "w+");
+        fichier = fopen("ressources/SAV1", "w+");
         
         fprintf(fichier,"%i",nb_IA);
         
