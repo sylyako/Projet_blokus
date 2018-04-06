@@ -13,7 +13,7 @@ Jeu COMPLET et parfaitement fonctionnel comprenant :
 	- Sauvegarde / Chargement de parties
 
 
-Branche Version_INTERFACE_GRAPHIQUE : 
+Branche Version_INTERFACEGRAPHIQUE : 
 
 Jeu QUASI-COMPLET comprenant : 
 	
