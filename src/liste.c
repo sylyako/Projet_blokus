@@ -178,7 +178,7 @@ void ajouter_piece(t_liste* liste,t_matrice* piece){
     }
 }
 
-/* Remplie les listes avec les données du fichier*/
+/* Remplie les listes avec les donnÃ©es du fichier*/
 void remplir_listes(t_liste* liste) {
 	FILE *fichier;
    // int i;
@@ -187,7 +187,7 @@ void remplir_listes(t_liste* liste) {
     int cpt;
     t_coordonnee coord;
 
-	fichier = fopen("piece.txt", "r");
+	fichier = fopen("ressources/piece.txt", "r");
 
 	while((caractereActuel = fgetc(fichier)) != EOF){
 		if (caractereActuel == 123){ //123 = {
