@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project: afficher.c File Reference</title>
+<title>Project: Partie.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,66 +64,51 @@ $(function() {
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">afficher.c File Reference</div>  </div>
+<div class="title">Partie.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Ensemble de fonctions d'affichage.  
+<p>Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="structures_8h_source.html">structures.h</a>&quot;</code><br />
-<code>#include &quot;couleurs.h&quot;</code><br />
-<code>#include &quot;unicode.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;Partie.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a68c038cdb5468dd9d574db9c08b359be"><td class="memItemLeft" align="right" valign="top"><a id="a68c038cdb5468dd9d574db9c08b359be"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afficher_8c.html#a68c038cdb5468dd9d574db9c08b359be">affichage_menu_pause</a> (void)</td></tr>
-<tr class="memdesc:a68c038cdb5468dd9d574db9c08b359be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu de pause. <br /></td></tr>
-<tr class="separator:a68c038cdb5468dd9d574db9c08b359be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e83558c881da2df1dbd99beb1b5276e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afficher_8c.html#a4e83558c881da2df1dbd99beb1b5276e">affiche_plateau</a> (int taille_plateau, <a class="el" href="structt__case.html">t_case</a>(*plateau) [taille_plateau], int joueur, int statut, int nbj_max)</td></tr>
-<tr class="memdesc:a4e83558c881da2df1dbd99beb1b5276e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le plateau de jeu.  <a href="#a4e83558c881da2df1dbd99beb1b5276e">More...</a><br /></td></tr>
-<tr class="separator:a4e83558c881da2df1dbd99beb1b5276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847b594eae4ec1cdf46566486092b06f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_partie_8c.html#a847b594eae4ec1cdf46566486092b06f">afficher_piece_dispo</a> (int nb_piece, <a class="el" href="structt__liste.html">t_liste</a> *liste)</td></tr>
+<tr class="memdesc:a847b594eae4ec1cdf46566486092b06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche tous les numero des pieces restantes.  <a href="#a847b594eae4ec1cdf46566486092b06f">More...</a><br /></td></tr>
+<tr class="separator:a847b594eae4ec1cdf46566486092b06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f643e238582f1badb8b9c46d8ac5bc"><td class="memItemLeft" align="right" valign="top"><a id="a62f643e238582f1badb8b9c46d8ac5bc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>piece_dispo</b> (int num_piece_choisi, <a class="el" href="structt__liste.html">t_liste</a> *liste, <a class="el" href="structt__matrice.html">t_matrice</a> *piece)</td></tr>
+<tr class="separator:a62f643e238582f1badb8b9c46d8ac5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a1332b7c8b99d7450c025a052c98c0"><td class="memItemLeft" align="right" valign="top"><a id="a55a1332b7c8b99d7450c025a052c98c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calcule_score</b> (int nbj_max, int *score, int joueur, <a class="el" href="structt__liste.html">t_liste</a> *liste)</td></tr>
+<tr class="separator:a55a1332b7c8b99d7450c025a052c98c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdf8c55e08f9a5b660c54bf6e038f91"><td class="memItemLeft" align="right" valign="top"><a id="a2cdf8c55e08f9a5b660c54bf6e038f91"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>jeux</b> (int nbj, int nbj_max, int nb_tour_joueur, int *score, int *joueur_en_jeux, int taille_plateau, <a class="el" href="structt__case.html">t_case</a>(*plateau)[taille_plateau], <a class="el" href="structt__liste.html">t_liste</a> *liste_piece, int partie)</td></tr>
+<tr class="separator:a2cdf8c55e08f9a5b660c54bf6e038f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Ensemble de fonctions d'affichage. </p>
+<div class="textblock"><p>Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal. </p>
 <dl class="section author"><dt>Author</dt><dd>Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a4e83558c881da2df1dbd99beb1b5276e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e83558c881da2df1dbd99beb1b5276e">&#9670;&nbsp;</a></span>affiche_plateau()</h2>
+<a id="a847b594eae4ec1cdf46566486092b06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847b594eae4ec1cdf46566486092b06f">&#9670;&nbsp;</a></span>afficher_piece_dispo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void affiche_plateau </td>
+          <td class="memname">void afficher_piece_dispo </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>taille_plateau</em>, </td>
+          <td class="paramname"><em>nb_piece</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt__case.html">t_case</a>(*)&#160;</td>
-          <td class="paramname"><em>plateau</em>[taille_plateau], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>joueur</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>statut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nbj_max</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__liste.html">t_liste</a> *&#160;</td>
+          <td class="paramname"><em>liste</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -133,13 +118,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affi
       </table>
 </div><div class="memdoc">
 
-<p>Affiche le plateau de jeu. </p>
+<p>Affiche tous les numero des pieces restantes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taille_plateau</td><td>La taille du plateau </td></tr>
-    <tr><td class="paramname">(*plateau)[taille_plateau]</td><td>Le plateau </td></tr>
-    <tr><td class="paramname">joueur</td><td>le joueur actuel </td></tr>
-    <tr><td class="paramname">nbj_max</td><td>Le nombre de joueurs </td></tr>
+    <tr><td class="paramname">nb_piece</td><td>numéro de la pièce recerchée </td></tr>
+    <tr><td class="paramname">liste</td><td>Pointeur sur une liste de pièces </td></tr>
   </table>
   </dd>
 </dl>
