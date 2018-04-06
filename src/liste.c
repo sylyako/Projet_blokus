@@ -81,7 +81,7 @@
 
 
 void copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max]){
-    int i,l,queue,ec;
+    int i;
     t_matrice piece;
 
     for(i = 0; i < nbj_max; i++){
@@ -103,7 +103,6 @@ void copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max]){
 //Initialisation des listes
 void init_liste(t_liste* liste){
     int i;
-    t_matrice mat;
 
 	liste->queue = -1;
 	liste->ec = -1;
@@ -256,7 +255,7 @@ void ajouter_piece(t_liste* liste,t_matrice* piece){
 /* Remplie les listes avec les données du fichier*/
 void remplir_listes(t_liste* liste) {
 	FILE *fichier;
-	int i, j, caractereActuel,cpt;
+	int caractereActuel,cpt;
     t_coordonnee coord;
 
 	fichier = fopen("ressources/piece.txt", "r");

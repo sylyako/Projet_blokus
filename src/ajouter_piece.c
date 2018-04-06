@@ -1,4 +1,5 @@
 #include "ajouter_piece.h"
+#include "init_plateau.h"
 
 
 /**
@@ -52,7 +53,7 @@ void placer_posibiliter(int taille_plateau, t_case (*plateau)[taille_plateau], i
 
 /* Veerifie si l'on peut placer la piece au coordonner cible puis la place, permet aussi de seulement verifier si l'on peut placer un piece au coordonner cible avec mode = 1 */
 int placer_piece(int taille_plateau, t_case (*plateau)[taille_plateau], t_matrice matri, t_coordonnee coord, int joueur, int mode){
-    int i,j,indice = -1;
+    int i,j;
     int cpt = 0;
     t_coordonnee coord2;
 

@@ -1,6 +1,9 @@
 /* Menue de pause + sauvegarde et charge */
 
 #include "menu_pause.h"
+#include "Partie.h"
+#include "afficher.h"
+
 
 /**
  * \file menu_pause.c
@@ -110,9 +113,6 @@ int charger_partie(){
         }
     }
 
-
-    affiche_plateau(taille_plateau,plateau,0,0, nbj_max);
-
     for(j = 0; j < nbj_max; j++){	//Pour chaque joueur
         i = 1;
         nb_piece = 0;
@@ -158,6 +158,8 @@ int charger_partie(){
     }else{
         return(4);
     }
+	
+    return(1);
 
 }
 
@@ -248,4 +250,5 @@ int menu_pause(int nbj, int nbj_max, int nb_tour_joueur, int* score,int* player,
                 break;
         }
     }while (choix != 4 && choix != 0);
+    return (1);
 }

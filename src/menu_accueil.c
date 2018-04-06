@@ -17,8 +17,7 @@ void affichage_regle(void){
 	fclose(regles);
 }
 
-int nb_ia(int *nbj,int nbj_max){
-    int choix;
+void nb_ia(int *nbj,int nbj_max){
 
     do{
         printf("\n--> Saisissez le nombre d'ordinateur : ");
@@ -44,12 +43,13 @@ int type_joueur () {
         case 2: commencer_partie(2);break;
 	case 3: return(1);break;
     }
+    return(1);
 }
 
 int commencer_partie( int partie){
     int nbj; //nb joueur ia
     int nbj_max; // nombre total de joueur
-    int i,choix,retour;
+    int choix,retour;
 
     printf("    1. 4 joueur\n");
     printf("    2. 2 joueur\n");
@@ -105,6 +105,7 @@ int commencer_partie( int partie){
             return(1);
             break;
     }
+    return(1);
 }
 
 int main(){

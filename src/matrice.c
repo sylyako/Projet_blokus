@@ -6,8 +6,8 @@ void init_matrice (t_matrice* matrice) { //FONCTIONNE CORRECTEMENT
 
 	matrice->taille = 0;
 	matrice->num = 0;
-	for (i = 0; i < 5; i++) {
-		for (j = 0; j < 5; j++)
+	for (i = 0; i < TAILLE_MATRICE_PIECE; i++) {
+		for (j = 0; j < TAILLE_MATRICE_PIECE; j++)
 			matrice->mat[i][j] = 0;
 	}
 }
@@ -15,8 +15,8 @@ void init_matrice (t_matrice* matrice) { //FONCTIONNE CORRECTEMENT
 void afficher_matrice (t_matrice matrice) { //FONCTIONNE CORRECTEMENT
 	int i, j;
 
-	for (i = 0; i < 5; i++) {
-		for ( j = 0; j < 5; j++){
+	for (i = 0; i < TAILLE_MATRICE_PIECE; i++) {
+		for ( j = 0; j < TAILLE_MATRICE_PIECE; j++){
             if(matrice.mat[i][j] == 0){
                 printf("|   ");
             }else{
@@ -38,8 +38,8 @@ void copie_matrice(t_matrice* source, t_matrice* copie){
     copie->num = source->num;
     copie->taille = source->taille;
 
-    for(i = 0; i < 5; i++){
-        for(j = 0; j < 5; j++){
+    for(i = 0; i < TAILLE_MATRICE_PIECE; i++){
+        for(j = 0; j < TAILLE_MATRICE_PIECE; j++){
             copie->mat[i][j]  = source->mat[i][j];
         }
     }
@@ -61,11 +61,11 @@ void insertion_taille_piece(t_matrice* matrice, int taille_piece){ //FONCTIONNE 
 }
 
 /*Donne le miroir miroir_horizontal*/
-void miroir_horizontal (int mat [5][5]) {
-    int i, j, tampon, max = 4;
+void miroir_horizontal (int (*mat)[TAILLE_MATRICE_PIECE]) {
+    int i, j, tampon, max = TAILLE_MATRICE_PIECE - 1;
 
-    for (i = 0; i < 2; i++) {
-        for (j = 0; j < 5; j++) {
+    for (i = 0; i < max / 2; i++) {
+        for (j = 0; j < TAILLE_MATRICE_PIECE; j++) {
             tampon = mat [i][j];
             mat [i] [j] = mat [max - i] [j];
             mat [max - i] [j] = tampon;
@@ -74,11 +74,11 @@ void miroir_horizontal (int mat [5][5]) {
 }
 
 /*Donne le miroir vertical*/
-void miroir_vertical (int mat [5][5]) {
-    int i, j, tampon, max = 4;
+void miroir_vertical (int (*mat)[TAILLE_MATRICE_PIECE]) {
+    int i, j, tampon, max = TAILLE_MATRICE_PIECE - 1;
 
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 2; j++) {
+    for (i = 0; i < TAILLE_MATRICE_PIECE; i++) {
+        for (j = 0; j < max / 2; j++) {
             tampon = mat [i][j];
             mat [i] [j] = mat [i] [max - j];
             mat [i] [max - j] = tampon;
@@ -87,10 +87,10 @@ void miroir_vertical (int mat [5][5]) {
 }
 
 /*Fait tourner la pièce*/
-void tourner_piece (int mat [5][5]) {
-    int i,j, tampon, max = 4;
+void tourner_piece (int (*mat)[TAILLE_MATRICE_PIECE]) {
+    int i,j, tampon, max = TAILLE_MATRICE_PIECE - 1;
 
-    for (j = 0; j < 3; j++) {
+    for (j = 0; j < max - 1; j++) {
         for (i = j; i < max - j; i++) {
             tampon = mat[i] [j] ;
             mat[i] [j] = mat[max - j] [i];
@@ -106,7 +106,7 @@ sens = 1 rotation droite
 sens = 2 retourner
 sens = 3 rotation gauche
 */
-void rotation (int mat [5][5], int sens) {
+void rotation (int (*mat)[TAILLE_MATRICE_PIECE], int sens) {
     int i;
 
     for (i = 0; i < sens; i++){

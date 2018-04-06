@@ -1,4 +1,5 @@
 #include "IA.h"
+#include "Partie.h"
 
 /* Calcule le score de placement quand on arrive en bas de l'arbre */
 int calcul_1_score_placement(int taille_plateau, t_case (*plateau)[taille_plateau], int joueur){
@@ -102,9 +103,8 @@ int calcul_2_score_placement(int taille_piece, t_coordonnee* coord, int taille_p
 
 /* Simule le tour des adversaires */
 void simuler_tour(int nbj_max, int* joueur_en_jeux, int taille_plateau, t_case (*plateau)[taille_plateau], t_liste* liste_piece, int cpt, int joueur, int nb_tour_joueur){
-    int i,j,l,rotat,num,tampo;
+    int i,l;
     t_retour ret;
-    t_coordonnee coord;
     t_matrice piece;
 
 
@@ -160,8 +160,7 @@ t_retour calcule_ia(int nbj_max, int* joueur_en_jeux, int taille_plateau, t_case
      t_matrice piece,piece2,piece_sans_rotation;
      t_case plateau2 [taille_plateau][taille_plateau],plateau_fictif[taille_plateau][taille_plateau];
      t_liste liste_piece2[nbj_max];
-     int nb_case_disponible = 0,i,j,k,compte,nb_simulation_rotation,nb_simulation_piece,nb_simulation_autour,num_piece,nb_piece;
-     int tab_piece[TAILLE_MAX];
+     int nb_case_disponible = 0,i,j,k,compte,nb_simulation_rotation,nb_simulation_piece,nb_simulation_autour;
 
     /* On initialise le retour de la fonction */
     ret.coord.x = 0;

@@ -1,4 +1,6 @@
 #include "possibilite.h"
+#include "init_plateau.h"
+#include "ajouter_piece.h"
 
 /**
  * \file possibilite.c

@@ -42,7 +42,6 @@
 
 /* Affiche tout les numero des pieces restantes en utilisant */
 void afficher_piece_dispo(int nb_piece, t_liste* liste){
-    int i = 0;
     t_matrice piece;
 
     en_tete(liste);
@@ -56,7 +55,6 @@ void afficher_piece_dispo(int nb_piece, t_liste* liste){
 
 /* Verifie si le numero de la piece choisi est bien une piece disponible dans laa liste du joueur, si c'est le cas on note tout les information de la piece */
 int piece_dispo(int num_piece_choisi, t_liste* liste, t_matrice* piece){
-    int i;
 
     en_tete(liste);
     val_elem(liste,piece);
@@ -88,9 +86,8 @@ void calcule_score(int nbj_max,int* score,int joueur, t_liste* liste){
 
 /* Fonction de jeux */
 int jeux(int nbj, int nbj_max, int nb_tour_joueur, int* score, int* joueur_en_jeux, int taille_plateau, t_case (*plateau)[taille_plateau],t_liste* liste_piece, int partie){
-    int nb_joueur_en_jeux = 0, nb_piece, nb_dispo = 0, choix, menu, statut, rotat, num;
+    int nb_joueur_en_jeux = 0, nb_piece, nb_dispo = 0, choix, menu, statut;
     int i,j,l,x,y,cpt = nbj_max;
-    int tab_piece[TAILLE_MAX];
     int mon_num;
     int socket_client [4];
     int socket_serveur;
