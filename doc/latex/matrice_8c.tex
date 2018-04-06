@@ -1,49 +1,42 @@
-\hypertarget{matrice_8c}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/matrice.c}
-\label{matrice_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/matrice.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/matrice.\+c}}
+\hypertarget{matrice_8c}{}\section{matrice.\+c File Reference}
+\label{matrice_8c}\index{matrice.\+c@{matrice.\+c}}
 
 
 Module de fonctions pour la gestion de matrices.  
 
 
-{\ttfamily \#include \char`\"{}matrice.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\\*
-Graphe des dépendances par inclusion de matrice.\+c\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=329pt]{matrice_8c__incl}
-\end{center}
-\end{figure}
-\subsection*{Fonctions}
+{\ttfamily \#include \char`\"{}matrice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\newline
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{matrice_8c_a5ec9f6d5dc391044ada8f66f265a6e6c}{init\+\_\+matrice} (\hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$piece)
+void \mbox{\hyperlink{matrice_8c_a5ec9f6d5dc391044ada8f66f265a6e6c}{init\+\_\+matrice}} (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$piece)
 \begin{DoxyCompactList}\small\item\em Initialise une matrice à 0. \end{DoxyCompactList}\item 
-void {\bfseries afficher\+\_\+matrice} (\hyperlink{structt__matrice}{t\+\_\+matrice} piece)\hypertarget{matrice_8c_aaabc4b1f13ce3f221069bce1a706b82f}{}\label{matrice_8c_aaabc4b1f13ce3f221069bce1a706b82f}
-
+\mbox{\Hypertarget{matrice_8c_aaabc4b1f13ce3f221069bce1a706b82f}\label{matrice_8c_aaabc4b1f13ce3f221069bce1a706b82f}} 
+void {\bfseries afficher\+\_\+matrice} (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} piece)
 \item 
-void \hyperlink{matrice_8c_a12313fda94f38f8cf54590e66b4d453f}{copie\+\_\+matrice} (\hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$source, \hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$copie)
+void \mbox{\hyperlink{matrice_8c_a12313fda94f38f8cf54590e66b4d453f}{copie\+\_\+matrice}} (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$source, \mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$copie)
 \begin{DoxyCompactList}\small\item\em Copie une matrice dans une autre. \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_ac2c3a0b8f5e2a25aee5f5089a653ba87}{insertion\+\_\+matrice\+\_\+piece} (\hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$piece, \hyperlink{structt__coordonnee}{t\+\_\+coordonnee} coord)
+void \mbox{\hyperlink{matrice_8c_ac2c3a0b8f5e2a25aee5f5089a653ba87}{insertion\+\_\+matrice\+\_\+piece}} (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$piece, \mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}} coord)
 \begin{DoxyCompactList}\small\item\em Insère dans la matrice un morceau d\textquotesingle{}une pièce de jeu. \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_ac6ea386d92d838c0b03299f4405c3d09}{insertion\+\_\+num\+\_\+piece} (\hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$piece, int numero)
+void \mbox{\hyperlink{matrice_8c_ac6ea386d92d838c0b03299f4405c3d09}{insertion\+\_\+num\+\_\+piece}} (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$piece, int numero)
 \begin{DoxyCompactList}\small\item\em Insère dans la matrice le numéro de la pièce de jeu. \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_ad64c8f3b30202e33a5f9f375f260fbde}{insertion\+\_\+taille\+\_\+piece} (\hyperlink{structt__matrice}{t\+\_\+matrice} $\ast$piece, int taille\+\_\+piece)
+void \mbox{\hyperlink{matrice_8c_ad64c8f3b30202e33a5f9f375f260fbde}{insertion\+\_\+taille\+\_\+piece}} (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$piece, int taille\+\_\+piece)
 \begin{DoxyCompactList}\small\item\em Fonction qui insère la taille de la pièce dans la structure. \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_ad4f7a76d00eb6b5a58a7d47ee1f6a502}{miroir\+\_\+horizontal} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]})
+void \mbox{\hyperlink{matrice_8c_ad4f7a76d00eb6b5a58a7d47ee1f6a502}{miroir\+\_\+horizontal}} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]})
 \begin{DoxyCompactList}\small\item\em Fait le miroir horizontal de la pièce. \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_a14517bc48f5c9d824996cd1adf0a5e3c}{miroir\+\_\+vertical} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]})
+void \mbox{\hyperlink{matrice_8c_a14517bc48f5c9d824996cd1adf0a5e3c}{miroir\+\_\+vertical}} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]})
 \begin{DoxyCompactList}\small\item\em Fait le miroir vertical de la pièce. \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_ae9e09edbb1e5aae833f3bf1e44e286f9}{tourner\+\_\+piece} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]})
+void \mbox{\hyperlink{matrice_8c_ae9e09edbb1e5aae833f3bf1e44e286f9}{tourner\+\_\+piece}} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]})
 \begin{DoxyCompactList}\small\item\em Fait une rotation de la pièce à 90° \end{DoxyCompactList}\item 
-void \hyperlink{matrice_8c_a7c0c768c540b3a105a15d1ab1b69eb25}{rotation} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]}, int sens)
+void \mbox{\hyperlink{matrice_8c_a7c0c768c540b3a105a15d1ab1b69eb25}{rotation}} (int($\ast$piece)\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE\mbox{]}, int sens)
 \begin{DoxyCompactList}\small\item\em Fait une rotation de la pièce selon un sens passé en paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Description détaillée}
+\subsection{Detailed Description}
 Module de fonctions pour la gestion de matrices. 
 
-\begin{DoxyAuthor}{Auteur}
+\begin{DoxyAuthor}{Author}
 Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -51,168 +44,154 @@ Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
 \end{DoxyVersion}
 
 
-\subsection{Documentation des fonctions}
+\subsection{Function Documentation}
+\mbox{\Hypertarget{matrice_8c_a12313fda94f38f8cf54590e66b4d453f}\label{matrice_8c_a12313fda94f38f8cf54590e66b4d453f}} 
 \index{matrice.\+c@{matrice.\+c}!copie\+\_\+matrice@{copie\+\_\+matrice}}
 \index{copie\+\_\+matrice@{copie\+\_\+matrice}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{copie\+\_\+matrice(t\+\_\+matrice $\ast$source, t\+\_\+matrice $\ast$copie)}{copie_matrice(t_matrice *source, t_matrice *copie)}}]{\setlength{\rightskip}{0pt plus 5cm}void copie\+\_\+matrice (
-\begin{DoxyParamCaption}
-\item[{{\bf t\+\_\+matrice} $\ast$}]{source, }
-\item[{{\bf t\+\_\+matrice} $\ast$}]{copie}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_a12313fda94f38f8cf54590e66b4d453f}{}\label{matrice_8c_a12313fda94f38f8cf54590e66b4d453f}
+\subsubsection{\texorpdfstring{copie\+\_\+matrice()}{copie\_matrice()}}
+{\footnotesize\ttfamily void copie\+\_\+matrice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$}]{copie }\end{DoxyParamCaption})}
+
 
 
 Copie une matrice dans une autre. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$source} & La source \\
 \hline
 {\em $\ast$copie} & La copie \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_a5ec9f6d5dc391044ada8f66f265a6e6c}\label{matrice_8c_a5ec9f6d5dc391044ada8f66f265a6e6c}} 
 \index{matrice.\+c@{matrice.\+c}!init\+\_\+matrice@{init\+\_\+matrice}}
 \index{init\+\_\+matrice@{init\+\_\+matrice}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{init\+\_\+matrice(t\+\_\+matrice $\ast$piece)}{init_matrice(t_matrice *piece)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+matrice (
-\begin{DoxyParamCaption}
-\item[{{\bf t\+\_\+matrice} $\ast$}]{piece}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_a5ec9f6d5dc391044ada8f66f265a6e6c}{}\label{matrice_8c_a5ec9f6d5dc391044ada8f66f265a6e6c}
+\subsubsection{\texorpdfstring{init\+\_\+matrice()}{init\_matrice()}}
+{\footnotesize\ttfamily void init\+\_\+matrice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
 
 
 Initialise une matrice à 0. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & Structure contenant les informations sur la matrice\\
 \hline
 \end{DoxyParams}
-afficher\+\_\+matrice (\hyperlink{structt__matrice}{t\+\_\+matrice} piece) Affiche la piece 
-\begin{DoxyParams}{Paramètres}
+afficher\+\_\+matrice (\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} piece) Affiche la piece 
+\begin{DoxyParams}{Parameters}
 {\em piece} & La piece et ses informations \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_ac2c3a0b8f5e2a25aee5f5089a653ba87}\label{matrice_8c_ac2c3a0b8f5e2a25aee5f5089a653ba87}} 
 \index{matrice.\+c@{matrice.\+c}!insertion\+\_\+matrice\+\_\+piece@{insertion\+\_\+matrice\+\_\+piece}}
 \index{insertion\+\_\+matrice\+\_\+piece@{insertion\+\_\+matrice\+\_\+piece}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{insertion\+\_\+matrice\+\_\+piece(t\+\_\+matrice $\ast$piece, t\+\_\+coordonnee coord)}{insertion_matrice_piece(t_matrice *piece, t_coordonnee coord)}}]{\setlength{\rightskip}{0pt plus 5cm}void insertion\+\_\+matrice\+\_\+piece (
-\begin{DoxyParamCaption}
-\item[{{\bf t\+\_\+matrice} $\ast$}]{piece, }
-\item[{{\bf t\+\_\+coordonnee}}]{coord}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_ac2c3a0b8f5e2a25aee5f5089a653ba87}{}\label{matrice_8c_ac2c3a0b8f5e2a25aee5f5089a653ba87}
+\subsubsection{\texorpdfstring{insertion\+\_\+matrice\+\_\+piece()}{insertion\_matrice\_piece()}}
+{\footnotesize\ttfamily void insertion\+\_\+matrice\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$}]{piece,  }\item[{\mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}}}]{coord }\end{DoxyParamCaption})}
+
 
 
 Insère dans la matrice un morceau d\textquotesingle{}une pièce de jeu. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La matrice \\
 \hline
 {\em coord} & Les coordonnées du bout de pièce \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_ac6ea386d92d838c0b03299f4405c3d09}\label{matrice_8c_ac6ea386d92d838c0b03299f4405c3d09}} 
 \index{matrice.\+c@{matrice.\+c}!insertion\+\_\+num\+\_\+piece@{insertion\+\_\+num\+\_\+piece}}
 \index{insertion\+\_\+num\+\_\+piece@{insertion\+\_\+num\+\_\+piece}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{insertion\+\_\+num\+\_\+piece(t\+\_\+matrice $\ast$piece, int numero)}{insertion_num_piece(t_matrice *piece, int numero)}}]{\setlength{\rightskip}{0pt plus 5cm}void insertion\+\_\+num\+\_\+piece (
-\begin{DoxyParamCaption}
-\item[{{\bf t\+\_\+matrice} $\ast$}]{piece, }
-\item[{int}]{numero}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_ac6ea386d92d838c0b03299f4405c3d09}{}\label{matrice_8c_ac6ea386d92d838c0b03299f4405c3d09}
+\subsubsection{\texorpdfstring{insertion\+\_\+num\+\_\+piece()}{insertion\_num\_piece()}}
+{\footnotesize\ttfamily void insertion\+\_\+num\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$}]{piece,  }\item[{int}]{numero }\end{DoxyParamCaption})}
+
 
 
 Insère dans la matrice le numéro de la pièce de jeu. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La pièce de jeu \\
 \hline
 {\em numero} & Le numéro de la pièce \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_ad64c8f3b30202e33a5f9f375f260fbde}\label{matrice_8c_ad64c8f3b30202e33a5f9f375f260fbde}} 
 \index{matrice.\+c@{matrice.\+c}!insertion\+\_\+taille\+\_\+piece@{insertion\+\_\+taille\+\_\+piece}}
 \index{insertion\+\_\+taille\+\_\+piece@{insertion\+\_\+taille\+\_\+piece}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{insertion\+\_\+taille\+\_\+piece(t\+\_\+matrice $\ast$piece, int taille\+\_\+piece)}{insertion_taille_piece(t_matrice *piece, int taille_piece)}}]{\setlength{\rightskip}{0pt plus 5cm}void insertion\+\_\+taille\+\_\+piece (
-\begin{DoxyParamCaption}
-\item[{{\bf t\+\_\+matrice} $\ast$}]{piece, }
-\item[{int}]{taille\+\_\+piece}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_ad64c8f3b30202e33a5f9f375f260fbde}{}\label{matrice_8c_ad64c8f3b30202e33a5f9f375f260fbde}
+\subsubsection{\texorpdfstring{insertion\+\_\+taille\+\_\+piece()}{insertion\_taille\_piece()}}
+{\footnotesize\ttfamily void insertion\+\_\+taille\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$}]{piece,  }\item[{int}]{taille\+\_\+piece }\end{DoxyParamCaption})}
+
 
 
 Fonction qui insère la taille de la pièce dans la structure. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La pièce de jeu \\
 \hline
 {\em taille\+\_\+piece} & La taille de la pièce \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_ad4f7a76d00eb6b5a58a7d47ee1f6a502}\label{matrice_8c_ad4f7a76d00eb6b5a58a7d47ee1f6a502}} 
 \index{matrice.\+c@{matrice.\+c}!miroir\+\_\+horizontal@{miroir\+\_\+horizontal}}
 \index{miroir\+\_\+horizontal@{miroir\+\_\+horizontal}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{miroir\+\_\+horizontal(int($\ast$piece)[T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE])}{miroir_horizontal(int(*piece)[TAILLE_MATRICE_PIECE])}}]{\setlength{\rightskip}{0pt plus 5cm}void miroir\+\_\+horizontal (
-\begin{DoxyParamCaption}
-\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]}}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_ad4f7a76d00eb6b5a58a7d47ee1f6a502}{}\label{matrice_8c_ad4f7a76d00eb6b5a58a7d47ee1f6a502}
+\subsubsection{\texorpdfstring{miroir\+\_\+horizontal()}{miroir\_horizontal()}}
+{\footnotesize\ttfamily void miroir\+\_\+horizontal (\begin{DoxyParamCaption}\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]} }\end{DoxyParamCaption})}
+
 
 
 Fait le miroir horizontal de la pièce. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La pièce \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_a14517bc48f5c9d824996cd1adf0a5e3c}\label{matrice_8c_a14517bc48f5c9d824996cd1adf0a5e3c}} 
 \index{matrice.\+c@{matrice.\+c}!miroir\+\_\+vertical@{miroir\+\_\+vertical}}
 \index{miroir\+\_\+vertical@{miroir\+\_\+vertical}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{miroir\+\_\+vertical(int($\ast$piece)[T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE])}{miroir_vertical(int(*piece)[TAILLE_MATRICE_PIECE])}}]{\setlength{\rightskip}{0pt plus 5cm}void miroir\+\_\+vertical (
-\begin{DoxyParamCaption}
-\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]}}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_a14517bc48f5c9d824996cd1adf0a5e3c}{}\label{matrice_8c_a14517bc48f5c9d824996cd1adf0a5e3c}
+\subsubsection{\texorpdfstring{miroir\+\_\+vertical()}{miroir\_vertical()}}
+{\footnotesize\ttfamily void miroir\+\_\+vertical (\begin{DoxyParamCaption}\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]} }\end{DoxyParamCaption})}
+
 
 
 Fait le miroir vertical de la pièce. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La pièce \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_a7c0c768c540b3a105a15d1ab1b69eb25}\label{matrice_8c_a7c0c768c540b3a105a15d1ab1b69eb25}} 
 \index{matrice.\+c@{matrice.\+c}!rotation@{rotation}}
 \index{rotation@{rotation}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{rotation(int($\ast$piece)[T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE], int sens)}{rotation(int(*piece)[TAILLE_MATRICE_PIECE], int sens)}}]{\setlength{\rightskip}{0pt plus 5cm}void rotation (
-\begin{DoxyParamCaption}
-\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]}, }
-\item[{int}]{sens}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_a7c0c768c540b3a105a15d1ab1b69eb25}{}\label{matrice_8c_a7c0c768c540b3a105a15d1ab1b69eb25}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily void rotation (\begin{DoxyParamCaption}\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]},  }\item[{int}]{sens }\end{DoxyParamCaption})}
+
 
 
 Fait une rotation de la pièce selon un sens passé en paramètre. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La pièce \\
 \hline
 {\em sens} & Le sens de la pièce \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{matrice_8c_ae9e09edbb1e5aae833f3bf1e44e286f9}\label{matrice_8c_ae9e09edbb1e5aae833f3bf1e44e286f9}} 
 \index{matrice.\+c@{matrice.\+c}!tourner\+\_\+piece@{tourner\+\_\+piece}}
 \index{tourner\+\_\+piece@{tourner\+\_\+piece}!matrice.\+c@{matrice.\+c}}
-\subsubsection[{\texorpdfstring{tourner\+\_\+piece(int($\ast$piece)[T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE])}{tourner_piece(int(*piece)[TAILLE_MATRICE_PIECE])}}]{\setlength{\rightskip}{0pt plus 5cm}void tourner\+\_\+piece (
-\begin{DoxyParamCaption}
-\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]}}
-\end{DoxyParamCaption}
-)}\hypertarget{matrice_8c_ae9e09edbb1e5aae833f3bf1e44e286f9}{}\label{matrice_8c_ae9e09edbb1e5aae833f3bf1e44e286f9}
+\subsubsection{\texorpdfstring{tourner\+\_\+piece()}{tourner\_piece()}}
+{\footnotesize\ttfamily void tourner\+\_\+piece (\begin{DoxyParamCaption}\item[{int($\ast$)}]{piece\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+C\+E\mbox{]} }\end{DoxyParamCaption})}
+
 
 
 Fait une rotation de la pièce à 90° 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$piece} & La pièce \\
 \hline
 \end{DoxyParams}

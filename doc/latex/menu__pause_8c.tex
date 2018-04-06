@@ -1,36 +1,29 @@
-\hypertarget{menu__pause_8c}{}\section{R√©f√©rence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/menu\+\_\+pause.c}
-\label{menu__pause_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/menu\+\_\+pause.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/menu\+\_\+pause.\+c}}
+\hypertarget{menu__pause_8c}{}\section{menu\+\_\+pause.\+c File Reference}
+\label{menu__pause_8c}\index{menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}}
 
 
 Fonctions de sauvegarde, de chargement et du menu de pause.  
 
 
-{\ttfamily \#include \char`\"{}menu\+\_\+pause.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Partie.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}afficher.\+h\char`\"{}}\\*
-Graphe des d√©pendances par inclusion de menu\+\_\+pause.\+c\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{menu__pause_8c__incl}
-\end{center}
-\end{figure}
-\subsection*{Fonctions}
+{\ttfamily \#include \char`\"{}menu\+\_\+pause.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Partie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}afficher.\+h\char`\"{}}\newline
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}{charger\+\_\+partie} ()\hypertarget{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}{}\label{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}
-
+\mbox{\Hypertarget{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}\label{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}} 
+int \mbox{\hyperlink{menu__pause_8c_a567460c4b8ba2212718aabec861b1942}{charger\+\_\+partie}} ()
 \begin{DoxyCompactList}\small\item\em Charge une partie ‡ partir d\textquotesingle{}un fichier de sauvegarde. \end{DoxyCompactList}\item 
-void \hyperlink{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}{sauvegarder\+\_\+partie} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece)
+void \mbox{\hyperlink{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}{sauvegarder\+\_\+partie}} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste\+\_\+piece)
 \begin{DoxyCompactList}\small\item\em Sauvegarde la partie. \end{DoxyCompactList}\item 
-int \hyperlink{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}{menu\+\_\+pause} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece)
+int \mbox{\hyperlink{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}{menu\+\_\+pause}} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste\+\_\+piece)
 \begin{DoxyCompactList}\small\item\em Le menu de pause. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Description d√©taill√©e}
+\subsection{Detailed Description}
 Fonctions de sauvegarde, de chargement et du menu de pause. 
 
-\begin{DoxyAuthor}{Auteur}
+\begin{DoxyAuthor}{Author}
 Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -38,27 +31,19 @@ Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
 \end{DoxyVersion}
 
 
-\subsection{Documentation des fonctions}
+\subsection{Function Documentation}
+\mbox{\Hypertarget{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}\label{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}} 
 \index{menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}!menu\+\_\+pause@{menu\+\_\+pause}}
 \index{menu\+\_\+pause@{menu\+\_\+pause}!menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}}
-\subsubsection[{\texorpdfstring{menu\+\_\+pause(int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+liste $\ast$liste\+\_\+piece)}{menu_pause(int nbj, int nbj_max, int nb_tour_joueur, int *score, int *player, int taille_plateau, t_case(*plateau)[taille_plateau], t_liste *liste_piece)}}]{\setlength{\rightskip}{0pt plus 5cm}menu\+\_\+pause (
-\begin{DoxyParamCaption}
-\item[{int}]{nbj, }
-\item[{int}]{nbj\+\_\+max, }
-\item[{int}]{nb\+\_\+tour\+\_\+joueur, }
-\item[{int $\ast$}]{score, }
-\item[{int $\ast$}]{player, }
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece}
-\end{DoxyParamCaption}
-)}\hypertarget{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}{}\label{menu__pause_8c_aa1170c11785fa53547eb25ff34af4fbd}
+\subsubsection{\texorpdfstring{menu\+\_\+pause()}{menu\_pause()}}
+{\footnotesize\ttfamily menu\+\_\+pause (\begin{DoxyParamCaption}\item[{int}]{nbj,  }\item[{int}]{nbj\+\_\+max,  }\item[{int}]{nb\+\_\+tour\+\_\+joueur,  }\item[{int $\ast$}]{score,  }\item[{int $\ast$}]{player,  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{\mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$}]{liste\+\_\+piece }\end{DoxyParamCaption})}
+
 
 
 Le menu de pause. 
 
 
-\begin{DoxyParams}{Param√®tres}
+\begin{DoxyParams}{Parameters}
 {\em nbj} & Nombre de joueurs ordinateurs \\
 \hline
 {\em nbj\+\_\+max} & Nombre de joueurs \\
@@ -76,26 +61,18 @@ Le menu de pause.
 {\em $\ast$liste\+\_\+piece} & Les listes de piËces des joueurs \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}\label{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}} 
 \index{menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}!sauvegarder\+\_\+partie@{sauvegarder\+\_\+partie}}
 \index{sauvegarder\+\_\+partie@{sauvegarder\+\_\+partie}!menu\+\_\+pause.\+c@{menu\+\_\+pause.\+c}}
-\subsubsection[{\texorpdfstring{sauvegarder\+\_\+partie(int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$player, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+liste $\ast$liste\+\_\+piece)}{sauvegarder_partie(int nbj, int nbj_max, int nb_tour_joueur, int *score, int *player, int taille_plateau, t_case(*plateau)[taille_plateau], t_liste *liste_piece)}}]{\setlength{\rightskip}{0pt plus 5cm}void sauvegarder\+\_\+partie (
-\begin{DoxyParamCaption}
-\item[{int}]{nbj, }
-\item[{int}]{nbj\+\_\+max, }
-\item[{int}]{nb\+\_\+tour\+\_\+joueur, }
-\item[{int $\ast$}]{score, }
-\item[{int $\ast$}]{player, }
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece}
-\end{DoxyParamCaption}
-)}\hypertarget{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}{}\label{menu__pause_8c_ab457b68b014d212a7422799f111e0a1e}
+\subsubsection{\texorpdfstring{sauvegarder\+\_\+partie()}{sauvegarder\_partie()}}
+{\footnotesize\ttfamily void sauvegarder\+\_\+partie (\begin{DoxyParamCaption}\item[{int}]{nbj,  }\item[{int}]{nbj\+\_\+max,  }\item[{int}]{nb\+\_\+tour\+\_\+joueur,  }\item[{int $\ast$}]{score,  }\item[{int $\ast$}]{player,  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{\mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$}]{liste\+\_\+piece }\end{DoxyParamCaption})}
+
 
 
 Sauvegarde la partie. 
 
 Enregistre dans un fichier l\textquotesingle{}Ètat du plateau, les piËces restantes de chaque joueur ainsi que leur score et ‡ qui c\textquotesingle{}est le tour de jouer 
-\begin{DoxyParams}{Param√®tres}
+\begin{DoxyParams}{Parameters}
 {\em nbj} & Nombre de joueurs ordinateurs \\
 \hline
 {\em nbj\+\_\+max} & Nombre de joueurs \\

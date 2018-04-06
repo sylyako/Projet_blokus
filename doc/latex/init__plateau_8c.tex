@@ -1,35 +1,28 @@
-\hypertarget{init__plateau_8c}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/init\+\_\+plateau.c}
-\label{init__plateau_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/init\+\_\+plateau.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/init\+\_\+plateau.\+c}}
+\hypertarget{init__plateau_8c}{}\section{init\+\_\+plateau.\+c File Reference}
+\label{init__plateau_8c}\index{init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}}
 
 
 Module de fonctions pour le plateau.  
 
 
-{\ttfamily \#include \char`\"{}init\+\_\+plateau.\+h\char`\"{}}\\*
-Graphe des dépendances par inclusion de init\+\_\+plateau.\+c\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=329pt]{init__plateau_8c__incl}
-\end{center}
-\end{figure}
-\subsection*{Fonctions}
+{\ttfamily \#include \char`\"{}init\+\_\+plateau.\+h\char`\"{}}\newline
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{init__plateau_8c_aa39ae2af4a2141444eee0af667f72745}{init\+\_\+plateau} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int nbj\+\_\+max, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece, int $\ast$joueur\+\_\+en\+\_\+jeux, int $\ast$score)
+void \mbox{\hyperlink{init__plateau_8c_aa39ae2af4a2141444eee0af667f72745}{init\+\_\+plateau}} (int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int nbj\+\_\+max, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste\+\_\+piece, int $\ast$joueur\+\_\+en\+\_\+jeux, int $\ast$score)
 \begin{DoxyCompactList}\small\item\em Initialise le plateau selon les règles du Blokus. \end{DoxyCompactList}\item 
-int \hyperlink{init__plateau_8c_a9b93825f8a4a6dd83a6a11aebc045aee}{coordonner\+\_\+invalide} (int x, int y, int taille\+\_\+plateau)
+int \mbox{\hyperlink{init__plateau_8c_a9b93825f8a4a6dd83a6a11aebc045aee}{coordonner\+\_\+invalide}} (int x, int y, int taille\+\_\+plateau)
 \begin{DoxyCompactList}\small\item\em Vérifie si les coordonnées sont dans le plateau. \end{DoxyCompactList}\item 
-void \hyperlink{init__plateau_8c_adbd25dca11f18d56a22394f385a334cc}{init\+\_\+plateau\+\_\+fictif} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau\+\_\+original)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau\+\_\+copie)\mbox{[}taille\+\_\+plateau\mbox{]}, int joueur, \hyperlink{structt__coordonnee}{t\+\_\+coordonnee} $\ast$coord)
+void \mbox{\hyperlink{init__plateau_8c_adbd25dca11f18d56a22394f385a334cc}{init\+\_\+plateau\+\_\+fictif}} (int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau\+\_\+original)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau\+\_\+copie)\mbox{[}taille\+\_\+plateau\mbox{]}, int joueur, \mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}} $\ast$coord)
 \begin{DoxyCompactList}\small\item\em Créé un plateau avec une seule possibilité de placement. \end{DoxyCompactList}\item 
-void \hyperlink{init__plateau_8c_ac05e76e09561c2c6fdf47c4bab1f7c3a}{copie\+\_\+plateau} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau\+\_\+original)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau\+\_\+copie)\mbox{[}taille\+\_\+plateau\mbox{]})
+void \mbox{\hyperlink{init__plateau_8c_ac05e76e09561c2c6fdf47c4bab1f7c3a}{copie\+\_\+plateau}} (int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau\+\_\+original)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau\+\_\+copie)\mbox{[}taille\+\_\+plateau\mbox{]})
 \begin{DoxyCompactList}\small\item\em Copie le tableau dans un autrre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Description détaillée}
+\subsection{Detailed Description}
 Module de fonctions pour le plateau. 
 
-\begin{DoxyAuthor}{Auteur}
+\begin{DoxyAuthor}{Author}
 Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -37,22 +30,19 @@ Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
 \end{DoxyVersion}
 
 
-\subsection{Documentation des fonctions}
+\subsection{Function Documentation}
+\mbox{\Hypertarget{init__plateau_8c_a9b93825f8a4a6dd83a6a11aebc045aee}\label{init__plateau_8c_a9b93825f8a4a6dd83a6a11aebc045aee}} 
 \index{init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}!coordonner\+\_\+invalide@{coordonner\+\_\+invalide}}
 \index{coordonner\+\_\+invalide@{coordonner\+\_\+invalide}!init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}}
-\subsubsection[{\texorpdfstring{coordonner\+\_\+invalide(int x, int y, int taille\+\_\+plateau)}{coordonner_invalide(int x, int y, int taille_plateau)}}]{\setlength{\rightskip}{0pt plus 5cm}int coordonner\+\_\+invalide (
-\begin{DoxyParamCaption}
-\item[{int}]{x, }
-\item[{int}]{y, }
-\item[{int}]{taille\+\_\+plateau}
-\end{DoxyParamCaption}
-)}\hypertarget{init__plateau_8c_a9b93825f8a4a6dd83a6a11aebc045aee}{}\label{init__plateau_8c_a9b93825f8a4a6dd83a6a11aebc045aee}
+\subsubsection{\texorpdfstring{coordonner\+\_\+invalide()}{coordonner\_invalide()}}
+{\footnotesize\ttfamily int coordonner\+\_\+invalide (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{taille\+\_\+plateau }\end{DoxyParamCaption})}
+
 
 
 Vérifie si les coordonnées sont dans le plateau. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em x} & La colonne du plateau \\
 \hline
 {\em y} & La ligne du plateau \\
@@ -60,21 +50,18 @@ Vérifie si les coordonnées sont dans le plateau.
 {\em taille\+\_\+plateau} & la aille du plateau \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{init__plateau_8c_ac05e76e09561c2c6fdf47c4bab1f7c3a}\label{init__plateau_8c_ac05e76e09561c2c6fdf47c4bab1f7c3a}} 
 \index{init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}!copie\+\_\+plateau@{copie\+\_\+plateau}}
 \index{copie\+\_\+plateau@{copie\+\_\+plateau}!init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}}
-\subsubsection[{\texorpdfstring{copie\+\_\+plateau(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau\+\_\+original)[taille\+\_\+plateau], t\+\_\+case($\ast$plateau\+\_\+copie)[taille\+\_\+plateau])}{copie_plateau(int taille_plateau, t_case(*plateau_original)[taille_plateau], t_case(*plateau_copie)[taille_plateau])}}]{\setlength{\rightskip}{0pt plus 5cm}void copie\+\_\+plateau (
-\begin{DoxyParamCaption}
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\+\_\+original\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\+\_\+copie\mbox{[}taille\+\_\+plateau\mbox{]}}
-\end{DoxyParamCaption}
-)}\hypertarget{init__plateau_8c_ac05e76e09561c2c6fdf47c4bab1f7c3a}{}\label{init__plateau_8c_ac05e76e09561c2c6fdf47c4bab1f7c3a}
+\subsubsection{\texorpdfstring{copie\+\_\+plateau()}{copie\_plateau()}}
+{\footnotesize\ttfamily void copie\+\_\+plateau (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\+\_\+original\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\+\_\+copie\mbox{[}taille\+\_\+plateau\mbox{]} }\end{DoxyParamCaption})}
+
 
 
 Copie le tableau dans un autrre. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em taille\+\_\+plateau} & La taille du plateau \\
 \hline
 {\em ($\ast$plateau\+\_\+original)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau original \\
@@ -82,24 +69,18 @@ Copie le tableau dans un autrre.
 {\em ($\ast$plateau\+\_\+copie)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau copié \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{init__plateau_8c_aa39ae2af4a2141444eee0af667f72745}\label{init__plateau_8c_aa39ae2af4a2141444eee0af667f72745}} 
 \index{init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}!init\+\_\+plateau@{init\+\_\+plateau}}
 \index{init\+\_\+plateau@{init\+\_\+plateau}!init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}}
-\subsubsection[{\texorpdfstring{init\+\_\+plateau(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], int nbj\+\_\+max, t\+\_\+liste $\ast$liste\+\_\+piece, int $\ast$joueur\+\_\+en\+\_\+jeux, int $\ast$score)}{init_plateau(int taille_plateau, t_case(*plateau)[taille_plateau], int nbj_max, t_liste *liste_piece, int *joueur_en_jeux, int *score)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+plateau (
-\begin{DoxyParamCaption}
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{int}]{nbj\+\_\+max, }
-\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece, }
-\item[{int $\ast$}]{joueur\+\_\+en\+\_\+jeux, }
-\item[{int $\ast$}]{score}
-\end{DoxyParamCaption}
-)}\hypertarget{init__plateau_8c_aa39ae2af4a2141444eee0af667f72745}{}\label{init__plateau_8c_aa39ae2af4a2141444eee0af667f72745}
+\subsubsection{\texorpdfstring{init\+\_\+plateau()}{init\_plateau()}}
+{\footnotesize\ttfamily void init\+\_\+plateau (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{int}]{nbj\+\_\+max,  }\item[{\mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$}]{liste\+\_\+piece,  }\item[{int $\ast$}]{joueur\+\_\+en\+\_\+jeux,  }\item[{int $\ast$}]{score }\end{DoxyParamCaption})}
+
 
 
 Initialise le plateau selon les règles du Blokus. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em taille\+\_\+plateau} & la taille du plateau \\
 \hline
 {\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\
@@ -113,23 +94,18 @@ Initialise le plateau selon les règles du Blokus.
 {\em $\ast$score} & Le score de chaque joueur \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{init__plateau_8c_adbd25dca11f18d56a22394f385a334cc}\label{init__plateau_8c_adbd25dca11f18d56a22394f385a334cc}} 
 \index{init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}!init\+\_\+plateau\+\_\+fictif@{init\+\_\+plateau\+\_\+fictif}}
 \index{init\+\_\+plateau\+\_\+fictif@{init\+\_\+plateau\+\_\+fictif}!init\+\_\+plateau.\+c@{init\+\_\+plateau.\+c}}
-\subsubsection[{\texorpdfstring{init\+\_\+plateau\+\_\+fictif(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau\+\_\+original)[taille\+\_\+plateau], t\+\_\+case($\ast$plateau\+\_\+copie)[taille\+\_\+plateau], int joueur, t\+\_\+coordonnee $\ast$coord)}{init_plateau_fictif(int taille_plateau, t_case(*plateau_original)[taille_plateau], t_case(*plateau_copie)[taille_plateau], int joueur, t_coordonnee *coord)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+plateau\+\_\+fictif (
-\begin{DoxyParamCaption}
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\+\_\+original\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\+\_\+copie\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{int}]{joueur, }
-\item[{{\bf t\+\_\+coordonnee} $\ast$}]{coord}
-\end{DoxyParamCaption}
-)}\hypertarget{init__plateau_8c_adbd25dca11f18d56a22394f385a334cc}{}\label{init__plateau_8c_adbd25dca11f18d56a22394f385a334cc}
+\subsubsection{\texorpdfstring{init\+\_\+plateau\+\_\+fictif()}{init\_plateau\_fictif()}}
+{\footnotesize\ttfamily void init\+\_\+plateau\+\_\+fictif (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\+\_\+original\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\+\_\+copie\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{int}]{joueur,  }\item[{\mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}} $\ast$}]{coord }\end{DoxyParamCaption})}
+
 
 
 Créé un plateau avec une seule possibilité de placement. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em taille\+\_\+plateau} & la taille du plateau \\
 \hline
 {\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\

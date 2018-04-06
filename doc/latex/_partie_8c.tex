@@ -1,0 +1,53 @@
+\hypertarget{_partie_8c}{}\section{Partie.\+c File Reference}
+\label{_partie_8c}\index{Partie.\+c@{Partie.\+c}}
+
+
+Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal.  
+
+
+{\ttfamily \#include \char`\"{}Partie.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_partie_8c_a847b594eae4ec1cdf46566486092b06f}{afficher\+\_\+piece\+\_\+dispo}} (int nb\+\_\+piece, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Affiche tous les numero des pieces restantes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_partie_8c_a62f643e238582f1badb8b9c46d8ac5bc}\label{_partie_8c_a62f643e238582f1badb8b9c46d8ac5bc}} 
+int {\bfseries piece\+\_\+dispo} (int num\+\_\+piece\+\_\+choisi, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste, \mbox{\hyperlink{structt__matrice}{t\+\_\+matrice}} $\ast$piece)
+\item 
+\mbox{\Hypertarget{_partie_8c_a55a1332b7c8b99d7450c025a052c98c0}\label{_partie_8c_a55a1332b7c8b99d7450c025a052c98c0}} 
+void {\bfseries calcule\+\_\+score} (int nbj\+\_\+max, int $\ast$score, int joueur, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste)
+\item 
+\mbox{\Hypertarget{_partie_8c_a2cdf8c55e08f9a5b660c54bf6e038f91}\label{_partie_8c_a2cdf8c55e08f9a5b660c54bf6e038f91}} 
+int {\bfseries jeux} (int nbj, int nbj\+\_\+max, int nb\+\_\+tour\+\_\+joueur, int $\ast$score, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste\+\_\+piece, int partie)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal. 
+
+\begin{DoxyAuthor}{Author}
+Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_partie_8c_a847b594eae4ec1cdf46566486092b06f}\label{_partie_8c_a847b594eae4ec1cdf46566486092b06f}} 
+\index{Partie.\+c@{Partie.\+c}!afficher\+\_\+piece\+\_\+dispo@{afficher\+\_\+piece\+\_\+dispo}}
+\index{afficher\+\_\+piece\+\_\+dispo@{afficher\+\_\+piece\+\_\+dispo}!Partie.\+c@{Partie.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+piece\+\_\+dispo()}{afficher\_piece\_dispo()}}
+{\footnotesize\ttfamily void afficher\+\_\+piece\+\_\+dispo (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+piece,  }\item[{\mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$}]{liste }\end{DoxyParamCaption})}
+
+
+
+Affiche tous les numero des pieces restantes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+piece} & numéro de la pièce recerchée \\
+\hline
+{\em liste} & Pointeur sur une liste de pièces \\
+\hline
+\end{DoxyParams}

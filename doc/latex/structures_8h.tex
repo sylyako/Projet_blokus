@@ -1,60 +1,45 @@
-\hypertarget{structures_8h}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/structures.h}
-\label{structures_8h}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/structures.\+h@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/structures.\+h}}
+\hypertarget{structures_8h}{}\section{structures.\+h File Reference}
+\label{structures_8h}\index{structures.\+h@{structures.\+h}}
 
 
 Contient les structures communes du programme.  
 
 
-{\ttfamily \#include $<$stdio.\+h$>$}\\*
-{\ttfamily \#include $<$stdlib.\+h$>$}\\*
-{\ttfamily \#include $<$string.\+h$>$}\\*
-{\ttfamily \#include $<$unistd.\+h$>$}\\*
-Graphe des dépendances par inclusion de structures.\+h\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=329pt]{structures_8h__incl}
-\end{center}
-\end{figure}
-Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structures_8h__dep__incl}
-\end{center}
-\end{figure}
-\subsection*{Classes}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+\subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structt__case}{t\+\_\+case}
+struct \mbox{\hyperlink{structt__case}{t\+\_\+case}}
 \begin{DoxyCompactList}\small\item\em Définition d\textquotesingle{}une case pour un plateau de Blokus. \end{DoxyCompactList}\item 
-struct \hyperlink{structt__coordonnee}{t\+\_\+coordonnee}
+struct \mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}}
 \begin{DoxyCompactList}\small\item\em Contient des coordonnées pour une matrice à deux dimensions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+M\+AX}~21\hypertarget{structures_8h_ae6ad0540d5109a0200f0dde5dc5b4bf6}{}\label{structures_8h_ae6ad0540d5109a0200f0dde5dc5b4bf6}
-
+\mbox{\Hypertarget{structures_8h_ae6ad0540d5109a0200f0dde5dc5b4bf6}\label{structures_8h_ae6ad0540d5109a0200f0dde5dc5b4bf6}} 
+\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+M\+AX}~21
 \item 
-\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE}~5\hypertarget{structures_8h_a93a84f484a79b425fbe94baedfbbac48}{}\label{structures_8h_a93a84f484a79b425fbe94baedfbbac48}
-
+\mbox{\Hypertarget{structures_8h_a93a84f484a79b425fbe94baedfbbac48}\label{structures_8h_a93a84f484a79b425fbe94baedfbbac48}} 
+\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+T\+R\+I\+C\+E\+\_\+\+P\+I\+E\+CE}~5
 \end{DoxyCompactItemize}
-\subsection*{Énumérations}
+\subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}{t\+\_\+couleur} \{ \\*
-\hyperlink{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e}{libre} = 4, 
+enum \mbox{\hyperlink{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}{t\+\_\+couleur}} \{ \newline
+\mbox{\hyperlink{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e}{libre}} = 4, 
 {\bfseries rouge} = 0, 
 {\bfseries bleu} = 1, 
 {\bfseries vert} = 2, 
-\\*
+\newline
 {\bfseries jaune} = 3
- \}\begin{DoxyCompactList}\small\item\em Définition de couleurs en fonction d\textquotesingle{}un entier. \end{DoxyCompactList}
-\end{DoxyCompactItemize}
+ \}
+\begin{DoxyCompactList}\small\item\em Définition de couleurs en fonction d\textquotesingle{}un entier. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Description détaillée}
+\subsection{Detailed Description}
 Contient les structures communes du programme. 
 
 \begin{DoxyVersion}{Version}
@@ -65,18 +50,20 @@ mars 2018
 \end{DoxyDate}
 
 
-\subsection{Documentation du type de l\textquotesingle{}énumération}
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}\label{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}} 
 \index{structures.\+h@{structures.\+h}!t\+\_\+couleur@{t\+\_\+couleur}}
 \index{t\+\_\+couleur@{t\+\_\+couleur}!structures.\+h@{structures.\+h}}
-\subsubsection[{\texorpdfstring{t\+\_\+couleur}{t_couleur}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf t\+\_\+couleur}}\hypertarget{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}{}\label{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}
+\subsubsection{\texorpdfstring{t\+\_\+couleur}{t\_couleur}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07}{t\+\_\+couleur}}}
+
 
 
 Définition de couleurs en fonction d\textquotesingle{}un entier. 
 
-L\textquotesingle{}énumération contient les quatre couleurs utilisées pour le Blokus ainsi qu\textquotesingle{}une valeur utilisée si aucune couleur n\textquotesingle{}est présente \begin{Desc}
-\item[Valeurs énumérées]\par
-\begin{description}
-\index{libre@{libre}!structures.\+h@{structures.\+h}}\index{structures.\+h@{structures.\+h}!libre@{libre}}\item[{\em 
-libre\hypertarget{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e}{}\label{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e}
-}]Sans couleur \end{description}
-\end{Desc}
+L\textquotesingle{}énumération contient les quatre couleurs utilisées pour le Blokus ainsi qu\textquotesingle{}une valeur utilisée si aucune couleur n\textquotesingle{}est présente \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{libre@{libre}!structures.\+h@{structures.\+h}}\index{structures.\+h@{structures.\+h}!libre@{libre}}}\mbox{\Hypertarget{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e}\label{structures_8h_aa9f0f93fc533400ebe242cbb9986ef07ac2a84c546ae51a97ad3a356f791e371e}} 
+libre&Sans couleur \\
+\hline
+
+\end{DoxyEnumFields}

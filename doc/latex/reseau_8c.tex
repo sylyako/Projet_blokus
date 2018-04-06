@@ -1,41 +1,34 @@
-\hypertarget{reseau_8c}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/reseau.c}
-\label{reseau_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/reseau.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/reseau.\+c}}
+\hypertarget{reseau_8c}{}\section{reseau.\+c File Reference}
+\label{reseau_8c}\index{reseau.\+c@{reseau.\+c}}
 
 
 Module qui permet une connexion T\+CP entre plusieurs ordinateurs.  
 
 
-{\ttfamily \#include \char`\"{}reseau.\+h\char`\"{}}\\*
-Graphe des dépendances par inclusion de reseau.\+c\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{reseau_8c__incl}
-\end{center}
-\end{figure}
-\subsection*{Fonctions}
+{\ttfamily \#include \char`\"{}reseau.\+h\char`\"{}}\newline
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{reseau_8c_add6e60e086591b7a1bd273bde5add9e7}{init\+\_\+serveur} (int $\ast$socket\+\_\+serveur, struct sockaddr\+\_\+in $\ast$adresse\+\_\+serveur)
+void \mbox{\hyperlink{reseau_8c_add6e60e086591b7a1bd273bde5add9e7}{init\+\_\+serveur}} (int $\ast$socket\+\_\+serveur, struct sockaddr\+\_\+in $\ast$adresse\+\_\+serveur)
 \begin{DoxyCompactList}\small\item\em Instaure un socket serveur sur l\textquotesingle{}ordinateur. \end{DoxyCompactList}\item 
-void \hyperlink{reseau_8c_aa42e4ec11d2447ab0c0347ca7ab90850}{ajout\+\_\+clients} (int $\ast$socket\+\_\+serveur, int socket\+\_\+client\mbox{[}$\,$\mbox{]}, int nbj\+\_\+max)
+void \mbox{\hyperlink{reseau_8c_a15751481a827478277413657b08134c3}{ajout\+\_\+clients}} (int $\ast$socket\+\_\+serveur, int socket\+\_\+client \mbox{[}$\,$\mbox{]}, int nbj\+\_\+max)
 \begin{DoxyCompactList}\small\item\em Ajoute des clients sur des sockets clients. \end{DoxyCompactList}\item 
-int \hyperlink{reseau_8c_ae9e47c397f69d8c57e3fe7fb4b84d152}{connexion\+\_\+serveur} (int $\ast$socket\+\_\+client, struct sockaddr\+\_\+in $\ast$server\+\_\+address)
+int \mbox{\hyperlink{reseau_8c_ae9e47c397f69d8c57e3fe7fb4b84d152}{connexion\+\_\+serveur}} (int $\ast$socket\+\_\+client, struct sockaddr\+\_\+in $\ast$server\+\_\+address)
 \begin{DoxyCompactList}\small\item\em Foctio qui permet de se conecter à un serveur. \end{DoxyCompactList}\item 
-void \hyperlink{reseau_8c_a1d1fdf15e373cf2ea1c06c78e0914458}{envoyer\+\_\+plateau\+\_\+clients} (int socket\+\_\+client\mbox{[}$\,$\mbox{]}, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int nbj\+\_\+max)
+void \mbox{\hyperlink{reseau_8c_a41db51cf896f92d120012c45b9e62345}{envoyer\+\_\+plateau\+\_\+clients}} (int socket\+\_\+client \mbox{[}$\,$\mbox{]}, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau) \mbox{[}taille\+\_\+plateau\mbox{]}, int nbj\+\_\+max)
 \begin{DoxyCompactList}\small\item\em Envoie le plateau de jeu à tous les clients. \end{DoxyCompactList}\item 
-void \hyperlink{reseau_8c_a068a46b7eba23a7fcccff9ce9480e957}{envoyer\+\_\+plateau} (int socket\+\_\+client, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]})
+void \mbox{\hyperlink{reseau_8c_a8ad56034f582019021feed3dee3128bd}{envoyer\+\_\+plateau}} (int socket\+\_\+client, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau) \mbox{[}taille\+\_\+plateau\mbox{]})
 \begin{DoxyCompactList}\small\item\em Envoie le plateau de jeu. \end{DoxyCompactList}\item 
-void \hyperlink{reseau_8c_aea0fee6be243dadc9e9a35d633143994}{envoyer\+\_\+numero} (int socket\+\_\+client, int numero)
+void \mbox{\hyperlink{reseau_8c_aea0fee6be243dadc9e9a35d633143994}{envoyer\+\_\+numero}} (int socket\+\_\+client, int numero)
 \begin{DoxyCompactList}\small\item\em Envoie un numéro qui est attribué au joueur. \end{DoxyCompactList}\item 
-void \hyperlink{reseau_8c_a77f5bbd4388f3ca9cfccb024a76b94c0}{nv\+\_\+plateau} (int socket\+\_\+client, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]})
+void \mbox{\hyperlink{reseau_8c_a18c2033e4cad10017063c9dc85ac8028}{nv\+\_\+plateau}} (int socket\+\_\+client, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau) \mbox{[}taille\+\_\+plateau\mbox{]})
 \begin{DoxyCompactList}\small\item\em Reçoit le nouvel état du plateau de jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Description détaillée}
+\subsection{Detailed Description}
 Module qui permet une connexion T\+CP entre plusieurs ordinateurs. 
 
-\begin{DoxyAuthor}{Auteur}
+\begin{DoxyAuthor}{Author}
 Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -43,22 +36,19 @@ Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
 \end{DoxyVersion}
 
 
-\subsection{Documentation des fonctions}
+\subsection{Function Documentation}
+\mbox{\Hypertarget{reseau_8c_a15751481a827478277413657b08134c3}\label{reseau_8c_a15751481a827478277413657b08134c3}} 
 \index{reseau.\+c@{reseau.\+c}!ajout\+\_\+clients@{ajout\+\_\+clients}}
 \index{ajout\+\_\+clients@{ajout\+\_\+clients}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{ajout\+\_\+clients(int $\ast$socket\+\_\+serveur, int socket\+\_\+client[], int nbj\+\_\+max)}{ajout_clients(int *socket_serveur, int socket_client[], int nbj_max)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+\_\+clients (
-\begin{DoxyParamCaption}
-\item[{int $\ast$}]{socket\+\_\+serveur, }
-\item[{int}]{socket\+\_\+client\mbox{[}$\,$\mbox{]}, }
-\item[{int}]{nbj\+\_\+max}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_aa42e4ec11d2447ab0c0347ca7ab90850}{}\label{reseau_8c_aa42e4ec11d2447ab0c0347ca7ab90850}
+\subsubsection{\texorpdfstring{ajout\+\_\+clients()}{ajout\_clients()}}
+{\footnotesize\ttfamily void ajout\+\_\+clients (\begin{DoxyParamCaption}\item[{int $\ast$}]{socket\+\_\+serveur,  }\item[{int}]{socket\+\_\+client\mbox{[}$\,$\mbox{]},  }\item[{int}]{nbj\+\_\+max }\end{DoxyParamCaption})}
+
 
 
 Ajoute des clients sur des sockets clients. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$socket\+\_\+serveur} & le socket serveur \\
 \hline
 {\em socket\+\_\+client\mbox{[}$\,$\mbox{]}} & Les sockets clients à lier au serveur \\
@@ -66,59 +56,52 @@ Ajoute des clients sur des sockets clients.
 {\em nbj\+\_\+max} & Le nombre de clients à lier \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{reseau_8c_ae9e47c397f69d8c57e3fe7fb4b84d152}\label{reseau_8c_ae9e47c397f69d8c57e3fe7fb4b84d152}} 
 \index{reseau.\+c@{reseau.\+c}!connexion\+\_\+serveur@{connexion\+\_\+serveur}}
 \index{connexion\+\_\+serveur@{connexion\+\_\+serveur}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{connexion\+\_\+serveur(int $\ast$socket\+\_\+client, struct sockaddr\+\_\+in $\ast$server\+\_\+address)}{connexion_serveur(int *socket_client, struct sockaddr_in *server_address)}}]{\setlength{\rightskip}{0pt plus 5cm}int connexion\+\_\+serveur (
-\begin{DoxyParamCaption}
-\item[{int $\ast$}]{socket\+\_\+client, }
-\item[{struct sockaddr\+\_\+in $\ast$}]{server\+\_\+address}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_ae9e47c397f69d8c57e3fe7fb4b84d152}{}\label{reseau_8c_ae9e47c397f69d8c57e3fe7fb4b84d152}
+\subsubsection{\texorpdfstring{connexion\+\_\+serveur()}{connexion\_serveur()}}
+{\footnotesize\ttfamily int connexion\+\_\+serveur (\begin{DoxyParamCaption}\item[{int $\ast$}]{socket\+\_\+client,  }\item[{struct sockaddr\+\_\+in $\ast$}]{server\+\_\+address }\end{DoxyParamCaption})}
+
 
 
 Foctio qui permet de se conecter à un serveur. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$socket\+\_\+client} & le socket du client \\
 \hline
 {\em $\ast$server\+\_\+address} & Les informations du serveur à indiquer \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{reseau_8c_aea0fee6be243dadc9e9a35d633143994}\label{reseau_8c_aea0fee6be243dadc9e9a35d633143994}} 
 \index{reseau.\+c@{reseau.\+c}!envoyer\+\_\+numero@{envoyer\+\_\+numero}}
 \index{envoyer\+\_\+numero@{envoyer\+\_\+numero}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{envoyer\+\_\+numero(int socket\+\_\+client, int numero)}{envoyer_numero(int socket_client, int numero)}}]{\setlength{\rightskip}{0pt plus 5cm}void envoyer\+\_\+numero (
-\begin{DoxyParamCaption}
-\item[{int}]{socket\+\_\+client, }
-\item[{int}]{numero}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_aea0fee6be243dadc9e9a35d633143994}{}\label{reseau_8c_aea0fee6be243dadc9e9a35d633143994}
+\subsubsection{\texorpdfstring{envoyer\+\_\+numero()}{envoyer\_numero()}}
+{\footnotesize\ttfamily void envoyer\+\_\+numero (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+client,  }\item[{int}]{numero }\end{DoxyParamCaption})}
+
 
 
 Envoie un numéro qui est attribué au joueur. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em socket\+\_\+client} & le socket du client \\
 \hline
 {\em numero} & le numéro attribué au joueur \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{reseau_8c_a8ad56034f582019021feed3dee3128bd}\label{reseau_8c_a8ad56034f582019021feed3dee3128bd}} 
 \index{reseau.\+c@{reseau.\+c}!envoyer\+\_\+plateau@{envoyer\+\_\+plateau}}
 \index{envoyer\+\_\+plateau@{envoyer\+\_\+plateau}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{envoyer\+\_\+plateau(int socket\+\_\+client, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau])}{envoyer_plateau(int socket_client, int taille_plateau, t_case(*plateau)[taille_plateau])}}]{\setlength{\rightskip}{0pt plus 5cm}void envoyer\+\_\+plateau (
-\begin{DoxyParamCaption}
-\item[{int}]{socket\+\_\+client, }
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_a068a46b7eba23a7fcccff9ce9480e957}{}\label{reseau_8c_a068a46b7eba23a7fcccff9ce9480e957}
+\subsubsection{\texorpdfstring{envoyer\+\_\+plateau()}{envoyer\_plateau()}}
+{\footnotesize\ttfamily void envoyer\+\_\+plateau (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+client,  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]} }\end{DoxyParamCaption})}
+
 
 
 Envoie le plateau de jeu. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em socket\+\_\+client} & le socket du client \\
 \hline
 {\em taille\+\_\+plateau} & La taille du plateau de jeu \\
@@ -126,22 +109,18 @@ Envoie le plateau de jeu.
 {\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau de jeu \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{reseau_8c_a41db51cf896f92d120012c45b9e62345}\label{reseau_8c_a41db51cf896f92d120012c45b9e62345}} 
 \index{reseau.\+c@{reseau.\+c}!envoyer\+\_\+plateau\+\_\+clients@{envoyer\+\_\+plateau\+\_\+clients}}
 \index{envoyer\+\_\+plateau\+\_\+clients@{envoyer\+\_\+plateau\+\_\+clients}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{envoyer\+\_\+plateau\+\_\+clients(int socket\+\_\+client[], int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], int nbj\+\_\+max)}{envoyer_plateau_clients(int socket_client[], int taille_plateau, t_case(*plateau)[taille_plateau], int nbj_max)}}]{\setlength{\rightskip}{0pt plus 5cm}void envoyer\+\_\+plateau\+\_\+clients (
-\begin{DoxyParamCaption}
-\item[{int}]{socket\+\_\+client\mbox{[}$\,$\mbox{]}, }
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{int}]{nbj\+\_\+max}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_a1d1fdf15e373cf2ea1c06c78e0914458}{}\label{reseau_8c_a1d1fdf15e373cf2ea1c06c78e0914458}
+\subsubsection{\texorpdfstring{envoyer\+\_\+plateau\+\_\+clients()}{envoyer\_plateau\_clients()}}
+{\footnotesize\ttfamily void envoyer\+\_\+plateau\+\_\+clients (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+client\mbox{[}$\,$\mbox{]},  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{int}]{nbj\+\_\+max }\end{DoxyParamCaption})}
+
 
 
 Envoie le plateau de jeu à tous les clients. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em socket\+\_\+client\mbox{[}$\,$\mbox{]}} & les sockets des clients \\
 \hline
 {\em $\ast$taille\+\_\+plateau} & La taille du plateau de jeu \\
@@ -151,40 +130,35 @@ Envoie le plateau de jeu à tous les clients.
 {\em nbj\+\_\+max} & Le nombre de joueurs \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{reseau_8c_add6e60e086591b7a1bd273bde5add9e7}\label{reseau_8c_add6e60e086591b7a1bd273bde5add9e7}} 
 \index{reseau.\+c@{reseau.\+c}!init\+\_\+serveur@{init\+\_\+serveur}}
 \index{init\+\_\+serveur@{init\+\_\+serveur}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{init\+\_\+serveur(int $\ast$socket\+\_\+serveur, struct sockaddr\+\_\+in $\ast$adresse\+\_\+serveur)}{init_serveur(int *socket_serveur, struct sockaddr_in *adresse_serveur)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+serveur (
-\begin{DoxyParamCaption}
-\item[{int $\ast$}]{socket\+\_\+serveur, }
-\item[{struct sockaddr\+\_\+in $\ast$}]{adresse\+\_\+serveur}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_add6e60e086591b7a1bd273bde5add9e7}{}\label{reseau_8c_add6e60e086591b7a1bd273bde5add9e7}
+\subsubsection{\texorpdfstring{init\+\_\+serveur()}{init\_serveur()}}
+{\footnotesize\ttfamily void init\+\_\+serveur (\begin{DoxyParamCaption}\item[{int $\ast$}]{socket\+\_\+serveur,  }\item[{struct sockaddr\+\_\+in $\ast$}]{adresse\+\_\+serveur }\end{DoxyParamCaption})}
+
 
 
 Instaure un socket serveur sur l\textquotesingle{}ordinateur. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em $\ast$socket\+\_\+serveur} & le socket serveur à initialiser \\
 \hline
 {\em $\ast$adresse\+\_\+serveur} & informations sur l\textquotesingle{}adresse du pc \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{reseau_8c_a18c2033e4cad10017063c9dc85ac8028}\label{reseau_8c_a18c2033e4cad10017063c9dc85ac8028}} 
 \index{reseau.\+c@{reseau.\+c}!nv\+\_\+plateau@{nv\+\_\+plateau}}
 \index{nv\+\_\+plateau@{nv\+\_\+plateau}!reseau.\+c@{reseau.\+c}}
-\subsubsection[{\texorpdfstring{nv\+\_\+plateau(int socket\+\_\+client, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau])}{nv_plateau(int socket_client, int taille_plateau, t_case(*plateau)[taille_plateau])}}]{\setlength{\rightskip}{0pt plus 5cm}void nv\+\_\+plateau (
-\begin{DoxyParamCaption}
-\item[{int}]{socket\+\_\+client, }
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}}
-\end{DoxyParamCaption}
-)}\hypertarget{reseau_8c_a77f5bbd4388f3ca9cfccb024a76b94c0}{}\label{reseau_8c_a77f5bbd4388f3ca9cfccb024a76b94c0}
+\subsubsection{\texorpdfstring{nv\+\_\+plateau()}{nv\_plateau()}}
+{\footnotesize\ttfamily void nv\+\_\+plateau (\begin{DoxyParamCaption}\item[{int}]{socket\+\_\+client,  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]} }\end{DoxyParamCaption})}
+
 
 
 Reçoit le nouvel état du plateau de jeu. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em taille\+\_\+plateau} & La taille du plateau de jeu \\
 \hline
 {\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau de jeu \\

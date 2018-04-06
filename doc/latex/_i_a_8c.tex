@@ -1,0 +1,126 @@
+\hypertarget{_i_a_8c}{}\section{I\+A.\+c File Reference}
+\label{_i_a_8c}\index{I\+A.\+c@{I\+A.\+c}}
+
+
+Regroupes les fonctions qui permet l\textquotesingle{}utilisation de l\textquotesingle{}ia.  
+
+
+{\ttfamily \#include \char`\"{}I\+A.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Partie.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_i_a_8c_a1ca52e208b3abaf80d2489d1485fdd1f}{calcul\+\_\+1\+\_\+score\+\_\+placement}} (int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int joueur)
+\begin{DoxyCompactList}\small\item\em fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction du nombre de possibilité quelle nous aura créée. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_i_a_8c_a5bf1613f7f947494ccecf8995850fab1}{calcul\+\_\+2\+\_\+score\+\_\+placement}} (int taille\+\_\+piece, \mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}} $\ast$coord, int taille\+\_\+plateau, int nb\+\_\+tour\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Seconde fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction de la taille de la pièce et de sa position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_i_a_8c_ae8d6b3901082a874e5546bf8c8211a66}{simuler\+\_\+tour}} (int nbj\+\_\+max, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste\+\_\+piece, int cpt, int joueur, int nb\+\_\+tour\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Simule les tours des autres joueurs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structt__retour}{t\+\_\+retour}} \mbox{\hyperlink{_i_a_8c_a8a5af590a4671422aecec34db5282286}{calcule\+\_\+ia}} (int nbj\+\_\+max, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$liste\+\_\+piece, int cpt, int joueur, int nb\+\_\+tour\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Simule le tour d\textquotesingle{}un joueur et détermine quelle pièce est la plus intéressante à jouer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Regroupes les fonctions qui permet l\textquotesingle{}utilisation de l\textquotesingle{}ia. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_i_a_8c_a1ca52e208b3abaf80d2489d1485fdd1f}\label{_i_a_8c_a1ca52e208b3abaf80d2489d1485fdd1f}} 
+\index{I\+A.\+c@{I\+A.\+c}!calcul\+\_\+1\+\_\+score\+\_\+placement@{calcul\+\_\+1\+\_\+score\+\_\+placement}}
+\index{calcul\+\_\+1\+\_\+score\+\_\+placement@{calcul\+\_\+1\+\_\+score\+\_\+placement}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{calcul\+\_\+1\+\_\+score\+\_\+placement()}{calcul\_1\_score\_placement()}}
+{\footnotesize\ttfamily int calcul\+\_\+1\+\_\+score\+\_\+placement (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+
+
+fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction du nombre de possibilité quelle nous aura créée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em plateau} & Le plateau sur lequel on fait le calcule \\
+\hline
+{\em joueur} & Sur quel joueur est effectuer la recherche \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_i_a_8c_a5bf1613f7f947494ccecf8995850fab1}\label{_i_a_8c_a5bf1613f7f947494ccecf8995850fab1}} 
+\index{I\+A.\+c@{I\+A.\+c}!calcul\+\_\+2\+\_\+score\+\_\+placement@{calcul\+\_\+2\+\_\+score\+\_\+placement}}
+\index{calcul\+\_\+2\+\_\+score\+\_\+placement@{calcul\+\_\+2\+\_\+score\+\_\+placement}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{calcul\+\_\+2\+\_\+score\+\_\+placement()}{calcul\_2\_score\_placement()}}
+{\footnotesize\ttfamily int calcul\+\_\+2\+\_\+score\+\_\+placement (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+piece,  }\item[{\mbox{\hyperlink{structt__coordonnee}{t\+\_\+coordonnee}} $\ast$}]{coord,  }\item[{int}]{taille\+\_\+plateau,  }\item[{int}]{nb\+\_\+tour\+\_\+joueur }\end{DoxyParamCaption})}
+
+
+
+Seconde fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction de la taille de la pièce et de sa position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille\+\_\+piece} & La taille du la piece posée \\
+\hline
+{\em coord} & A quelle coordonner se trouve la pièce \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Combien de tous de joueur se sont écoulés \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_i_a_8c_a8a5af590a4671422aecec34db5282286}\label{_i_a_8c_a8a5af590a4671422aecec34db5282286}} 
+\index{I\+A.\+c@{I\+A.\+c}!calcule\+\_\+ia@{calcule\+\_\+ia}}
+\index{calcule\+\_\+ia@{calcule\+\_\+ia}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{calcule\+\_\+ia()}{calcule\_ia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structt__retour}{t\+\_\+retour}} calcule\+\_\+ia (\begin{DoxyParamCaption}\item[{int}]{nbj\+\_\+max,  }\item[{int $\ast$}]{joueur\+\_\+en\+\_\+jeux,  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{\mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$}]{liste\+\_\+piece,  }\item[{int}]{cpt,  }\item[{int}]{joueur,  }\item[{int}]{nb\+\_\+tour\+\_\+joueur }\end{DoxyParamCaption})}
+
+
+
+Simule le tour d\textquotesingle{}un joueur et détermine quelle pièce est la plus intéressante à jouer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbj\+\_\+max} & Nombre de joueur totale \\
+\hline
+{\em joueur\+\_\+en\+\_\+jeux} & Tableau qui permet de savoir si un joueur a encore la possibilité de jouer \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em plateau} & Le plateau sur lequel on fait le calcule \\
+\hline
+{\em liste\+\_\+piece} & Contiens la liste des pièces des joueurs \\
+\hline
+{\em cpt} & Correspond la profondeur actuelle dans l\textquotesingle{}arbre \\
+\hline
+{\em joueur} & Sur quel joueur est effectué la recherche \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Combien de tous de joueur se sont écoulés  ret qui contient le numéro de la pièce à placer, le nombre de rotation qu\textquotesingle{}il faut lui faire, ces coordonner et la valeur d\textquotesingle{}intérêt affecter à cette pièce. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_i_a_8c_ae8d6b3901082a874e5546bf8c8211a66}\label{_i_a_8c_ae8d6b3901082a874e5546bf8c8211a66}} 
+\index{I\+A.\+c@{I\+A.\+c}!simuler\+\_\+tour@{simuler\+\_\+tour}}
+\index{simuler\+\_\+tour@{simuler\+\_\+tour}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{simuler\+\_\+tour()}{simuler\_tour()}}
+{\footnotesize\ttfamily void simuler\+\_\+tour (\begin{DoxyParamCaption}\item[{int}]{nbj\+\_\+max,  }\item[{int $\ast$}]{joueur\+\_\+en\+\_\+jeux,  }\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{\mbox{\hyperlink{structt__liste}{t\+\_\+liste}} $\ast$}]{liste\+\_\+piece,  }\item[{int}]{cpt,  }\item[{int}]{joueur,  }\item[{int}]{nb\+\_\+tour\+\_\+joueur }\end{DoxyParamCaption})}
+
+
+
+Simule les tours des autres joueurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbj\+\_\+max} & Nombre de joueur a simuler \\
+\hline
+{\em joueur\+\_\+en\+\_\+jeux} & Tableau qui permet de savoir si un joueur a encore la possibilité de jouer \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em plateau} & Le plateau sur lequel on fait le calcule \\
+\hline
+{\em liste\+\_\+piece} & Contiens la liste des pièces des joueurs \\
+\hline
+{\em cpt} & Correspond la profondeur actuelle dans l\textquotesingle{}arbre \\
+\hline
+{\em joueur} & Sur quel joueur est effectué la recherche \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Combien de tous de joueur se sont écoulés \\
+\hline
+\end{DoxyParams}

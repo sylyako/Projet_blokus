@@ -1,34 +1,27 @@
-\hypertarget{afficher_8c}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/afficher.c}
-\label{afficher_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/afficher.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/afficher.\+c}}
+\hypertarget{afficher_8c}{}\section{afficher.\+c File Reference}
+\label{afficher_8c}\index{afficher.\+c@{afficher.\+c}}
 
 
 Ensemble de fonctions d\textquotesingle{}affichage.  
 
 
-{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}couleurs.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}unicode.\+h\char`\"{}}\\*
-Graphe des dépendances par inclusion de afficher.\+c\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=337pt]{afficher_8c__incl}
-\end{center}
-\end{figure}
-\subsection*{Fonctions}
+{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}couleurs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unicode.\+h\char`\"{}}\newline
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{afficher_8c_a68c038cdb5468dd9d574db9c08b359be}{affichage\+\_\+menu\+\_\+pause} (void)\hypertarget{afficher_8c_a68c038cdb5468dd9d574db9c08b359be}{}\label{afficher_8c_a68c038cdb5468dd9d574db9c08b359be}
-
+\mbox{\Hypertarget{afficher_8c_a68c038cdb5468dd9d574db9c08b359be}\label{afficher_8c_a68c038cdb5468dd9d574db9c08b359be}} 
+void \mbox{\hyperlink{afficher_8c_a68c038cdb5468dd9d574db9c08b359be}{affichage\+\_\+menu\+\_\+pause}} (void)
 \begin{DoxyCompactList}\small\item\em Affiche le menu de pause. \end{DoxyCompactList}\item 
-void \hyperlink{afficher_8c_a895494ff8bb7c1a79c490a82fcb8ceb3}{affiche\+\_\+plateau} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int joueur, int statut, int nbj\+\_\+max)
+void \mbox{\hyperlink{afficher_8c_a4e83558c881da2df1dbd99beb1b5276e}{affiche\+\_\+plateau}} (int taille\+\_\+plateau, \mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$plateau) \mbox{[}taille\+\_\+plateau\mbox{]}, int joueur, int statut, int nbj\+\_\+max)
 \begin{DoxyCompactList}\small\item\em Affiche le plateau de jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Description détaillée}
+\subsection{Detailed Description}
 Ensemble de fonctions d\textquotesingle{}affichage. 
 
-\begin{DoxyAuthor}{Auteur}
+\begin{DoxyAuthor}{Author}
 Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -36,24 +29,19 @@ Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
 \end{DoxyVersion}
 
 
-\subsection{Documentation des fonctions}
+\subsection{Function Documentation}
+\mbox{\Hypertarget{afficher_8c_a4e83558c881da2df1dbd99beb1b5276e}\label{afficher_8c_a4e83558c881da2df1dbd99beb1b5276e}} 
 \index{afficher.\+c@{afficher.\+c}!affiche\+\_\+plateau@{affiche\+\_\+plateau}}
 \index{affiche\+\_\+plateau@{affiche\+\_\+plateau}!afficher.\+c@{afficher.\+c}}
-\subsubsection[{\texorpdfstring{affiche\+\_\+plateau(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], int joueur, int statut, int nbj\+\_\+max)}{affiche_plateau(int taille_plateau, t_case(*plateau)[taille_plateau], int joueur, int statut, int nbj_max)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+plateau (
-\begin{DoxyParamCaption}
-\item[{int}]{taille\+\_\+plateau, }
-\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
-\item[{int}]{joueur, }
-\item[{int}]{statut, }
-\item[{int}]{nbj\+\_\+max}
-\end{DoxyParamCaption}
-)}\hypertarget{afficher_8c_a895494ff8bb7c1a79c490a82fcb8ceb3}{}\label{afficher_8c_a895494ff8bb7c1a79c490a82fcb8ceb3}
+\subsubsection{\texorpdfstring{affiche\+\_\+plateau()}{affiche\_plateau()}}
+{\footnotesize\ttfamily void affiche\+\_\+plateau (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+plateau,  }\item[{\mbox{\hyperlink{structt__case}{t\+\_\+case}}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]},  }\item[{int}]{joueur,  }\item[{int}]{statut,  }\item[{int}]{nbj\+\_\+max }\end{DoxyParamCaption})}
+
 
 
 Affiche le plateau de jeu. 
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em taille\+\_\+plateau} & La taille du plateau \\
 \hline
 {\em ($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}} & Le plateau \\
