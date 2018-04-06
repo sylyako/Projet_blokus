@@ -1,7 +1,7 @@
 
 Le Dépôt GitHub est découpé en 2 branches bien distinctes afin de pouvoir utiliser le Jeu de la meilleure des manières. 
 
-Branche Version_TERMINAL : 
+Branche Version_TERMINALE : 
 
 Jeu COMPLET et parfaitement fonctionnel comprenant : 
 	
