@@ -1,7 +1,29 @@
 #include "structures.h"
 #include "Partie.h"
 
+/**
+ * \file liste.c
+ * \brief Ensemble de fonctions servants à l'utilisation des listes.
+ * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
+ * \version 1
+ *
+ * \fn void affichage_regle(void)
+ * \brief Affiche les regles du jeu
+ * 
+ * \fn void nb_ia(int *nbj,int nbj_max)
+ * \brief Nous donne le nombre de joueur controler par l'ordinateur
+ * \param nbj Nombre de joueur controler par l'ordinateur 
+ * \param nbj_max Nombre de joueur total
+ * 
+ * \fn int type_joueur (void)
+ * \brief Pour le jeu en reseau, cella nous permet de savoir si l'on est un client ou le serveur 
+ * 
+ * \fn int commencer_partie(int partie)
+ * \brief permet de lance une partie en mode local ou réseau 
+ * \param partie détermine si la partie est en réseau ou en local
+ */
 
+/* Affiche les regles du jeu */
 void affichage_regle(void){
 	char carac;
 	FILE * regles;
@@ -17,6 +39,7 @@ void affichage_regle(void){
 	fclose(regles);
 }
 
+/* Retourne sur le pointeur nbj le nombre de joueur controler par l'ordinateur*/
 void nb_ia(int *nbj,int nbj_max){
 
     do{
@@ -28,8 +51,10 @@ void nb_ia(int *nbj,int nbj_max){
 }
 
 int commencer_partie( int partie);
+ 
 
-int type_joueur () {
+/* Détermine si le joueur est client ou serveur */
+int type_joueur (void) {
     int choix;
 
     printf("    1. Créer une partie\n");
@@ -46,7 +71,9 @@ int type_joueur () {
     return(1);
 }
 
-int commencer_partie( int partie){
+
+/* Lance une partie en mode local ou réseau */
+int commencer_partie(int partie){
     int nbj; //nb joueur ia
     int nbj_max; // nombre total de joueur
     int choix,retour;
