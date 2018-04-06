@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "t",
   2: "ailmprsu",
   3: "acehilmnoprstv",
-  4: "cpxy",
+  4: "cnprxy",
   5: "t",
   6: "l"
 };
@@ -22,12 +22,12 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "Tout",
-  1: "Classes",
-  2: "Fichiers",
-  3: "Fonctions",
+  0: "All",
+  1: "Data Structures",
+  2: "Files",
+  3: "Functions",
   4: "Variables",
-  5: "Énumérations",
-  6: "Valeurs énumérées"
+  5: "Enumerations",
+  6: "Enumerator"
 };
 
