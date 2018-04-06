@@ -38,7 +38,7 @@
  * \param plateau [taille_plateau][taille_plateau] Matrice contenant le plateau de jeu
  * \param piece Pointeur de type t_liste contenant les pieces
  *
-
+ */
 
 /* Affiche tout les numero des pieces restantes en utilisant */
 void afficher_piece_dispo(int nb_piece, t_liste* liste){
@@ -86,7 +86,7 @@ void calcule_score(int nbj_max,int* score,int joueur, t_liste* liste){
 
 /* Fonction de jeux */
 int jeux(int nbj, int nbj_max, int nb_tour_joueur, int* score, int* joueur_en_jeux, int taille_plateau, t_case (*plateau)[taille_plateau],t_liste* liste_piece, int partie){
-    int nb_joueur_en_jeux = 0, nb_piece, nb_dispo = 0, choix, menu, statut;
+    int nb_joueur_en_jeux = 0, nb_piece = 0, nb_dispo = 0, choix, menu, statut;
     int i,j,l,x,y,cpt = nbj_max;
     int mon_num;
     int socket_client [4];
@@ -110,7 +110,7 @@ int jeux(int nbj, int nbj_max, int nb_tour_joueur, int* score, int* joueur_en_je
     }
 	
      if (partie == 1) {
-        init();
+       
 
 	char message_tt_present [] = "Tous les joueurs sont présents !";
         
@@ -125,7 +125,7 @@ int jeux(int nbj, int nbj_max, int nb_tour_joueur, int* score, int* joueur_en_je
     }
 
     if (partie == 2) {
-        init();
+        
 
 	char message_serveur [250];
         

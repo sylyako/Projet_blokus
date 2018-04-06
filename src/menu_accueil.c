@@ -2,7 +2,7 @@
 #include "Partie.h"
 
 /**
- * \file liste.c
+ * \file menu_accueil.c
  * \brief Ensemble de fonctions servants à l'utilisation des listes.
  * \author Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris
  * \version 1

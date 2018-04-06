@@ -1,6 +1,51 @@
 #include "IA.h"
 #include "Partie.h"
 
+
+/**
+ * \file IA.c
+ * \brief Regroupes les fonctions qui permet l'utilisation de l'ia.
+ *
+ *
+ * \fn int calcul_1_score_placement(int taille_plateau, t_case (*plateau)[taille_plateau], int joueur)
+ * \brief fonction qui calcule l'intérêt qu'a une pièce à être placée à cette position, en fonction du nombre de possibilité quelle nous aura créée.
+ * \param taille_plateau La taille du plateau
+ * \param plateau Le plateau sur lequel on fait le calcule
+ * \param joueur Sur quel joueur est effectuer la recherche
+ *
+ * \fn calcul_2_score_placement(int taille_piece, t_coordonnee* coord, int taille_plateau,int nb_tour_joueur)
+ * \brief Seconde fonction qui calcule l'intérêt qu'a une pièce à être placée à cette position, en fonction de la taille de la pièce et de sa position.
+ * \param taille_piece La taille du la piece posée
+ * \param coord A quelle coordonner se trouve la pièce
+ * \param taille_plateau La taille du plateau
+ * \param nb_tour_joueur Combien de tous de joueur se sont écoulés
+ * 
+ * \fn simuler_tour(int nbj_max, int* joueur_en_jeux, int taille_plateau, t_case (*plateau)[taille_plateau], t_liste* liste_piece, int cpt, int joueur, int nb_tour_joueur)
+ * \brief Simule les tours des autres joueurs
+ * \param nbj_max Nombre de joueur a simuler
+ * \param joueur_en_jeux Tableau qui permet de savoir si un joueur a encore la possibilité de jouer
+ * \param taille_plateau La taille du plateau
+ * \param plateau Le plateau sur lequel on fait le calcule
+ * \param liste_piece Contiens la liste des pièces des joueurs
+ * \param cpt Correspond la profondeur actuelle dans l'arbre
+ * \param joueur Sur quel joueur est effectué la recherche
+ * \param nb_tour_joueur Combien de tous de joueur se sont écoulés
+ * 
+ * 
+ * \fn calcule_ia(int nbj_max, int* joueur_en_jeux, int taille_plateau, t_case (*plateau)[taille_plateau], t_liste* liste_piece, int cpt, int joueur, int nb_tour_joueur)
+ * \brief Simule le tour d'un joueur et détermine quelle pièce est la plus intéressante à jouer
+ * \param nbj_max Nombre de joueur totale
+ * \param joueur_en_jeux Tableau qui permet de savoir si un joueur a encore la possibilité de jouer
+ * \param taille_plateau La taille du plateau
+ * \param plateau Le plateau sur lequel on fait le calcule
+ * \param liste_piece Contiens la liste des pièces des joueurs
+ * \param cpt Correspond la profondeur actuelle dans l'arbre
+ * \param joueur Sur quel joueur est effectué la recherche
+ * \param nb_tour_joueur Combien de tous de joueur se sont écoulés
+ * \retun ret qui contient le numéro de la pièce à placer, le nombre de rotation qu'il faut lui faire, ces coordonner et la valeur d'intérêt affecter à cette pièce.
+ */
+
+
 /* Calcule le score de placement quand on arrive en bas de l'arbre */
 int calcul_1_score_placement(int taille_plateau, t_case (*plateau)[taille_plateau], int joueur){
     int i,j;

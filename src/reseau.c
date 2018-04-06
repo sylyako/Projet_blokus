@@ -91,7 +91,7 @@ void ajout_clients(int * socket_serveur,int socket_client [], int nbj_max) {
 
 /*Connexion à un serveur via une IP à entrer et un port fixe*/
 int connexion_serveur ( int *socket_client, struct sockaddr_in *server_address) {
-	int i, statut;
+	int  statut;
 	char  adresse_serveur [15];
 
 	server_address->sin_family = AF_INET;
