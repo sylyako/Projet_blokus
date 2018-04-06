@@ -1,0 +1,82 @@
+\hypertarget{menu__accueil_8c}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/menu\+\_\+accueil.c}
+\label{menu__accueil_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/menu\+\_\+accueil.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/menu\+\_\+accueil.\+c}}
+
+
+Ensemble de fonctions servants à l\textquotesingle{}utilisation des listes.  
+
+
+{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Partie.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de menu\+\_\+accueil.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu__accueil_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{menu__accueil_8c_a70d8eb3c11959e70870f596ead7c1323}{affichage\+\_\+regle} (void)\hypertarget{menu__accueil_8c_a70d8eb3c11959e70870f596ead7c1323}{}\label{menu__accueil_8c_a70d8eb3c11959e70870f596ead7c1323}
+
+\begin{DoxyCompactList}\small\item\em Affiche les regles du jeu. \end{DoxyCompactList}\item 
+void \hyperlink{menu__accueil_8c_adb1328b8217c5b9fac7b08bd30deb251}{nb\+\_\+ia} (int $\ast$nbj, int nbj\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Nous donne le nombre de joueur controler par l\textquotesingle{}ordinateur. \end{DoxyCompactList}\item 
+int \hyperlink{menu__accueil_8c_ab10a01dd0e9916eb458ca69959543b9c}{commencer\+\_\+partie} (int partie)
+\begin{DoxyCompactList}\small\item\em permet de lance une partie en mode local ou réseau \end{DoxyCompactList}\item 
+int \hyperlink{menu__accueil_8c_a525a53d39ad12ccdab445ee27ce485c2}{type\+\_\+joueur} (void)\hypertarget{menu__accueil_8c_a525a53d39ad12ccdab445ee27ce485c2}{}\label{menu__accueil_8c_a525a53d39ad12ccdab445ee27ce485c2}
+
+\begin{DoxyCompactList}\small\item\em Pour le jeu en reseau, cella nous permet de savoir si l\textquotesingle{}on est un client ou le serveur. \end{DoxyCompactList}\item 
+int {\bfseries main} ()\hypertarget{menu__accueil_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{menu__accueil_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Ensemble de fonctions servants à l\textquotesingle{}utilisation des listes. 
+
+\begin{DoxyAuthor}{Auteur}
+Friant Marilou Tourpe Florian Semamra Kevin Amillard Joris 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Documentation des fonctions}
+\index{menu\+\_\+accueil.\+c@{menu\+\_\+accueil.\+c}!commencer\+\_\+partie@{commencer\+\_\+partie}}
+\index{commencer\+\_\+partie@{commencer\+\_\+partie}!menu\+\_\+accueil.\+c@{menu\+\_\+accueil.\+c}}
+\subsubsection[{\texorpdfstring{commencer\+\_\+partie(int partie)}{commencer_partie(int partie)}}]{\setlength{\rightskip}{0pt plus 5cm}int commencer\+\_\+partie (
+\begin{DoxyParamCaption}
+\item[{int}]{partie}
+\end{DoxyParamCaption}
+)}\hypertarget{menu__accueil_8c_ab10a01dd0e9916eb458ca69959543b9c}{}\label{menu__accueil_8c_ab10a01dd0e9916eb458ca69959543b9c}
+
+
+permet de lance une partie en mode local ou réseau 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em partie} & détermine si la partie est en réseau ou en local \\
+\hline
+\end{DoxyParams}
+\index{menu\+\_\+accueil.\+c@{menu\+\_\+accueil.\+c}!nb\+\_\+ia@{nb\+\_\+ia}}
+\index{nb\+\_\+ia@{nb\+\_\+ia}!menu\+\_\+accueil.\+c@{menu\+\_\+accueil.\+c}}
+\subsubsection[{\texorpdfstring{nb\+\_\+ia(int $\ast$nbj, int nbj\+\_\+max)}{nb_ia(int *nbj, int nbj_max)}}]{\setlength{\rightskip}{0pt plus 5cm}void nb\+\_\+ia (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{nbj, }
+\item[{int}]{nbj\+\_\+max}
+\end{DoxyParamCaption}
+)}\hypertarget{menu__accueil_8c_adb1328b8217c5b9fac7b08bd30deb251}{}\label{menu__accueil_8c_adb1328b8217c5b9fac7b08bd30deb251}
+
+
+Nous donne le nombre de joueur controler par l\textquotesingle{}ordinateur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nbj} & Nombre de joueur controler par l\textquotesingle{}ordinateur \\
+\hline
+{\em nbj\+\_\+max} & Nombre de joueur total \\
+\hline
+\end{DoxyParams}

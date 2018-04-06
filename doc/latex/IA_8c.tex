@@ -1,0 +1,156 @@
+\hypertarget{IA_8c}{}\section{Référence du fichier /info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/\+IA.c}
+\label{IA_8c}\index{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/\+I\+A.\+c@{/info/etu/l2info/l2info031/\+Projet\+\_\+blokus-\/\+Version\+\_\+\+Terminale/src/\+I\+A.\+c}}
+
+
+Regroupes les fonctions qui permet l\textquotesingle{}utilisation de l\textquotesingle{}ia.  
+
+
+{\ttfamily \#include \char`\"{}I\+A.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Partie.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de I\+A.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{IA_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{IA_8c_a1ca52e208b3abaf80d2489d1485fdd1f}{calcul\+\_\+1\+\_\+score\+\_\+placement} (int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, int joueur)
+\begin{DoxyCompactList}\small\item\em fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction du nombre de possibilité quelle nous aura créée. \end{DoxyCompactList}\item 
+int \hyperlink{IA_8c_a722f456d97ecf0103fddc1ac9f472f57}{calcul\+\_\+2\+\_\+score\+\_\+placement} (int taille\+\_\+piece, \hyperlink{structt__coordonnee}{t\+\_\+coordonnee} $\ast$coord, int taille\+\_\+plateau, int nb\+\_\+tour\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Seconde fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction de la taille de la pièce et de sa position. \end{DoxyCompactList}\item 
+void \hyperlink{IA_8c_affb51da845ee4ef29a9814ab2223cdc8}{simuler\+\_\+tour} (int nbj\+\_\+max, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece, int cpt, int joueur, int nb\+\_\+tour\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Simule les tours des autres joueurs. \end{DoxyCompactList}\item 
+\hyperlink{structt__retour}{t\+\_\+retour} \hyperlink{IA_8c_ac1021cb0ca1061023506f23a3bf831d1}{calcule\+\_\+ia} (int nbj\+\_\+max, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, \hyperlink{structt__case}{t\+\_\+case}($\ast$plateau)\mbox{[}taille\+\_\+plateau\mbox{]}, \hyperlink{structt__liste}{t\+\_\+liste} $\ast$liste\+\_\+piece, int cpt, int joueur, int nb\+\_\+tour\+\_\+joueur)
+\begin{DoxyCompactList}\small\item\em Simule le tour d\textquotesingle{}un joueur et détermine quelle pièce est la plus intéressante à jouer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Regroupes les fonctions qui permet l\textquotesingle{}utilisation de l\textquotesingle{}ia. 
+
+
+
+\subsection{Documentation des fonctions}
+\index{I\+A.\+c@{I\+A.\+c}!calcul\+\_\+1\+\_\+score\+\_\+placement@{calcul\+\_\+1\+\_\+score\+\_\+placement}}
+\index{calcul\+\_\+1\+\_\+score\+\_\+placement@{calcul\+\_\+1\+\_\+score\+\_\+placement}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+1\+\_\+score\+\_\+placement(int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], int joueur)}{calcul_1_score_placement(int taille_plateau, t_case(*plateau)[taille_plateau], int joueur)}}]{\setlength{\rightskip}{0pt plus 5cm}int calcul\+\_\+1\+\_\+score\+\_\+placement (
+\begin{DoxyParamCaption}
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{int}]{joueur}
+\end{DoxyParamCaption}
+)}\hypertarget{IA_8c_a1ca52e208b3abaf80d2489d1485fdd1f}{}\label{IA_8c_a1ca52e208b3abaf80d2489d1485fdd1f}
+
+
+fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction du nombre de possibilité quelle nous aura créée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em plateau} & Le plateau sur lequel on fait le calcule \\
+\hline
+{\em joueur} & Sur quel joueur est effectuer la recherche \\
+\hline
+\end{DoxyParams}
+\index{I\+A.\+c@{I\+A.\+c}!calcul\+\_\+2\+\_\+score\+\_\+placement@{calcul\+\_\+2\+\_\+score\+\_\+placement}}
+\index{calcul\+\_\+2\+\_\+score\+\_\+placement@{calcul\+\_\+2\+\_\+score\+\_\+placement}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection[{\texorpdfstring{calcul\+\_\+2\+\_\+score\+\_\+placement(int taille\+\_\+piece, t\+\_\+coordonnee $\ast$coord, int taille\+\_\+plateau, int nb\+\_\+tour\+\_\+joueur)}{calcul_2_score_placement(int taille_piece, t_coordonnee *coord, int taille_plateau, int nb_tour_joueur)}}]{\setlength{\rightskip}{0pt plus 5cm}calcul\+\_\+2\+\_\+score\+\_\+placement (
+\begin{DoxyParamCaption}
+\item[{int}]{taille\+\_\+piece, }
+\item[{{\bf t\+\_\+coordonnee} $\ast$}]{coord, }
+\item[{int}]{taille\+\_\+plateau, }
+\item[{int}]{nb\+\_\+tour\+\_\+joueur}
+\end{DoxyParamCaption}
+)}\hypertarget{IA_8c_a722f456d97ecf0103fddc1ac9f472f57}{}\label{IA_8c_a722f456d97ecf0103fddc1ac9f472f57}
+
+
+Seconde fonction qui calcule l\textquotesingle{}intérêt qu\textquotesingle{}a une pièce à être placée à cette position, en fonction de la taille de la pièce et de sa position. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+\_\+piece} & La taille du la piece posée \\
+\hline
+{\em coord} & A quelle coordonner se trouve la pièce \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Combien de tous de joueur se sont écoulés \\
+\hline
+\end{DoxyParams}
+\index{I\+A.\+c@{I\+A.\+c}!calcule\+\_\+ia@{calcule\+\_\+ia}}
+\index{calcule\+\_\+ia@{calcule\+\_\+ia}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection[{\texorpdfstring{calcule\+\_\+ia(int nbj\+\_\+max, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+liste $\ast$liste\+\_\+piece, int cpt, int joueur, int nb\+\_\+tour\+\_\+joueur)}{calcule_ia(int nbj_max, int *joueur_en_jeux, int taille_plateau, t_case(*plateau)[taille_plateau], t_liste *liste_piece, int cpt, int joueur, int nb_tour_joueur)}}]{\setlength{\rightskip}{0pt plus 5cm}calcule\+\_\+ia (
+\begin{DoxyParamCaption}
+\item[{int}]{nbj\+\_\+max, }
+\item[{int $\ast$}]{joueur\+\_\+en\+\_\+jeux, }
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece, }
+\item[{int}]{cpt, }
+\item[{int}]{joueur, }
+\item[{int}]{nb\+\_\+tour\+\_\+joueur}
+\end{DoxyParamCaption}
+)}\hypertarget{IA_8c_ac1021cb0ca1061023506f23a3bf831d1}{}\label{IA_8c_ac1021cb0ca1061023506f23a3bf831d1}
+
+
+Simule le tour d\textquotesingle{}un joueur et détermine quelle pièce est la plus intéressante à jouer. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nbj\+\_\+max} & Nombre de joueur totale \\
+\hline
+{\em joueur\+\_\+en\+\_\+jeux} & Tableau qui permet de savoir si un joueur a encore la possibilité de jouer \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em plateau} & Le plateau sur lequel on fait le calcule \\
+\hline
+{\em liste\+\_\+piece} & Contiens la liste des pièces des joueurs \\
+\hline
+{\em cpt} & Correspond la profondeur actuelle dans l\textquotesingle{}arbre \\
+\hline
+{\em joueur} & Sur quel joueur est effectué la recherche \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Combien de tous de joueur se sont écoulés  ret qui contient le numéro de la pièce à placer, le nombre de rotation qu\textquotesingle{}il faut lui faire, ces coordonner et la valeur d\textquotesingle{}intérêt affecter à cette pièce. \\
+\hline
+\end{DoxyParams}
+\index{I\+A.\+c@{I\+A.\+c}!simuler\+\_\+tour@{simuler\+\_\+tour}}
+\index{simuler\+\_\+tour@{simuler\+\_\+tour}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection[{\texorpdfstring{simuler\+\_\+tour(int nbj\+\_\+max, int $\ast$joueur\+\_\+en\+\_\+jeux, int taille\+\_\+plateau, t\+\_\+case($\ast$plateau)[taille\+\_\+plateau], t\+\_\+liste $\ast$liste\+\_\+piece, int cpt, int joueur, int nb\+\_\+tour\+\_\+joueur)}{simuler_tour(int nbj_max, int *joueur_en_jeux, int taille_plateau, t_case(*plateau)[taille_plateau], t_liste *liste_piece, int cpt, int joueur, int nb_tour_joueur)}}]{\setlength{\rightskip}{0pt plus 5cm}simuler\+\_\+tour (
+\begin{DoxyParamCaption}
+\item[{int}]{nbj\+\_\+max, }
+\item[{int $\ast$}]{joueur\+\_\+en\+\_\+jeux, }
+\item[{int}]{taille\+\_\+plateau, }
+\item[{{\bf t\+\_\+case}($\ast$)}]{plateau\mbox{[}taille\+\_\+plateau\mbox{]}, }
+\item[{{\bf t\+\_\+liste} $\ast$}]{liste\+\_\+piece, }
+\item[{int}]{cpt, }
+\item[{int}]{joueur, }
+\item[{int}]{nb\+\_\+tour\+\_\+joueur}
+\end{DoxyParamCaption}
+)}\hypertarget{IA_8c_affb51da845ee4ef29a9814ab2223cdc8}{}\label{IA_8c_affb51da845ee4ef29a9814ab2223cdc8}
+
+
+Simule les tours des autres joueurs. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nbj\+\_\+max} & Nombre de joueur a simuler \\
+\hline
+{\em joueur\+\_\+en\+\_\+jeux} & Tableau qui permet de savoir si un joueur a encore la possibilité de jouer \\
+\hline
+{\em taille\+\_\+plateau} & La taille du plateau \\
+\hline
+{\em plateau} & Le plateau sur lequel on fait le calcule \\
+\hline
+{\em liste\+\_\+piece} & Contiens la liste des pièces des joueurs \\
+\hline
+{\em cpt} & Correspond la profondeur actuelle dans l\textquotesingle{}arbre \\
+\hline
+{\em joueur} & Sur quel joueur est effectué la recherche \\
+\hline
+{\em nb\+\_\+tour\+\_\+joueur} & Combien de tous de joueur se sont écoulés \\
+\hline
+\end{DoxyParams}
