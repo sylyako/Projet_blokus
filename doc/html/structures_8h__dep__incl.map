@@ -1,21 +1,24 @@
-<map id="src/structures.h" name="src/structures.h">
-<area shape="rect" id="node2" href="$afficher_8c.html" title="Ensemble de fonctions d&#39;affichage. " alt="" coords="5,80,104,107"/>
-<area shape="rect" id="node3" href="$afficher_8h_source.html" title="src/afficher.h" alt="" coords="557,155,656,181"/>
-<area shape="rect" id="node6" href="$ajouter__piece_8h_source.html" title="src/ajouter_piece.h" alt="" coords="37,229,169,256"/>
-<area shape="rect" id="node8" href="$matrice_8h_source.html" title="src/matrice.h" alt="" coords="295,80,393,107"/>
-<area shape="rect" id="node10" href="$IA_8h_source.html" title="src/IA.h" alt="" coords="537,229,605,256"/>
-<area shape="rect" id="node11" href="$init__plateau_8h_source.html" title="src/init_plateau.h" alt="" coords="731,229,853,256"/>
-<area shape="rect" id="node14" href="$menu__pause_8h_source.html" title="src/menu_pause.h" alt="" coords="877,229,1006,256"/>
-<area shape="rect" id="node16" href="$possibilite_8h_source.html" title="src/possibilite.h" alt="" coords="193,229,306,256"/>
-<area shape="rect" id="node18" href="$reseau_8h_source.html" title="src/reseau.h" alt="" coords="646,80,741,107"/>
-<area shape="rect" id="node20" href="$unicode_8c.html" title="Fonctions d&#39;affichage des cases du plateau avec des caractères unicode. " alt="" coords="953,80,1053,107"/>
-<area shape="rect" id="node4" href="$Partie_8h_source.html" title="src/Partie.h" alt="" coords="526,304,615,331"/>
-<area shape="rect" id="node5" href="$Partie_8c.html" title="Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal. " alt="" coords="526,379,615,405"/>
-<area shape="rect" id="node7" href="$ajouter__piece_8c.html" title="Fonctions qui vérifient le placement d&#39;une pièce et la placent. " alt="" coords="37,304,169,331"/>
-<area shape="rect" id="node9" href="$liste_8h_source.html" title="src/liste.h" alt="" coords="393,155,471,181"/>
-<area shape="rect" id="node13" href="$liste_8c.html" title="Ensemble de fonctions servants � l&#39;utilisation des listes. " alt="" coords="382,229,461,256"/>
-<area shape="rect" id="node12" href="$init__plateau_8c.html" title="Module de fonctions pour le plateau. " alt="" coords="731,304,853,331"/>
-<area shape="rect" id="node15" href="$menu__pause_8c.html" title="Fonctions de sauvegarde, de chargement et du menu de pause. " alt="" coords="877,304,1006,331"/>
-<area shape="rect" id="node17" href="$possibilite_8c.html" title="Ensemble de fonctions relatives aux possibilitees du positionnement d&#39;une ou de plusieurs piece avec ..." alt="" coords="193,304,306,331"/>
-<area shape="rect" id="node19" href="$reseau_8c.html" title="Module qui permet une connexion TCP entre plusieurs ordinateurs. " alt="" coords="731,155,826,181"/>
+<map id="/info/etu/l2info/l2info031/Projet_blokus&#45;Version_Terminale/src/structures.h" name="/info/etu/l2info/l2info031/Projet_blokus&#45;Version_Terminale/src/structures.h">
+<area shape="rect" id="node2" href="$afficher_8c.html" title="Ensemble de fonctions d&#39;affichage. " alt="" coords="240,109,457,165"/>
+<area shape="rect" id="node3" href="$afficher_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/afficher.h" alt="" coords="1608,317,1825,373"/>
+<area shape="rect" id="node6" href="$menu__accueil_8c.html" title="Ensemble de fonctions servants à l&#39;utilisation des listes. " alt="" coords="1681,525,1899,581"/>
+<area shape="rect" id="node9" href="$ajouter__piece_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/ajouter_piece.h" alt="" coords="488,317,705,373"/>
+<area shape="rect" id="node12" href="$matrice_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/matrice.h" alt="" coords="869,109,1087,165"/>
+<area shape="rect" id="node14" href="$init__plateau_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/init_plateau.h" alt="" coords="247,317,464,373"/>
+<area shape="rect" id="node16" href="$IA_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/IA.h" alt="" coords="5,317,223,373"/>
+<area shape="rect" id="node17" href="$menu__pause_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/menu_pause.h" alt="" coords="1367,317,1584,373"/>
+<area shape="rect" id="node18" href="$possibilite_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/possibilite.h" alt="" coords="1023,317,1240,373"/>
+<area shape="rect" id="node20" href="$matrice_8c.html" title="Module de fonctions pour la gestion de matrices. " alt="" coords="1029,213,1247,269"/>
+<area shape="rect" id="node21" href="$reseau_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/reseau.h" alt="" coords="1323,109,1540,165"/>
+<area shape="rect" id="node23" href="$unicode_8c.html" title="Fonctions d&#39;affichage des cases du plateau avec des caractères unicode. " alt="" coords="1901,109,2119,165"/>
+<area shape="rect" id="node4" href="$Partie_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/Partie.h" alt="" coords="1075,421,1292,477"/>
+<area shape="rect" id="node7" href="$menu__pause_8c.html" title="Fonctions de sauvegarde, de chargement et du menu de pause. " alt="" coords="1367,525,1584,581"/>
+<area shape="rect" id="node5" href="$IA_8c.html" title="Regroupes les fonctions qui permet l&#39;utilisation de l&#39;ia. " alt="" coords="395,525,612,581"/>
+<area shape="rect" id="node8" href="$Partie_8c.html" title="Ensemble de fonctions qui font tourner une partie de jeu. Fichier principal. " alt="" coords="1075,525,1292,581"/>
+<area shape="rect" id="node10" href="$ajouter__piece_8c.html" title="Fonctions qui vérifient le placement d&#39;une pièce et la placent. " alt="" coords="464,421,681,477"/>
+<area shape="rect" id="node11" href="$possibilite_8c.html" title="Ensemble de fonctions relatives aux possibilitees du positionnement d&#39;une ou de plusieurs piece avec ..." alt="" coords="705,421,923,477"/>
+<area shape="rect" id="node13" href="$liste_8h_source.html" title="/info/etu/l2info/l2info031\l/Projet_blokus&#45;Version_Terminale\l/src/liste.h" alt="" coords="685,213,903,269"/>
+<area shape="rect" id="node19" href="$liste_8c.html" title="Ensemble de fonctions servants � l&#39;utilisation des listes. " alt="" coords="729,317,947,373"/>
+<area shape="rect" id="node15" href="$init__plateau_8c.html" title="Module de fonctions pour le plateau. " alt="" coords="223,421,440,477"/>
+<area shape="rect" id="node22" href="$reseau_8c.html" title="Module qui permet une connexion TCP entre plusieurs ordinateurs. " alt="" coords="1323,213,1540,269"/>
 </map>
