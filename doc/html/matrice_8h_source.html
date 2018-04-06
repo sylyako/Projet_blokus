@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Blokus_terminal:  Fichier source de /info/etu/l2info/l2info031/Projet_blokus-Version_Terminale/src/matrice.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Blokus_terminal
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">matrice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MATRICE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MATRICE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="structures_8h.html">structures.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structt__matrice.html">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">int</span> mat[5][5];</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">int</span> taille;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">int</span> num;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}<a class="code" href="structt__matrice.html">t_matrice</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#a5ec9f6d5dc391044ada8f66f265a6e6c">init_matrice</a> (<a class="code" href="structt__matrice.html">t_matrice</a>* mat);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> afficher_matrice (<a class="code" href="structt__matrice.html">t_matrice</a> mat);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#a12313fda94f38f8cf54590e66b4d453f">copie_matrice</a>(<a class="code" href="structt__matrice.html">t_matrice</a>* source, <a class="code" href="structt__matrice.html">t_matrice</a>* copie);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#ac2c3a0b8f5e2a25aee5f5089a653ba87">insertion_matrice_piece</a>(<a class="code" href="structt__matrice.html">t_matrice</a>* matrice, <a class="code" href="structt__coordonnee.html">t_coordonnee</a> coord);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#ac6ea386d92d838c0b03299f4405c3d09">insertion_num_piece</a>(<a class="code" href="structt__matrice.html">t_matrice</a>* matrice, <span class="keywordtype">int</span> numero);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#ad64c8f3b30202e33a5f9f375f260fbde">insertion_taille_piece</a>(<a class="code" href="structt__matrice.html">t_matrice</a>* matrice, <span class="keywordtype">int</span> taille_piece);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#ad4f7a76d00eb6b5a58a7d47ee1f6a502">miroir_horizontal</a> (<span class="keywordtype">int</span> mat [5][5]);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#a14517bc48f5c9d824996cd1adf0a5e3c">miroir_vertical</a> (<span class="keywordtype">int</span> mat [5][5]);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#ae9e09edbb1e5aae833f3bf1e44e286f9">tourner_piece</a> (<span class="keywordtype">int</span> mat [5][5]);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="matrice_8c.html#a7c0c768c540b3a105a15d1ab1b69eb25">rotation</a> (<span class="keywordtype">int</span> mat [5][5], <span class="keywordtype">int</span> sens);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="matrice_8c_html_a5ec9f6d5dc391044ada8f66f265a6e6c"><div class="ttname"><a href="matrice_8c.html#a5ec9f6d5dc391044ada8f66f265a6e6c">init_matrice</a></div><div class="ttdeci">void init_matrice(t_matrice *piece)</div><div class="ttdoc">Initialise une matrice à 0. </div><div class="ttdef"><b>Definition:</b> matrice.c:63</div></div>
+<div class="ttc" id="matrice_8c_html_ac6ea386d92d838c0b03299f4405c3d09"><div class="ttname"><a href="matrice_8c.html#ac6ea386d92d838c0b03299f4405c3d09">insertion_num_piece</a></div><div class="ttdeci">void insertion_num_piece(t_matrice *piece, int numero)</div><div class="ttdoc">Insère dans la matrice le numéro de la pièce de jeu. </div><div class="ttdef"><b>Definition:</b> matrice.c:113</div></div>
+<div class="ttc" id="matrice_8c_html_a12313fda94f38f8cf54590e66b4d453f"><div class="ttname"><a href="matrice_8c.html#a12313fda94f38f8cf54590e66b4d453f">copie_matrice</a></div><div class="ttdeci">void copie_matrice(t_matrice *source, t_matrice *copie)</div><div class="ttdoc">Copie une matrice dans une autre. </div><div class="ttdef"><b>Definition:</b> matrice.c:94</div></div>
+<div class="ttc" id="structures_8h_html"><div class="ttname"><a href="structures_8h.html">structures.h</a></div><div class="ttdoc">Contient les structures communes du programme. </div></div>
+<div class="ttc" id="matrice_8c_html_a14517bc48f5c9d824996cd1adf0a5e3c"><div class="ttname"><a href="matrice_8c.html#a14517bc48f5c9d824996cd1adf0a5e3c">miroir_vertical</a></div><div class="ttdeci">void miroir_vertical(int(*piece)[TAILLE_MATRICE_PIECE])</div><div class="ttdoc">Fait le miroir vertical de la pièce. </div><div class="ttdef"><b>Definition:</b> matrice.c:136</div></div>
+<div class="ttc" id="matrice_8c_html_a7c0c768c540b3a105a15d1ab1b69eb25"><div class="ttname"><a href="matrice_8c.html#a7c0c768c540b3a105a15d1ab1b69eb25">rotation</a></div><div class="ttdeci">void rotation(int(*piece)[TAILLE_MATRICE_PIECE], int sens)</div><div class="ttdoc">Fait une rotation de la pièce selon un sens passé en paramètre. </div><div class="ttdef"><b>Definition:</b> matrice.c:168</div></div>
+<div class="ttc" id="matrice_8c_html_ac2c3a0b8f5e2a25aee5f5089a653ba87"><div class="ttname"><a href="matrice_8c.html#ac2c3a0b8f5e2a25aee5f5089a653ba87">insertion_matrice_piece</a></div><div class="ttdeci">void insertion_matrice_piece(t_matrice *piece, t_coordonnee coord)</div><div class="ttdoc">Insère dans la matrice un morceau d&amp;#39;une pièce de jeu. </div><div class="ttdef"><b>Definition:</b> matrice.c:108</div></div>
+<div class="ttc" id="matrice_8c_html_ad4f7a76d00eb6b5a58a7d47ee1f6a502"><div class="ttname"><a href="matrice_8c.html#ad4f7a76d00eb6b5a58a7d47ee1f6a502">miroir_horizontal</a></div><div class="ttdeci">void miroir_horizontal(int(*piece)[TAILLE_MATRICE_PIECE])</div><div class="ttdoc">Fait le miroir horizontal de la pièce. </div><div class="ttdef"><b>Definition:</b> matrice.c:123</div></div>
+<div class="ttc" id="matrice_8c_html_ae9e09edbb1e5aae833f3bf1e44e286f9"><div class="ttname"><a href="matrice_8c.html#ae9e09edbb1e5aae833f3bf1e44e286f9">tourner_piece</a></div><div class="ttdeci">void tourner_piece(int(*piece)[TAILLE_MATRICE_PIECE])</div><div class="ttdoc">Fait une rotation de la pièce à 90° </div><div class="ttdef"><b>Definition:</b> matrice.c:149</div></div>
+<div class="ttc" id="structt__coordonnee_html"><div class="ttname"><a href="structt__coordonnee.html">t_coordonnee</a></div><div class="ttdoc">Contient des coordonnées pour une matrice à deux dimensions. </div><div class="ttdef"><b>Definition:</b> structures.h:53</div></div>
+<div class="ttc" id="matrice_8c_html_ad64c8f3b30202e33a5f9f375f260fbde"><div class="ttname"><a href="matrice_8c.html#ad64c8f3b30202e33a5f9f375f260fbde">insertion_taille_piece</a></div><div class="ttdeci">void insertion_taille_piece(t_matrice *piece, int taille_piece)</div><div class="ttdoc">Fonction qui insère la taille de la pièce dans la structure. </div><div class="ttdef"><b>Definition:</b> matrice.c:118</div></div>
+<div class="ttc" id="structt__matrice_html"><div class="ttname"><a href="structt__matrice.html">t_matrice</a></div><div class="ttdef"><b>Definition:</b> matrice.h:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

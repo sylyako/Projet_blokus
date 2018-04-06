@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Blokus_terminal:  Fichier source de /info/etu/l2info/l2info031/Projet_blokus-Version_Terminale/src/init_plateau.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Blokus_terminal
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">init_plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INITPLATEAU</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INITPLATEAU</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="structures_8h.html">structures.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;liste.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> <a class="code" href="init__plateau_8c.html#aa39ae2af4a2141444eee0af667f72745">init_plateau</a>(<span class="keywordtype">int</span> taille_plateau, <a class="code" href="structt__case.html">t_case</a> (*plateau)[taille_plateau], <span class="keywordtype">int</span> nbj_max, <a class="code" href="structt__liste.html">t_liste</a>* liste_piece, <span class="keywordtype">int</span>* player, <span class="keywordtype">int</span>* score);</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">int</span> <a class="code" href="init__plateau_8c.html#a9b93825f8a4a6dd83a6a11aebc045aee">coordonner_invalide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> taille_plateau);</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="init__plateau_8c.html#adbd25dca11f18d56a22394f385a334cc">init_plateau_fictif</a>(<span class="keywordtype">int</span> taille_plateau, <a class="code" href="structt__case.html">t_case</a> (*plateau_original)[taille_plateau], <a class="code" href="structt__case.html">t_case</a> (*plateau_copie)[taille_plateau],<span class="keywordtype">int</span> joueur, <a class="code" href="structt__coordonnee.html">t_coordonnee</a>* coord);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> <a class="code" href="init__plateau_8c.html#ac05e76e09561c2c6fdf47c4bab1f7c3a">copie_plateau</a>(<span class="keywordtype">int</span> taille_plateau, <a class="code" href="structt__case.html">t_case</a> (*plateau_original)[taille_plateau] , <a class="code" href="structt__case.html">t_case</a> (*plateau_copie)[taille_plateau]);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structures_8h_html"><div class="ttname"><a href="structures_8h.html">structures.h</a></div><div class="ttdoc">Contient les structures communes du programme. </div></div>
+<div class="ttc" id="structt__liste_html"><div class="ttname"><a href="structt__liste.html">t_liste</a></div><div class="ttdef"><b>Definition:</b> liste.h:6</div></div>
+<div class="ttc" id="init__plateau_8c_html_ac05e76e09561c2c6fdf47c4bab1f7c3a"><div class="ttname"><a href="init__plateau_8c.html#ac05e76e09561c2c6fdf47c4bab1f7c3a">copie_plateau</a></div><div class="ttdeci">void copie_plateau(int taille_plateau, t_case(*plateau_original)[taille_plateau], t_case(*plateau_copie)[taille_plateau])</div><div class="ttdoc">Copie le tableau dans un autrre. </div><div class="ttdef"><b>Definition:</b> init_plateau.c:132</div></div>
+<div class="ttc" id="init__plateau_8c_html_a9b93825f8a4a6dd83a6a11aebc045aee"><div class="ttname"><a href="init__plateau_8c.html#a9b93825f8a4a6dd83a6a11aebc045aee">coordonner_invalide</a></div><div class="ttdeci">int coordonner_invalide(int x, int y, int taille_plateau)</div><div class="ttdoc">Vérifie si les coordonnées sont dans le plateau. </div><div class="ttdef"><b>Definition:</b> init_plateau.c:87</div></div>
+<div class="ttc" id="structt__case_html"><div class="ttname"><a href="structt__case.html">t_case</a></div><div class="ttdoc">Définition d&amp;#39;une case pour un plateau de Blokus. </div><div class="ttdef"><b>Definition:</b> structures.h:39</div></div>
+<div class="ttc" id="init__plateau_8c_html_aa39ae2af4a2141444eee0af667f72745"><div class="ttname"><a href="init__plateau_8c.html#aa39ae2af4a2141444eee0af667f72745">init_plateau</a></div><div class="ttdeci">void init_plateau(int taille_plateau, t_case(*plateau)[taille_plateau], int nbj_max, t_liste *liste_piece, int *joueur_en_jeux, int *score)</div><div class="ttdoc">Initialise le plateau selon les règles du Blokus. </div><div class="ttdef"><b>Definition:</b> init_plateau.c:52</div></div>
+<div class="ttc" id="init__plateau_8c_html_adbd25dca11f18d56a22394f385a334cc"><div class="ttname"><a href="init__plateau_8c.html#adbd25dca11f18d56a22394f385a334cc">init_plateau_fictif</a></div><div class="ttdeci">void init_plateau_fictif(int taille_plateau, t_case(*plateau_original)[taille_plateau], t_case(*plateau_copie)[taille_plateau], int joueur, t_coordonnee *coord)</div><div class="ttdoc">Créé un plateau avec une seule possibilité de placement. </div><div class="ttdef"><b>Definition:</b> init_plateau.c:107</div></div>
+<div class="ttc" id="structt__coordonnee_html"><div class="ttname"><a href="structt__coordonnee.html">t_coordonnee</a></div><div class="ttdoc">Contient des coordonnées pour une matrice à deux dimensions. </div><div class="ttdef"><b>Definition:</b> structures.h:53</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

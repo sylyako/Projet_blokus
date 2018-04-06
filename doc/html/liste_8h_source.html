@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Blokus_terminal:  Fichier source de /info/etu/l2info/l2info031/Projet_blokus-Version_Terminale/src/liste.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Blokus_terminal
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">liste.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LISTE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LISTE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;matrice.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structt__liste.html">    6</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span>{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">int</span> queue;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">int</span> ec;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="structt__matrice.html">t_matrice</a> elem[TAILLE_MAX];</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}<a class="code" href="structt__liste.html">t_liste</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a5cc83f8eeeb903a8b631ef84f9efffcf">copie_liste</a>(<span class="keywordtype">int</span> nbj_max, <a class="code" href="structt__liste.html">t_liste</a> source[nbj_max], <a class="code" href="structt__liste.html">t_liste</a> copie[nbj_max]);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a7dda997062b284703a6637cb25a8871a">init_liste</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">int</span> <a class="code" href="liste_8c.html#aaf6d7622b271b1fba9c0eb73a5d6db44">liste_vide</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="liste_8c.html#a1ec9a3419a08cb571c722eb8eeb45224">hors_liste</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a6f3dc42709b31e9eb527e3018568e766">en_tete</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a0070ce853ee19eac4f1226988a494e01">en_queue</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a8e2e7a55e996e294e79a6e607cad00dc">precedent</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#ac76a08dfdd4e447188d85378a1c39aba">suivant</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a24e91e6bd38de3d8e043dd079256053b">val_elem</a> (<a class="code" href="structt__liste.html">t_liste</a>* liste, <a class="code" href="structt__matrice.html">t_matrice</a>* copie);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a6173fcd0d246aa6ab73cfd9395d1e179">oter_elt</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a3fcc34a240ac672285b9588bb8c6c1ec">placer_elem</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste,<a class="code" href="structt__matrice.html">t_matrice</a>* piece);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a08a7b02c46805f275729f5639551f144">ajouter_piece</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste,<a class="code" href="structt__matrice.html">t_matrice</a>* piece);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="liste_8c.html#a13b2afdaa5eec613cf6d42eb49eae08a">remplir_listes</a>(<a class="code" href="structt__liste.html">t_liste</a>* liste);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="liste_8c_html_aaf6d7622b271b1fba9c0eb73a5d6db44"><div class="ttname"><a href="liste_8c.html#aaf6d7622b271b1fba9c0eb73a5d6db44">liste_vide</a></div><div class="ttdeci">int liste_vide(t_liste *liste)</div><div class="ttdoc">Indique si une liste est vide ou non. </div><div class="ttdef"><b>Definition:</b> liste.c:117</div></div>
+<div class="ttc" id="liste_8c_html_a7dda997062b284703a6637cb25a8871a"><div class="ttname"><a href="liste_8c.html#a7dda997062b284703a6637cb25a8871a">init_liste</a></div><div class="ttdeci">void init_liste(t_liste *liste)</div><div class="ttdoc">Initialise la liste. </div><div class="ttdef"><b>Definition:</b> liste.c:104</div></div>
+<div class="ttc" id="liste_8c_html_a3fcc34a240ac672285b9588bb8c6c1ec"><div class="ttname"><a href="liste_8c.html#a3fcc34a240ac672285b9588bb8c6c1ec">placer_elem</a></div><div class="ttdeci">void placer_elem(t_liste *liste, t_matrice *piece)</div><div class="ttdoc">Fonction qui place ou remplace une matrice dans la liste. </div><div class="ttdef"><b>Definition:</b> liste.c:200</div></div>
+<div class="ttc" id="liste_8c_html_a24e91e6bd38de3d8e043dd079256053b"><div class="ttname"><a href="liste_8c.html#a24e91e6bd38de3d8e043dd079256053b">val_elem</a></div><div class="ttdeci">void val_elem(t_liste *liste, t_matrice *copie)</div><div class="ttdoc">Fonction qui récupère la matrice de l&amp;#39;élément courant et la copie. </div><div class="ttdef"><b>Definition:</b> liste.c:171</div></div>
+<div class="ttc" id="structt__liste_html"><div class="ttname"><a href="structt__liste.html">t_liste</a></div><div class="ttdef"><b>Definition:</b> liste.h:6</div></div>
+<div class="ttc" id="liste_8c_html_ac76a08dfdd4e447188d85378a1c39aba"><div class="ttname"><a href="liste_8c.html#ac76a08dfdd4e447188d85378a1c39aba">suivant</a></div><div class="ttdeci">void suivant(t_liste *liste)</div><div class="ttdoc">Fonction qui place l&amp;#39;élément courant sur l&amp;#39;élément suivant. </div><div class="ttdef"><b>Definition:</b> liste.c:161</div></div>
+<div class="ttc" id="liste_8c_html_a6173fcd0d246aa6ab73cfd9395d1e179"><div class="ttname"><a href="liste_8c.html#a6173fcd0d246aa6ab73cfd9395d1e179">oter_elt</a></div><div class="ttdeci">void oter_elt(t_liste *liste)</div><div class="ttdoc">Fonction qui supprime l&amp;#39;élément courant. </div><div class="ttdef"><b>Definition:</b> liste.c:184</div></div>
+<div class="ttc" id="liste_8c_html_a5cc83f8eeeb903a8b631ef84f9efffcf"><div class="ttname"><a href="liste_8c.html#a5cc83f8eeeb903a8b631ef84f9efffcf">copie_liste</a></div><div class="ttdeci">void copie_liste(int nbj_max, t_liste source[nbj_max], t_liste copie[nbj_max])</div><div class="ttdoc">Fonction qui copie une liste source sur la liste copie. </div><div class="ttdef"><b>Definition:</b> liste.c:83</div></div>
+<div class="ttc" id="liste_8c_html_a13b2afdaa5eec613cf6d42eb49eae08a"><div class="ttname"><a href="liste_8c.html#a13b2afdaa5eec613cf6d42eb49eae08a">remplir_listes</a></div><div class="ttdeci">void remplir_listes(t_liste *liste)</div><div class="ttdoc">Fonction qui remplit une liste avec une banque de pièces contenue dans un fichier. ...</div><div class="ttdef"><b>Definition:</b> liste.c:256</div></div>
+<div class="ttc" id="liste_8c_html_a1ec9a3419a08cb571c722eb8eeb45224"><div class="ttname"><a href="liste_8c.html#a1ec9a3419a08cb571c722eb8eeb45224">hors_liste</a></div><div class="ttdeci">int hors_liste(t_liste *liste)</div><div class="ttdoc">Indique si l&amp;#39;élément courant de la liste se trouve bien dans la liste. </div><div class="ttdef"><b>Definition:</b> liste.c:127</div></div>
+<div class="ttc" id="liste_8c_html_a6f3dc42709b31e9eb527e3018568e766"><div class="ttname"><a href="liste_8c.html#a6f3dc42709b31e9eb527e3018568e766">en_tete</a></div><div class="ttdeci">void en_tete(t_liste *liste)</div><div class="ttdoc">Fonction qui place l&amp;#39;élément courant en tête de liste. </div><div class="ttdef"><b>Definition:</b> liste.c:137</div></div>
+<div class="ttc" id="liste_8c_html_a0070ce853ee19eac4f1226988a494e01"><div class="ttname"><a href="liste_8c.html#a0070ce853ee19eac4f1226988a494e01">en_queue</a></div><div class="ttdeci">void en_queue(t_liste *liste)</div><div class="ttdoc">Fonction qui place l&amp;#39;élément courant en queue de liste. </div><div class="ttdef"><b>Definition:</b> liste.c:145</div></div>
+<div class="ttc" id="structt__matrice_html"><div class="ttname"><a href="structt__matrice.html">t_matrice</a></div><div class="ttdef"><b>Definition:</b> matrice.h:5</div></div>
+<div class="ttc" id="liste_8c_html_a08a7b02c46805f275729f5639551f144"><div class="ttname"><a href="liste_8c.html#a08a7b02c46805f275729f5639551f144">ajouter_piece</a></div><div class="ttdeci">void ajouter_piece(t_liste *liste, t_matrice *piece)</div><div class="ttdoc">Fonction qui place une pièce au bon endroit de la liste. </div><div class="ttdef"><b>Definition:</b> liste.c:219</div></div>
+<div class="ttc" id="liste_8c_html_a8e2e7a55e996e294e79a6e607cad00dc"><div class="ttname"><a href="liste_8c.html#a8e2e7a55e996e294e79a6e607cad00dc">precedent</a></div><div class="ttdeci">void precedent(t_liste *liste)</div><div class="ttdoc">Fonction qui place l&amp;#39;élément courant sur l&amp;#39;élément précédent. </div><div class="ttdef"><b>Definition:</b> liste.c:153</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+GÃ©nÃ©rÃ© par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
