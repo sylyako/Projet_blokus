@@ -788,13 +788,13 @@ int page_regle(SDL_Window * fenetre, SDL_Renderer * surface, TTF_Font * police, 
     
     
     if(numero_page==1){
-        regle = IMG_Load("../regle_11.png");
+        regle = IMG_Load("../img/regle_11.png");
     }
     else if (numero_page==2){
-        regle = IMG_Load("../regle_2.png");
+        regle = IMG_Load("../img/regle_2.png");
     }
     else {
-        regle = IMG_Load("../regle_3.png");
+        regle = IMG_Load("../img/regle_3.png");
     }
     
     SDL_Texture* monImage = SDL_CreateTextureFromSurface(surface,regle);
@@ -803,7 +803,7 @@ int page_regle(SDL_Window * fenetre, SDL_Renderer * surface, TTF_Font * police, 
     
     
     if(numero_page==1 || numero_page==2){
-        SDL_Surface* fleche_bas = IMG_Load("../fleche_bas.png");
+        SDL_Surface* fleche_bas = IMG_Load("../img/fleche_bas.png");
         if(!fleche_bas)
         {
             printf("Erreur de chargement de l'image : %s",SDL_GetError());
@@ -818,7 +818,7 @@ int page_regle(SDL_Window * fenetre, SDL_Renderer * surface, TTF_Font * police, 
     
     if (numero_page==2 || numero_page==3){
         
-        SDL_Surface* fleche_haut = IMG_Load("../fleche_haut.jpg");
+        SDL_Surface* fleche_haut = IMG_Load("../img/fleche_haut.jpg");
         SDL_Texture* fleche_haut_t = SDL_CreateTextureFromSurface(surface,fleche_haut);
         SDL_Rect pos_fleche_haut ={wf-50,hf-100,50,50};
         SDL_RenderCopy(surface, fleche_haut_t, NULL,&pos_fleche_haut);
